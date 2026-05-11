@@ -38,17 +38,21 @@ document.querySelectorAll('.news__form').forEach(form => {
 // ═══════════════════════════════════════════════════════
 
 const PRICING = [
-  { size: '21 × 30 cm (A4)',  edition: '30', price: 'R$ 600' },
-  { size: '30 × 42 cm (A3)',  edition: '25', price: 'R$ 1.200' },
-  { size: '42 × 60 cm (A2)',  edition: '15', price: 'R$ 2.400' },
-  { size: '60 × 84 cm (A1)',  edition: '10', price: 'R$ 4.500' },
-  { size: '84 × 118 cm (A0)', edition: '5',  price: 'R$ 9.000' }
+  { size: '21 × 30 cm',  edition: 'Edição de 30', price: 'R$ 600' },
+  { size: '30 × 42 cm',  edition: 'Edição de 25', price: 'R$ 1.200' },
+  { size: '42 × 60 cm',  edition: 'Edição de 15', price: 'R$ 2.400' },
+  { size: '60 × 84 cm',  edition: 'Edição de 10', price: 'R$ 4.500' },
+  { size: '84 × 118 cm', edition: 'Edição de 5',  price: 'R$ 9.000' }
 ];
 
-function pricingTable() {
-  return `<table>${PRICING.map(p =>
-    `<tr><td>${p.size}</td><td>${p.edition} cópias</td><td>${p.price}</td></tr>`
-  ).join('')}</table>`;
+function pricingList() {
+  return PRICING.map(p =>
+    `<li class="lb-pricing__item">
+       <span class="lb-pricing__size">${p.size}</span>
+       <span class="lb-pricing__price">${p.price}</span>
+       <span class="lb-pricing__edition">${p.edition}</span>
+     </li>`
+  ).join('');
 }
 
 async function initPortfolio() {
@@ -103,10 +107,10 @@ async function initPortfolio() {
   const lbDesc = document.getElementById('lb-desc');
   const lbTags = document.getElementById('lb-tags');
   const lbCta = document.getElementById('lb-cta');
-  const lbPricingBody = document.getElementById('lb-pricing-table');
+  const lbPricingList = document.getElementById('lb-pricing-list');
 
-  // Initialize pricing table once
-  if (lbPricingBody) lbPricingBody.innerHTML = pricingTable().replace(/<\/?table>/g, '');
+  // Initialize pricing list once (organic, no table)
+  if (lbPricingList) lbPricingList.innerHTML = pricingList();
 
   window.openLightbox = function(arr, idx) {
     currentPrints = arr;

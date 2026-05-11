@@ -5,14 +5,8 @@
     "filename": "PORT_WAG_5373.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg",
     "category": "abstrato",
-    "description": "Vortex hipnótico em azul e violeta com figura central. Túnel de luz que parece sugar o olhar pra dentro da imagem. Estudo de movimento puro.",
-    "tags": [
-      "vortex",
-      "túnel",
-      "movimento circular",
-      "azul violeta",
-      "hipnótico"
-    ]
+    "description": "Túnel de luz violeta em movimento contínuo, feito provavelmente no clube da montanha. A figura central é envolvida por uma espiral que não para, parece sugar o olhar pra dentro da imagem. É o gesto puro: corpo girando no escuro, lanterna na mão, obturador aberto. O que sobra na chapa é o tempo dele, condensado.",
+    "tags": ["vortex", "violeta", "hipnose", "montanha", "gesto", "espiral"]
   },
   {
     "id": "p02",
@@ -20,14 +14,8 @@
     "filename": "PORT_IMG_4684.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_IMG_4684.jpg",
     "category": "autorretrato",
-    "description": "Autorretrato em paisagem de montanha à noite. Duas esferas perfeitas de fagulhas douradas (lã de aço) emolduram a figura, cidade ao fundo. O fogo desenha o tempo.",
-    "tags": [
-      "lã de aço",
-      "fagulhas",
-      "autorretrato",
-      "montanha",
-      "noturno"
-    ]
+    "description": "Autorretrato em paisagem de montanha à noite, cidade brilhando ao fundo. Não é lã de aço: são estrelinhas, velas mágicas presas num bastão e giradas à mão tentando desenhar o símbolo do infinito. As fagulhas duram poucos segundos. A montanha é permanente. A fotografia segura as duas durações na mesma chapa, e algo aí lembra asas de águia abertas.",
+    "tags": ["autorretrato", "montanha", "estrelinhas", "fagulhas", "gesto", "asas"]
   },
   {
     "id": "p03",
@@ -35,14 +23,8 @@
     "filename": "PORT_DSC_4239.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4239.jpg",
     "category": "paisagem",
-    "description": "Árvore solitária na escuridão. Galhos iluminados em dourado com um tronco escarlate, contemplação noturna pura. Estudo de presença.",
-    "tags": [
-      "árvore",
-      "dourado",
-      "vermelho",
-      "solidão",
-      "minimalista"
-    ]
+    "description": "Árvore solitária na escuridão de um sítio. Galhos delineados em dourado, tronco escarlate. Experiência rara: a lanterna foi instalada num drone, e o desenho de luz veio do voo controlado ao redor da copa. O resto é silêncio. Estudo de presença, onde a árvore é tudo que existe no quadro porque foi tudo que a luz revelou.",
+    "tags": ["árvore", "dourado", "drone", "sítio", "contemplação", "presença"]
   },
   {
     "id": "p04",
@@ -50,373 +32,205 @@
     "filename": "PORT_WAG_2335.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2335.jpg",
     "category": "concept",
-    "description": "Janela de luz quadriculada flutuando entre folhagem noturna. Concept art de luz como objeto sólido. A mata abraça uma forma impossível.",
-    "tags": [
-      "janela",
-      "geométrico",
-      "vegetação",
-      "flutuante",
-      "concept"
-    ]
+    "description": "Primeira obra feita com o bastão de LED artesanal, montado em uma vara de bambu com fita LED e bateria 12V acoplada na ponta. Cenário: uma rua de Piracanga ao anoitecer, vegetação tropical respirando ao redor. A janela quadriculada aparece flutuando entre as folhas, sem moldura, sem parede que a sustente. Só luz desenhada no ar e a câmera somando tudo. Conceito visual de luz como matéria sólida.",
+    "tags": ["piracanga", "bastão LED", "janela", "concept", "vegetação tropical"]
   },
   {
     "id": "p05",
-    "title": "Anunciação",
-    "filename": "PORT_WAG_8430.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8430.jpg",
-    "category": "retrato",
-    "description": "Retrato de modelo gestante em vestido branco. Asas dramáticas em vermelho-fogo se abrem atrás dela, vegetação noturna ao fundo. Maternidade épica.",
-    "tags": [
-      "maternidade",
-      "asas",
-      "vermelho",
-      "floresta",
-      "sessão"
-    ]
-  },
-  {
-    "id": "p06",
     "title": "Travessia",
     "filename": "PORT_PHE_7476.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_PHE_7476.jpg",
     "category": "paisagem",
-    "description": "Caminho de luz aberto entre vegetação tropical à noite. Palmeiras e bananeiras emolduram um corredor iluminado por luz construída no chão. A escuridão da floresta vira matéria.",
-    "tags": [
-      "tropical",
-      "vegetação",
-      "caminho",
-      "luz construída",
-      "noturno"
-    ]
+    "description": "Entrada de uma das casas de Piracanga, na noite de lua cheia. O céu tropical clareou o suficiente pra recortar palmeiras e bananeiras em silhueta, enquanto a luz desenhada no chão abriu um corredor iluminado entre a folhagem densa. Travessia literal: o caminho que existia só de dia, revelado pela luz construída à noite. A floresta vira interior, a passagem vira convite.",
+    "tags": ["piracanga", "lua cheia", "tropical", "caminho", "vegetação"]
   },
   {
-    "id": "p07",
-    "title": "Infinito",
+    "id": "p06",
+    "title": "Cúpula",
     "filename": "PORT_GOPR5643.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5643.jpg",
     "category": "lã de aço",
-    "description": "Explosão dourada de lã de aço na praia sob céu nublado dramático. Fagulhas em meia-cúpula com símbolo de infinito no centro. Cinematic.",
-    "tags": [
-      "lã de aço",
-      "praia",
-      "fagulhas",
-      "infinito",
-      "céu dramático"
-    ]
+    "description": "Lã de aço acesa no chicote e girada à mão na praia, sob céu nublado dramático. As fagulhas formam uma cúpula dourada que dura poucos segundos. Ao fundo, dunas e a linha do mar. O cenário sustenta o gesto: a praia vazia, o céu pesado, a meia-esfera de fogo que se desenha e some. A fotografia preserva o que, na noite real, foi efêmero.",
+    "tags": ["praia", "dunas", "lã de aço", "fagulhas", "cúpula", "cinematográfica"]
   },
   {
-    "id": "p08",
+    "id": "p07",
     "title": "Portal",
     "filename": "PORT_WAG_8672.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8672.jpg",
     "category": "retrato",
-    "description": "Modelo gestante em paisagem montanhosa noturna com céu estrelado. Anel multicolorido (cyan, rosa, dourado) emoldura sua silhueta. Etéreo.",
-    "tags": [
-      "maternidade",
-      "montanha",
-      "multicolor",
-      "estrelas",
-      "portal"
-    ]
+    "description": "Foto feita no alto da montanha, no clube da montanha onde morávamos. Melyna, esposa, em paisagem montanhosa noturna sob céu estrelado, grávida. O anel multicolorido em ciano, rosa e dourado emoldura a silhueta dela como um portal: ela está prestes a ser outra coisa, e a luz construída ao redor reconhece isso. Altitude, gestação, fotografia. Três passagens ocorrendo na mesma exposição.",
+    "tags": ["gravidez", "portal", "montanha", "anel", "gesto"]
   },
   {
-    "id": "p09",
+    "id": "p08",
     "title": "Jardim Noturno",
     "filename": "PORT_DSC_1218.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1218.jpg",
     "category": "paisagem",
-    "description": "Jardim de palmeiras à noite com orbes de luz multicoloridos espalhados entre os troncos. A vegetação dialoga com geometrias luminosas.",
-    "tags": [
-      "palmeiras",
-      "orbes",
-      "jardim",
-      "noturno",
-      "multicolor"
-    ]
+    "description": "Parque do Ibirapuera, São Paulo, em noite de ensaio fotográfico improvisado com amigos. As palmeiras imensas viram um jardim suspenso, e os orbes de luz multicoloridos espalhados entre os troncos transformam o lugar num lugar diferente: a vegetação dialoga com geometrias luminosas, como se o parque tivesse ganho um andar invisível durante a noite. A cidade desaparece. O jardim ficou.",
+    "tags": ["ibirapuera", "jardim", "suspenso", "palmeiras", "orbes", "são paulo"]
   },
   {
-    "id": "p10",
+    "id": "p09",
     "title": "Aparição",
     "filename": "PORT_DSC_4184.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4184.jpg",
     "category": "concept",
-    "description": "Figura ascendente em luz azul-ciano com base em luz branca translúcida. Gênio noturno emergindo da floresta. Concept fantástico.",
-    "tags": [
-      "figura",
-      "azul ciano",
-      "ascendente",
-      "floresta",
-      "fantástico"
-    ]
+    "description": "Figura ascendente em luz azul-ciano com base de luz branca translúcida, emergindo do escuro da floresta. Concept que beira o fantástico: gênio noturno se anunciando, presença que existe entre matéria e energia. A floresta abraça uma forma que não estava ali antes do gesto, e que não estará ali depois. A fotografia certifica o instante em que algo apareceu.",
+    "tags": ["figura", "aparição", "ciano", "floresta", "fantástico", "presença"]
   },
   {
-    "id": "p11",
+    "id": "p10",
     "title": "Altar",
     "filename": "PORT_GOPR5836.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5836.jpg",
     "category": "concept",
-    "description": "Interior de oca cerimonial com almofadas no chão e velas acesas no centro. Orbe azul-vermelha flutua sobre o altar improvisado. Espaço sagrado em luz.",
-    "tags": [
-      "oca",
-      "cerimonial",
-      "altar",
-      "azul vermelho",
-      "sagrado",
-      "velas"
-    ]
+    "description": "Oca da etnia Xingu construída na Serrinha, durante festival de arte na Bahia. Uma fogueirinha verdadeira no centro, mas as labaredas em azul e magenta foram desenhadas com light painting, dilatando o fogo até preencher o espaço cerimonial. Local sagrado, presença viva: a oca recebe a luz como recebe convidados. Não domina, convive.",
+    "tags": ["oca", "xingu", "serrinha", "bahia", "fogo", "ritual", "sagrado"]
   },
   {
-    "id": "p12",
+    "id": "p11",
     "title": "Oca",
     "filename": "PORT_WAG_5229.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5229.jpg",
     "category": "concept",
-    "description": "Interior de oca circular iluminada por light painting em azul e magenta, fogueira no centro. Composição complexa em ambiente vernacular.",
-    "tags": [
-      "oca",
-      "fogueira",
-      "interior",
-      "magenta azul",
-      "vernacular"
-    ]
+    "description": "Interior de oca circular com piso de madeira, iluminada por light painting em azul e magenta. Fogueira ao centro. A geometria redonda do espaço dialoga com a luz construída: a oca abriga, a luz revela. Cenário brasileiro tratado como cenário de concept, sem perder a presença do lugar real.",
+    "tags": ["oca", "interior", "magenta", "azul", "fogueira", "brasil"]
   },
   {
-    "id": "p13",
+    "id": "p12",
     "title": "Vigília",
     "filename": "PORT__WAG0466.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0466.jpg",
     "category": "paisagem",
-    "description": "Silhueta sentada em meditação na areia, sob céu estrelado, envolvida por arcos dourados e formas em luz branca. Momento de contemplação radical.",
-    "tags": [
-      "meditação",
-      "estrelas",
-      "silhueta",
-      "praia",
-      "contemplativo"
-    ]
+    "description": "Praia de Piracanga, um amigo em posição de yoga sob céu estrelado, envolvido por arcos dourados e formas em luz branca. O corpo dele permanece parado pela duração inteira da exposição: a postura é a vigília, e a luz construída ao redor reconhece o silêncio dele. A noite chega em quem está disposto a esperar.",
+    "tags": ["piracanga", "yoga", "praia", "meditação", "estrelas", "vigília"]
   },
   {
-    "id": "p14",
+    "id": "p13",
     "title": "Vista de Cima",
     "filename": "PORT_DJI_0144.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DJI_0144.jpg",
     "category": "abstrato",
-    "description": "Vista aérea de drone. Forma orgânica em luz dourada flutuando sobre superfície escura. Estudo abstrato visto de cima.",
-    "tags": [
-      "drone",
-      "vista aérea",
-      "dourado",
-      "abstrato",
-      "orgânico"
-    ]
+    "description": "Vista aérea feita com drone enquanto eu desenhava embaixo com o bastão de LED. Forma orgânica em luz dourada, flutuando sobre superfície escura, vista de um ponto que olho nenhum alcança. Parte do ensaio se perdeu nos arquivos, esta sobreviveu. Estudo abstrato visto de cima, onde a perspectiva muda o que a luz desenha sem mudar o gesto.",
+    "tags": ["drone", "vista aérea", "bastão LED", "dourado", "abstrato", "orgânico"]
   },
   {
-    "id": "p15",
+    "id": "p14",
     "title": "Sonho",
     "filename": "PORT__WAG0931.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0931.jpg",
     "category": "paisagem",
-    "description": "Árvores em silhueta sob céu noturno laranja-magenta. Pequenas espirais douradas dispersas pelo gramado. Ambiente onírico de fim de dia.",
-    "tags": [
-      "árvores",
-      "crepúsculo",
-      "laranja magenta",
-      "espirais",
-      "onírico"
-    ]
+    "description": "Árvores em silhueta sob céu noturno laranja-magenta, com pequenas espirais douradas dispersas pelo gramado. Cenário de festa, exposição de mais ou menos quinze minutos com um LED pequeno (Malight) na mão. As espirais se acumulam pelo chão como pegadas: o que sobra de quem caminhou desenhando luz a noite inteira. Ambiente onírico.",
+    "tags": ["árvores", "crepúsculo", "malight", "espirais", "festa", "onírico"]
   },
   {
-    "id": "p16",
+    "id": "p15",
     "title": "Forma na Areia",
     "filename": "PORT__WAG0495.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0495.jpg",
     "category": "abstrato",
-    "description": "Escultura abstrata de luz na areia da praia, à noite. Espirais e curvas em branco-pérola formam uma figura quase orgânica. Cabeça noturna.",
-    "tags": [
-      "praia",
-      "areia",
-      "escultural",
-      "monocromático",
-      "orgânico"
-    ]
+    "description": "Praia à noite, intenção de fotografar espíritos. Escultura abstrata de luz na areia, espirais e curvas em branco-pérola formando uma figura quase orgânica, vagamente humanoide, com capuz, com corpo de roupa solta. Não é gente, não é fantasma: é a luz que o gesto deixa quando a intenção é invocar o invisível. Cabeça noturna feita só de luz.",
+    "tags": ["praia", "areia", "espíritos", "capuz", "escultura", "fantasmagoria"]
   },
   {
-    "id": "p17",
+    "id": "p16",
     "title": "Dança",
     "filename": "PORT_DSC_5460.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_5460.jpg",
-    "category": "autorretrato",
-    "description": "Autorretrato dançando em paisagem urbana noturna. Luzes coloridas envolvem a figura em movimento, ponte iluminada ao fundo. Ritmo capturado.",
-    "tags": [
-      "dança",
-      "urbano",
-      "ponte",
-      "movimento",
-      "multicolor"
-    ]
+    "category": "retrato",
+    "description": "Rishikesh, beira do Rio Ganges, Índia. Uma modelo dançando entre luzes coloridas em paisagem urbana noturna, com as pontes da cidade ao fundo. Tentativa de uma imagem mais psicodélica: cor concentrada, ritmo no corpo, fluxo da câmera. O Ganges segue. A dança ficou na chapa.",
+    "tags": ["índia", "rishikesh", "ganges", "dança", "psicodélica", "urbano"]
   },
   {
-    "id": "p18",
+    "id": "p17",
     "title": "Monumento",
     "filename": "PORT_DSC_1229.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1229.jpg",
     "category": "concept",
-    "description": "Escultura urbana monumental envolvida em redemoinhos de luz dourada. Arquitetura em diálogo com cor e movimento. Céu noturno alaranjado.",
-    "tags": [
-      "arquitetura",
-      "escultura urbana",
-      "dourado",
-      "monumental"
-    ]
+    "description": "Intervenção artística monumental no Ibirapuera, São Paulo, em dia de exposição pública. Encontrei a escultura armada no parque e fiz a foto ali mesmo, envolvendo a obra em redemoinhos de luz dourada durante a exposição longa. Diálogo entre duas intervenções: a do artista da escultura e a minha, com a câmera. Resultou psicodélico.",
+    "tags": ["ibirapuera", "intervenção", "escultura", "dourado", "psicodélico", "são paulo"]
   },
   {
-    "id": "p19",
+    "id": "p18",
     "title": "Esfera",
     "filename": "PORT_DSC_3077.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3077.jpg",
     "category": "abstrato",
-    "description": "Esfera de luz branca-azulada flutuando entre árvores ao entardecer. Composição etérea em parque tropical, céu rosado ao fundo.",
-    "tags": [
-      "esfera",
-      "branco azulado",
-      "parque",
-      "entardecer",
-      "etéreo"
-    ]
+    "description": "Esfera de luz branca-azulada flutuando entre árvores ao entardecer, em parque tropical. Eu gosto dessas esferas e dessas mandalas: tem algo dentro delas, alguma coisa que ilumina por dentro e traz pra fora. O cenário sustenta o gesto, grama, floresta, bosque, céu rosado ao fundo. Composição etérea, antes da noite chegar completa.",
+    "tags": ["esfera", "mandala", "entardecer", "parque", "etéreo", "bosque"]
   },
   {
-    "id": "p20",
+    "id": "p19",
     "title": "Linha",
     "filename": "PORT_WAG_9237.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_9237.jpg",
     "category": "paisagem",
-    "description": "Paisagem noturna minimalista. Apenas um traço sutil de luz branca no horizonte sob céu nublado. Lirismo da economia. Quase nada, e tudo.",
-    "tags": [
-      "minimalista",
-      "horizonte",
-      "lírico",
-      "escuridão",
-      "sutil"
-    ]
+    "description": "Pedra grande em Atibaia, durante o projeto Lapsos, madrugada. Apenas um traço sutil de luz branca corta o horizonte sob céu nublado. A linha é mínima, quase um susto: o que ela faz é destacar a textura da pedra que estava ali o tempo todo, e que o olho diurno passaria sem ver. Lirismo da economia.",
+    "tags": ["atibaia", "pedra", "lapsos", "textura", "minimalismo", "horizonte"]
   },
   {
-    "id": "p21",
-    "title": "Donut",
+    "id": "p20",
+    "title": "Halo",
     "filename": "PORT_WAG_8657.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8657.jpg",
     "category": "retrato",
-    "description": "Modelo gestante emoldurada por anel/donut gigante de luz roxa+rosa. Tracejados azuis ao redor da figura. Composição centrada, paisagem rural ao fundo.",
-    "tags": [
-      "maternidade",
-      "anel",
-      "roxo rosa",
-      "portal",
-      "sessão"
-    ]
+    "description": "Melyna em paisagem noturna da montanha. Eu estava estreando um equipamento novo, e o gesto procurava uma névoa de luz ao redor dela, uma aura curadora se formando no ar. O anel roxo perfeito flutua à volta da figura como halo: o que envolve, o que cuida, o que separa o sujeito do resto da noite. Retrato em luz construída.",
+    "tags": ["halo", "aura", "melyna", "montanha", "roxo", "retrato"]
   },
   {
-    "id": "p22",
-    "title": "Diagonal",
+    "id": "p21",
+    "title": "Risca",
     "filename": "PORT_GOPR8420.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR8420.jpg",
     "category": "paisagem",
-    "description": "Praia à noite com céu estrelado. Feixe de laser verde corta o quadro em diagonal e desenha forma luminosa na areia. Coqueiros silhueta no horizonte.",
-    "tags": [
-      "praia",
-      "laser verde",
-      "estrelas",
-      "coqueiros",
-      "linha"
-    ]
+    "description": "Praia deserta à noite, sob céu estrelado profundo. Uma risca diagonal de luz verde corta o quadro e desenha uma forma na areia. Ao fundo, a cidade brilha a uns quinze quilômetros, recortada por coqueiros silhuetados. A foto vive da tensão entre o vazio próximo e a civilização distante, atravessada por uma única linha precisa. Quase milimétrica.",
+    "tags": ["praia", "deserta", "risca", "estrelas", "coqueiros", "diagonal"]
   },
   {
-    "id": "p23",
+    "id": "p22",
     "title": "Passarela",
     "filename": "PORT_WAG_2448.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2448.jpg",
     "category": "paisagem",
-    "description": "Caminho de luz dourada sobre passarela de madeira em meio à mata. Perspectiva linear com troncos verticais iluminados em azul. Profundidade pura.",
-    "tags": [
-      "passarela",
-      "perspectiva",
-      "dourado azul",
-      "mata",
-      "linear"
-    ]
+    "description": "Estrada de areia em Piracanga, durante laboratório do FBA. Bastão de LED 12V girado em movimento contínuo desenha um caminho dourado sobre o solo, enquanto latinhas de teatro com gelatinas coloridas iluminam os troncos verticais ao lado da cerca em azul. Foto icônica do bastão que eu usei mais que qualquer outro pincel. Perspectiva linear pura.",
+    "tags": ["piracanga", "estrada", "bastão LED", "FBA", "perspectiva", "ícone"]
   },
   {
-    "id": "p24",
+    "id": "p23",
     "title": "Caligrafia",
     "filename": "PORT_WAG_5255.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5255.jpg",
     "category": "abstrato",
-    "description": "Macro de escrita luminosa dourada. Formas abstratas em ouro vivo dominam o quadro inteiro. Caligrafia abstrata.",
-    "tags": [
-      "macro",
-      "dourado",
-      "caligrafia",
-      "detalhe",
-      "escrita"
-    ]
+    "description": "Inversão do gesto comum do light painting: aqui a luz ficou fixa e eu movimentei a câmera durante a exposição. O resultado é caligrafia, formas abstratas em ouro vivo dominando o quadro inteiro como escrita à mão. Trabalho inspirado em uma amiga que pratica caligrafia sensitiva. A câmera escrevendo, em vez do gesto.",
+    "tags": ["caligrafia", "sensitiva", "dourado", "macro", "escrita", "câmera em movimento"]
   },
   {
-    "id": "p25",
+    "id": "p24",
     "title": "Diálogo",
     "filename": "PORT_WAG_8599.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg",
     "category": "abstrato",
-    "description": "Composição abstrata em laranja-fogo e branco-fluido. Esfera central de fogo cercada por traços brancos sinuosos. Estudo de oposições.",
-    "tags": [
-      "abstrato",
-      "laranja branco",
-      "esfera",
-      "fluido",
-      "oposições"
-    ]
+    "description": "Esfera central de fogo laranja envolvida por traços brancos sinuosos. Duas naturezas que normalmente não conversam: o quente e o frio, o concentrado e o disperso, o estável e o fluido. A fotografia coloca as duas no mesmo plano e na mesma duração, e por isso elas dialogam. Calor e frescor no mesmo gesto.",
+    "tags": ["fogo", "laranja", "branco", "fluido", "oposição", "diálogo"]
   },
   {
-    "id": "p26",
-    "title": "Cogumelo",
+    "id": "p25",
+    "title": "Surgimento",
     "filename": "PORT_WAG_2333-2.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2333-2.jpg",
     "category": "concept",
-    "description": "Cogumelo de luz emergindo de tapete luminoso linear na mata. Concept de criatura noturna feita só de luz. Surrealismo botânico.",
-    "tags": [
-      "cogumelo",
-      "tapete de luz",
-      "surreal",
-      "mata",
-      "criatura"
-    ]
+    "description": "Estradinha em Piracanga com plantações nas laterais. Não é cogumelo: é um caminho fluido com várias linhas onduladas que convergem até um portal, e algo está surgindo de lá de dentro. A forma emerge sem nome próprio, sem origem identificável, e a luz é só o que torna o surgimento visível pra câmera. O resto continua oculto.",
+    "tags": ["piracanga", "surgimento", "portal", "caminho", "emergência", "mata"]
   },
   {
-    "id": "p27",
-    "title": "Centro",
-    "filename": "PORT_DSC_2986.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_2986.jpg",
-    "category": "autorretrato",
-    "description": "Autorretrato dentro de oca circular com piso de madeira. Figura central iluminada, traços verdes e brancos giram ao redor. Espaço sagrado.",
-    "tags": [
-      "oca",
-      "interior",
-      "verde branco",
-      "centro",
-      "sagrado"
-    ]
-  },
-  {
-    "id": "p28",
-    "title": "Anéis",
+    "id": "p26",
+    "title": "Lume",
     "filename": "PORT_DSC_3083.jpg",
     "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3083.jpg",
     "category": "abstrato",
-    "description": "Anéis dourados sobrepostos em movimento orbital. Composição complexa de loops e espirais flutuando entre árvores noturnas.",
-    "tags": [
-      "anéis",
-      "dourado",
-      "loops",
-      "noturno",
-      "parque"
-    ]
+    "description": "Movimento contínuo do corpo com LEDs de luz quente nas mãos. O que parecia anéis sobrepostos é, no fundo, dança: loops fluidos, espirais que se acumulam, brasa em forma de gesto. A composição flutua entre árvores noturnas, e o movimento do corpo é o que estrutura tudo. Lume sustentado pela duração da exposição.",
+    "tags": ["dança", "lume", "led quente", "loops", "espirais", "movimento"]
   }
 ]
