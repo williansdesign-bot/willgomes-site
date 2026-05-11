@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editor · Willians Gomes</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/style.css">
+
+<style>
+  body { padding-bottom: 120px; }
+  .edit-header {
+    padding: 80px 24px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .edit-header h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .edit-header p {
+    color: var(--fg-soft);
+    max-width: 640px;
+    margin: 0 auto 24px;
+    font-size: 0.95rem;
+  }
+  .edit-header .instructions {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 16px;
+  }
+  .edit-actions {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(20, 20, 20, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    padding: 16px 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .edit-actions button {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .edit-actions button:hover {
+    background: var(--gold);
+    color: #0a0a0a;
+    border-color: var(--gold);
+  }
+  .edit-actions button.primary {
+    background: var(--gold);
+    color: #0a0a0a;
+    border-color: var(--gold);
+  }
+  .edit-actions button.primary:hover {
+    background: #e0c078;
+  }
+
+  .edit-list {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .edit-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    align-items: start;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--line);
+  }
+  .edit-card:last-child { border-bottom: 0; }
+  .edit-card__image .frame {
+    aspect-ratio: 4 / 5;
+    padding: 6px;
+  }
+  .edit-card__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .edit-card__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .edit-card__title {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .edit-card__cat {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .edit-card__filename {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    color: var(--fg-mute);
+  }
+  .edit-card__label {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--fg-mute);
+    margin-bottom: 4px;
+  }
+  .edit-card__textarea {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 14px 16px;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    transition: border-color var(--transition);
+  }
+  .edit-card__textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+  }
+  .edit-card__textarea.modified {
+    border-left: 3px solid var(--gold);
+  }
+  .edit-card__tags-input {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    padding: 10px 14px;
+    width: 100%;
+    transition: border-color var(--transition);
+  }
+  .edit-card__tags-input:focus {
+    outline: none;
+    border-color: var(--gold);
+  }
+  .field-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .auth-wall {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .auth-form {
+    text-align: center;
+    max-width: 380px;
+  }
+  .auth-form h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+  }
+  .auth-form input {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    padding: 14px 18px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: 16px;
+  }
+  .auth-form button {
+    background: var(--gold);
+    color: #0a0a0a;
+    border: 0;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: #0a0a0a;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 14px 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 200;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  @media (max-width: 720px) {
+    .edit-card { grid-template-columns: 1fr; gap: 16px; }
+    .edit-card__image .frame { aspect-ratio: 3/4; max-width: 240px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════ AUTH WALL ═══════ -->
+<div class="auth-wall" id="authWall">
+  <form class="auth-form" id="authForm">
+    <h2>Editor</h2>
+    <input type="password" id="authPin" placeholder="senha" autocomplete="off" autofocus>
+    <button type="submit">Entrar</button>
+  </form>
+</div>
+
+<!-- ═══════ EDITOR ═══════ -->
+<div id="editor" style="display:none;">
+  <div class="edit-actions">
+    <button id="btnLoad">Recarregar do servidor</button>
+    <button id="btnLocal">Carregar rascunho local</button>
+    <button id="btnExport" class="primary">Exportar JSON</button>
+    <button id="btnClear">Limpar rascunho local</button>
+  </div>
+
+  <header class="edit-header">
+    <h1>Editar descrições</h1>
+    <p>
+      Edite as descrições, categorias e tags das 28 obras. As alterações ficam salvas localmente no seu navegador automaticamente. Quando terminar, clique <strong>Exportar JSON</strong> e me mande o arquivo, eu refino o texto e atualizo o site.
+    </p>
+    <p class="instructions">Ctrl/Cmd · S salva rascunho · Auto-save a cada 5 segundos</p>
+  </header>
+
+  <div class="edit-list" id="editList"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const STORAGE_KEY = 'willgomes_edit_draft';
+const PIN = 'tempo-unico';
+
+// ═══ AUTH ═══
+const authForm = document.getElementById('authForm');
+const authWall = document.getElementById('authWall');
+const editor = document.getElementById('editor');
+
+authForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const pin = document.getElementById('authPin').value.trim().toLowerCase();
+  if (pin === PIN || pin === 'tempounico' || pin === 'willians') {
+    authWall.style.display = 'none';
+    editor.style.display = 'block';
+    initEditor();
+  } else {
+    alert('Senha incorreta. Tente "tempo-unico"');
+  }
+});
+
+// Allow ?key=tempo-unico to skip auth
+if (new URLSearchParams(location.search).get('key') === PIN) {
+  authWall.style.display = 'none';
+  editor.style.display = 'block';
+  document.addEventListener('DOMContentLoaded', initEditor);
+}
+
+// ═══ TOAST ═══
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+// ═══ EDITOR ═══
+let prints = [];
+let original = [];
+
+async function initEditor() {
+  // Try local draft first, else fetch from server
+  const draft = localStorage.getItem(STORAGE_KEY);
+  if (draft) {
+    try {
+      prints = JSON.parse(draft);
+      toast('Rascunho local carregado');
+    } catch (e) { prints = []; }
+  }
+  if (!prints.length) await loadFromServer();
+  if (!original.length) original = JSON.parse(JSON.stringify(prints));
+  renderList();
+  setupAutosave();
+  setupKeyboard();
+}
+
+async function loadFromServer() {
+  try {
+    const res = await fetch('/assets/prints.json?t=' + Date.now());
+    prints = await res.json();
+    original = JSON.parse(JSON.stringify(prints));
+    renderList();
+    toast('Carregado do servidor');
+  } catch (e) {
+    alert('Erro ao carregar: ' + e.message);
+  }
+}
+
+function renderList() {
+  const list = document.getElementById('editList');
+  list.innerHTML = '';
+  prints.forEach((p, idx) => {
+    const card = document.createElement('article');
+    card.className = 'edit-card';
+    card.innerHTML = `
+      <div class="edit-card__image">
+        <div class="frame">
+          <img src="${p.url}" alt="${p.title}" loading="lazy">
+        </div>
+      </div>
+      <div class="edit-card__meta">
+        <div class="edit-card__head">
+          <span class="edit-card__title">${idx + 1}. ${p.title}</span>
+          <span class="edit-card__cat">${p.category || 'sem categoria'}</span>
+        </div>
+        <span class="edit-card__filename">${p.filename}</span>
+
+        <div class="field-group">
+          <label class="edit-card__label" for="desc-${idx}">Descrição</label>
+          <textarea class="edit-card__textarea" id="desc-${idx}" data-idx="${idx}" data-field="description">${p.description || ''}</textarea>
+        </div>
+
+        <div class="field-group">
+          <label class="edit-card__label" for="cat-${idx}">Categoria</label>
+          <input class="edit-card__tags-input" id="cat-${idx}" type="text" data-idx="${idx}" data-field="category" value="${p.category || ''}">
+        </div>
+
+        <div class="field-group">
+          <label class="edit-card__label" for="tags-${idx}">Tags (separadas por vírgula)</label>
+          <input class="edit-card__tags-input" id="tags-${idx}" type="text" data-idx="${idx}" data-field="tags" value="${(p.tags || []).join(', ')}">
+        </div>
+      </div>
+    `;
+    list.appendChild(card);
+  });
+
+  // Attach input handlers
+  list.querySelectorAll('[data-idx]').forEach(el => {
+    el.addEventListener('input', handleInput);
+  });
+}
+
+function handleInput(e) {
+  const idx = parseInt(e.target.dataset.idx);
+  const field = e.target.dataset.field;
+  let value = e.target.value;
+  if (field === 'tags') {
+    value = value.split(',').map(t => t.trim()).filter(Boolean);
+  }
+  prints[idx][field] = value;
+
+  // Mark as modified
+  const origVal = field === 'tags' ? (original[idx][field] || []).join(', ') : (original[idx][field] || '');
+  const newVal = field === 'tags' ? value.join(', ') : value;
+  if (origVal !== newVal) {
+    e.target.classList.add('modified');
+  } else {
+    e.target.classList.remove('modified');
+  }
+}
+
+function setupAutosave() {
+  setInterval(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(prints));
+  }, 5000);
+}
+
+function setupKeyboard() {
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+      e.preventDefault();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(prints));
+      toast('Rascunho salvo');
+    }
+  });
+}
+
+document.getElementById('btnLoad').addEventListener('click', () => {
+  if (confirm('Descartar suas edições e recarregar do servidor?')) {
+    loadFromServer();
+    localStorage.removeItem(STORAGE_KEY);
+  }
+});
+
+document.getElementById('btnLocal').addEventListener('click', () => {
+  const draft = localStorage.getItem(STORAGE_KEY);
+  if (draft) {
+    prints = JSON.parse(draft);
+    renderList();
+    toast('Rascunho recarregado');
+  } else {
+    toast('Nenhum rascunho local');
+  }
+});
+
+document.getElementById('btnClear').addEventListener('click', () => {
+  if (confirm('Limpar rascunho local? Suas edições serão perdidas.')) {
+    localStorage.removeItem(STORAGE_KEY);
+    toast('Rascunho limpo');
+  }
+});
+
+document.getElementById('btnExport').addEventListener('click', () => {
+  const blob = new Blob([JSON.stringify(prints, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const date = new Date().toISOString().split('T')[0];
+  a.href = url;
+  a.download = `prints-edited-${date}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('JSON exportado');
+});
+</script>
+
+</body>
+</html>

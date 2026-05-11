@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   willgomes.art — global scripts
+   willgomes.art · global scripts
    ═══════════════════════════════════════════════════════ */
 
 // Reveal-on-scroll
@@ -70,7 +70,7 @@ async function initPortfolio() {
     card.className = 'portfolio-card reveal';
     card.innerHTML = `
       <div class="frame">
-        <img src="${p.url}" alt="${p.title} — ${p.description ? p.description.split('—')[0].trim() : 'light painting'}" loading="lazy">
+        <img src="${p.url}" alt="${p.title} · ${p.description ? p.description.split('·')[0].trim() : 'light painting'}" loading="lazy">
       </div>
       <div class="portfolio-card-meta">
         <span class="portfolio-card-title">${p.title}</span>

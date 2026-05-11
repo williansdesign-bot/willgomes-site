@@ -1,4 +1,4 @@
-# Willians Gomes — Light Painting
+# Willians Gomes · Light Painting
 
 Site oficial. Light painting + fine art photography.
 

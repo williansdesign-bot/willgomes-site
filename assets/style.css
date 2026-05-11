@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   willgomes.art — design tokens + global styles
+   willgomes.art · design tokens + global styles
    ═══════════════════════════════════════════════════════ */
 
 :root {
@@ -43,7 +43,7 @@ a:focus-visible, button:focus-visible {
 ::selection { background: var(--gold); color: #0a0a0a; }
 
 /* ═══════════════════════════════════════════════════════
-   FRAME — passe-partout preto absoluto pras imagens
+   FRAME · passe-partout preto absoluto pras imagens
    ═══════════════════════════════════════════════════════ */
 
 .frame {
@@ -159,7 +159,7 @@ a:focus-visible, button:focus-visible {
   text-transform: none;
 }
 
-/* Hero text block — separated from image */
+/* Hero text block · separated from image */
 .hero__text {
   text-align: center;
   padding: 120px 24px 100px;
@@ -175,7 +175,7 @@ a:focus-visible, button:focus-visible {
   margin-bottom: 40px;
   opacity: 0.85;
 }
-.hero__edition::before { content: '— '; color: var(--fg-mute); }
+.hero__edition::before { content: '· '; color: var(--fg-mute); }
 
 .hero__text h1 {
   font-family: var(--serif);
@@ -241,7 +241,7 @@ a:focus-visible, button:focus-visible {
   color: var(--fg-mute);
   margin-bottom: 24px;
 }
-.eyebrow::before { content: '— '; color: var(--gold); }
+.eyebrow::before { content: '· '; color: var(--gold); }
 
 .section h2 {
   font-family: var(--serif);
@@ -483,7 +483,7 @@ a:focus-visible, button:focus-visible {
   color: var(--fg-mute);
   margin-bottom: 50px;
 }
-.connect h3::before { content: '— '; color: var(--gold); }
+.connect h3::before { content: '· '; color: var(--gold); }
 .connect__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
