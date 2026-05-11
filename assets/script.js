@@ -3,25 +3,20 @@
    ═══════════════════════════════════════════════════════ */
 
 // Reveal-on-scroll
-(function() {
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  } else {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-  }
-})();
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 // Newsletter form fake-success (mailto until Buttondown wired up)
 document.querySelectorAll('.news__form').forEach(form => {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', () => {
     const btn = form.querySelector('button');
     setTimeout(() => {
       btn.textContent = 'Enviado';
@@ -34,7 +29,7 @@ document.querySelectorAll('.news__form').forEach(form => {
 });
 
 // ═══════════════════════════════════════════════════════
-// LIGHTBOX (portfolio page)
+// LOJA + LIGHTBOX
 // ═══════════════════════════════════════════════════════
 
 const PRICING = [
@@ -46,8 +41,8 @@ const PRICING = [
 ];
 
 function pricingList() {
-  return PRICING.map(p =>
-    `<li class="lb-pricing__item">
+  return PRICING.map((p, idx) =>
+    `<li class="lb-pricing__item" data-size-idx="${idx}" role="button" tabindex="0" aria-label="Selecionar tamanho ${p.size} por ${p.price}">
        <span class="lb-pricing__size">${p.size}</span>
        <span class="lb-pricing__price">${p.price}</span>
        <span class="lb-pricing__edition">${p.edition}</span>
@@ -55,13 +50,13 @@ function pricingList() {
   ).join('');
 }
 
-async function initPortfolio() {
+async function initGallery() {
   const grid = document.getElementById('portfolioGrid');
   if (!grid) return;
 
   let prints = [];
   try {
-    const res = await fetch('/assets/prints.json');
+    const res = await fetch('/assets/prints.json?t=' + Date.now());
     prints = await res.json();
   } catch (e) {
     console.error('Failed to load prints', e);
@@ -72,9 +67,10 @@ async function initPortfolio() {
   prints.forEach((p, idx) => {
     const card = document.createElement('article');
     card.className = 'portfolio-card reveal';
+    card.id = p.id;
     card.innerHTML = `
       <div class="frame">
-        <img src="${p.url}" alt="${p.title} · ${p.description ? p.description.split('·')[0].trim() : 'light painting'}" loading="lazy">
+        <img src="${p.url}" alt="${p.title}" loading="lazy">
       </div>
       <div class="portfolio-card-meta">
         <span class="portfolio-card-title">${p.title}</span>
@@ -85,20 +81,13 @@ async function initPortfolio() {
     grid.appendChild(card);
   });
 
-  // Re-observe new reveals
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-  document.querySelectorAll('.portfolio-card.reveal').forEach(el => io.observe(el));
+  // Observe new reveal cards
+  document.querySelectorAll('.portfolio-card.reveal').forEach(el => revealObserver.observe(el));
 
   // Lightbox state
   let currentPrints = prints;
   let currentIdx = 0;
+  let selectedSizeIdx = null;
 
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lb-img');
@@ -109,12 +98,58 @@ async function initPortfolio() {
   const lbCta = document.getElementById('lb-cta');
   const lbPricingList = document.getElementById('lb-pricing-list');
 
-  // Initialize pricing list once (organic, no table)
-  if (lbPricingList) lbPricingList.innerHTML = pricingList();
+  // Initialize pricing list (clickable size selector)
+  if (lbPricingList) {
+    lbPricingList.innerHTML = pricingList();
+    lbPricingList.querySelectorAll('.lb-pricing__item').forEach(item => {
+      const select = () => {
+        selectedSizeIdx = parseInt(item.dataset.sizeIdx);
+        lbPricingList.querySelectorAll('.lb-pricing__item').forEach(i => i.classList.remove('selected'));
+        item.classList.add('selected');
+        updateCta();
+      };
+      item.addEventListener('click', select);
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          select();
+        }
+      });
+    });
+  }
+
+  function updateCta() {
+    const p = currentPrints[currentIdx];
+    if (!p) return;
+    if (selectedSizeIdx !== null) {
+      const sz = PRICING[selectedSizeIdx];
+      lbCta.textContent = `Solicitar ${sz.size} · ${sz.price}`;
+      lbCta.classList.add('lb-cta--ready');
+      const subj = encodeURIComponent(`Print: ${p.title} · ${sz.size} · ${sz.price}`);
+      const body = encodeURIComponent(`Olá Willians,
+
+Tenho interesse no print:
+
+  Obra: ${p.title} (ref ${p.filename})
+  Tamanho: ${sz.size}
+  ${sz.edition}
+  Valor inicial: ${sz.price}
+
+Confirma disponibilidade, prazo de entrega e forma de pagamento (Pix, transferência ou cartão)?
+
+Obrigado.`);
+      lbCta.href = `mailto:willians.design@gmail.com?subject=${subj}&body=${body}`;
+    } else {
+      lbCta.textContent = 'Toque um tamanho acima';
+      lbCta.classList.remove('lb-cta--ready');
+      lbCta.href = '#';
+    }
+  }
 
   window.openLightbox = function(arr, idx) {
     currentPrints = arr;
     currentIdx = idx;
+    selectedSizeIdx = null;
     const p = arr[idx];
     lbImg.src = p.url;
     lbImg.alt = p.title;
@@ -122,9 +157,8 @@ async function initPortfolio() {
     lbCat.textContent = p.category;
     lbDesc.textContent = p.description || '';
     lbTags.innerHTML = (p.tags || []).map(t => `<span>${t}</span>`).join('');
-    const subj = encodeURIComponent(`Interesse em print: ${p.title} (${p.filename})`);
-    const body = encodeURIComponent(`Olá Willians,\n\nTenho interesse no print "${p.title}" (ref: ${p.filename}).\n\nGostaria de saber tamanhos disponíveis, prazo de entrega e forma de pagamento.\n\nObrigado.`);
-    lbCta.href = `mailto:willians.design@gmail.com?subject=${subj}&body=${body}`;
+    lbPricingList?.querySelectorAll('.lb-pricing__item').forEach(i => i.classList.remove('selected'));
+    updateCta();
     lb.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
   };
@@ -147,6 +181,15 @@ async function initPortfolio() {
     else if (e.key === 'ArrowRight') nextPrint();
     else if (e.key === 'ArrowLeft') prevPrint();
   });
+
+  // Hash deep-link: /#p01 opens that print
+  if (location.hash && /^#p\d+$/.test(location.hash)) {
+    const id = location.hash.slice(1);
+    const idx = prints.findIndex(p => p.id === id);
+    if (idx >= 0) {
+      setTimeout(() => openLightbox(prints, idx), 200);
+    }
+  }
 }
 
-initPortfolio();
+initGallery();
