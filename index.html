@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Willians Gomes — Light Painting</title>
 <meta name="description" content="Light painting e fotografia fine art. Há mais de duas décadas, Willians Gomes desenha com luz, mas o que ele faz é com tempo.">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#141414">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Willians Gomes — Light Painting">
 <meta property="og:description" content="Desenho com luz, mas o que faço é com tempo. Light painting · Fine art photography.">
@@ -15,524 +14,52 @@
 <meta property="og:url" content="https://willgomes.art">
 <meta property="og:locale" content="pt_BR">
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Willians Gomes — Light Painting">
-<meta name="twitter:description" content="Light painting · Fine art photography">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg">
 
-<!-- Favicon (Vortex como icon) -->
 <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg">
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
-  /* ─── tokens ───────────────────────────────────────── */
-  :root {
-    --bg: #0a0a0a;
-    --bg-soft: #131313;
-    --fg: #f0f0f0;
-    --fg-soft: #999;
-    --fg-mute: #666;
-    --fg-faint: #444;
-    --gold: #c9a961;
-    --line: #1f1f1f;
-    --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-    --mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
-    --transition: 0.4s cubic-bezier(.2,.7,.2,1);
-  }
-
-  /* ─── reset ────────────────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--bg);
-    color: var(--fg);
-    font-family: var(--sans);
-    font-weight: 300;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-  }
-  img { display: block; max-width: 100%; height: auto; }
-  a { color: inherit; text-decoration: none; }
-  a:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
-  button:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
-  ::selection { background: var(--gold); color: #0a0a0a; }
-
-  /* ─── HERO ─────────────────────────────────────────── */
-  .hero {
-    position: relative;
-    min-height: 100vh;
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 80px 24px 60px;
-    overflow: hidden;
-  }
-  .hero__bg {
-    position: absolute;
-    inset: -5%;
-    background-image: url('https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.5);
-    will-change: transform;
-    animation: kenBurns 28s ease-in-out infinite alternate;
-    z-index: -2;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(
-        180deg,
-        rgba(10,10,10,0.45) 0%,
-        rgba(10,10,10,0.15) 35%,
-        rgba(10,10,10,0.55) 75%,
-        rgba(10,10,10,0.95) 100%
-      );
-    z-index: -1;
-  }
-  @keyframes kenBurns {
-    0%   { transform: scale(1.0) translate(0, 0); }
-    100% { transform: scale(1.12) translate(-1.5%, -1%); }
-  }
-
-  /* hero content */
-  .hero__edition {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 50px;
-    opacity: 0.85;
-  }
-  .hero__edition::before {
-    content: '— ';
-    color: var(--fg-mute);
-  }
-  .hero h1 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(2.2rem, 7vw, 4.5rem);
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-    text-shadow: 0 2px 30px rgba(0,0,0,0.5);
-  }
-  .hero__tagline {
-    font-size: 0.78rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--fg-soft);
-    margin-bottom: 60px;
-    font-weight: 300;
-  }
-  .hero__quote {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.1rem, 2.4vw, 1.6rem);
-    color: var(--fg);
-    max-width: 680px;
-    line-height: 1.5;
-    margin-bottom: 70px;
-  }
-  .hero__quote::before, .hero__quote::after {
-    content: '';
-    display: block;
-    width: 32px;
-    height: 1px;
-    background: var(--gold);
-    opacity: 0.6;
-    margin: 28px auto;
-  }
-  .hero__scroll {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    writing-mode: vertical-rl;
-    animation: fadePulse 3s ease-in-out infinite;
-  }
-  @keyframes fadePulse {
-    0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
-    50%      { opacity: 0.9; transform: translateX(-50%) translateY(6px); }
-  }
-
-  /* ─── reveal-on-scroll ─────────────────────────────── */
-  .reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.9s var(--transition), transform 0.9s var(--transition);
-  }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-
-  /* ─── SECTION SHELL ────────────────────────────────── */
-  .section {
-    padding: 120px 24px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .eyebrow {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    margin-bottom: 24px;
-  }
-  .eyebrow::before {
-    content: '— ';
-    color: var(--gold);
-  }
-  .section h2 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-    line-height: 1.25;
-    margin-bottom: 40px;
-    max-width: 800px;
-  }
-  .section h2 em {
-    font-style: italic;
-    color: var(--gold);
-    font-weight: 500;
-  }
-  .section p.lede {
-    font-size: 1.1rem;
-    color: #d4d4d4;
-    max-width: 680px;
-    line-height: 1.75;
-    margin-bottom: 0;
-  }
-  .section p.lede em {
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--fg);
-    font-size: 1.08em;
-  }
-
-  /* ─── WORK PREVIEW GRID ────────────────────────────── */
-  .work {
-    padding: 100px 24px 120px;
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-  .work__header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .work__header h2 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
-  }
-  .work__header .meta {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-  }
-  .work__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 60px;
-  }
-  .work__card {
-    cursor: pointer;
-    display: block;
-    overflow: hidden;
-    background: #000;
-    position: relative;
-    border: 1px solid var(--line);
-    transition: border-color var(--transition);
-  }
-  .work__card:hover { border-color: var(--gold); }
-  .work__card-img {
-    aspect-ratio: 4 / 5;
-    overflow: hidden;
-  }
-  .work__card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.92);
-    transition: transform 0.8s var(--transition), filter 0.6s var(--transition);
-  }
-  .work__card:hover .work__card-img img {
-    transform: scale(1.04);
-    filter: brightness(1.05);
-  }
-  .work__card-meta {
-    padding: 18px 20px 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
-  }
-  .work__card-title {
-    font-family: var(--serif);
-    font-size: 1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-  }
-  .work__card-cat {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-  }
-  .work__cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    font-family: var(--sans);
-    font-weight: 400;
-    font-size: 0.85rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--fg);
-    padding: 6px 0;
-    border-bottom: 1px solid var(--fg-mute);
-    transition: border-color var(--transition), gap var(--transition);
-  }
-  .work__cta:hover {
-    border-color: var(--gold);
-    gap: 18px;
-  }
-  .work__cta::after {
-    content: '→';
-    font-family: var(--serif);
-    font-size: 1rem;
-    color: var(--gold);
-  }
-
-  /* ─── COMING SOON STRIP ────────────────────────────── */
-  .coming {
-    padding: 80px 24px;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    text-align: center;
-    background: var(--bg-soft);
-  }
-  .coming__items {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--fg-soft);
-  }
-  .coming__items span {
-    position: relative;
-    padding-left: 20px;
-  }
-  .coming__items span::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 6px;
-    height: 6px;
-    background: var(--gold);
-    border-radius: 50%;
-    opacity: 0.6;
-  }
-
-  /* ─── NEWSLETTER ───────────────────────────────────── */
-  .news {
-    padding: 120px 24px;
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  .news h2 {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    margin-bottom: 16px;
-  }
-  .news p {
-    color: var(--fg-soft);
-    font-size: 0.95rem;
-    margin-bottom: 40px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .news__form {
-    display: flex;
-    gap: 8px;
-    max-width: 460px;
-    margin: 0 auto;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 8px;
-    transition: border-color var(--transition);
-  }
-  .news__form:focus-within { border-color: var(--gold); }
-  .news__form input {
-    flex: 1;
-    background: transparent;
-    border: 0;
-    color: var(--fg);
-    font-family: var(--sans);
-    font-size: 0.95rem;
-    padding: 10px 4px;
-    outline: none;
-  }
-  .news__form input::placeholder { color: var(--fg-mute); }
-  .news__form button {
-    background: transparent;
-    border: 0;
-    color: var(--gold);
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 10px 4px;
-    transition: color var(--transition);
-  }
-  .news__form button:hover { color: var(--fg); }
-
-  /* ─── CONNECTIONS ──────────────────────────────────── */
-  .connect {
-    padding: 100px 24px 80px;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .connect h3 {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    margin-bottom: 50px;
-  }
-  .connect h3::before {
-    content: '— ';
-    color: var(--gold);
-  }
-  .connect__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-  }
-  .connect__card {
-    display: block;
-    background: var(--bg);
-    padding: 36px 28px;
-    text-align: center;
-    transition: background var(--transition);
-  }
-  .connect__card:hover { background: var(--bg-soft); }
-  .connect__card .label {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    margin-bottom: 14px;
-  }
-  .connect__card .value {
-    font-family: var(--serif);
-    font-size: 1.15rem;
-    color: var(--fg);
-    transition: color var(--transition);
-  }
-  .connect__card:hover .value { color: var(--gold); }
-
-  /* ─── FOOTER ───────────────────────────────────────── */
-  footer {
-    padding: 60px 24px 40px;
-    text-align: center;
-    border-top: 1px solid var(--line);
-    color: var(--fg-mute);
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  }
-  footer .edition {
-    color: var(--gold);
-    margin-bottom: 12px;
-    font-size: 0.62rem;
-  }
-  footer .copyright {
-    color: var(--fg-faint);
-  }
-
-  /* ─── responsive ───────────────────────────────────── */
-  @media (max-width: 800px) {
-    .hero { padding: 60px 20px 50px; }
-    .hero__edition { margin-bottom: 36px; }
-    .hero h1 { letter-spacing: 0.2em; }
-    .hero__tagline { margin-bottom: 48px; }
-    .hero__quote { margin-bottom: 50px; }
-    .work__grid { grid-template-columns: 1fr; gap: 16px; }
-    .section, .work, .news, .connect { padding-top: 80px; padding-bottom: 80px; }
-    .coming__items { gap: 24px; font-size: 0.62rem; }
-    .news__form { flex-direction: column; gap: 12px; }
-    .news__form button { text-align: left; padding-left: 0; }
-  }
-
-  /* ─── reduced motion ──────────────────────────────── */
-  @media (prefers-reduced-motion: reduce) {
-    .hero__bg { animation: none; }
-    .hero__scroll { animation: none; }
-    .reveal { opacity: 1; transform: none; transition: none; }
-    * { transition-duration: 0.01ms !important; }
-  }
-</style>
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 
-<!-- ═══════ HERO ═══════ -->
+<!-- ═══════ TOP NAV ═══════ -->
+<nav class="topnav">
+  <a href="/" class="topnav__brand">Willians Gomes</a>
+  <ul class="topnav__menu">
+    <li><a href="/" class="active">Início</a></li>
+    <li><a href="/portfolio.html">Portfolio</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════ HERO — sem texto sobre imagem ═══════ -->
 <section class="hero" aria-label="Apresentação">
-  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__image-wrap">
+    <div class="frame">
+      <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg"
+           alt="Vortex — túnel hipnótico de luz desenhado à mão durante o obturador aberto, obra inaugural da série Tempo Único"
+           fetchpriority="high">
+    </div>
+  </div>
+  <div class="hero__caption">
+    <span class="work-title">Vortex, 2010s—2020s</span>
+    <span>Light painting · single exposure</span>
+  </div>
+</section>
 
+<!-- ═══════ HERO TEXT — separado da imagem ═══════ -->
+<section class="hero__text reveal">
   <p class="hero__edition">Edição inaugural · Maio 2026</p>
-
   <h1>Willians Gomes</h1>
   <p class="hero__tagline">Light Painting · Fine Art Photography</p>
-
   <p class="hero__quote">
     Desenho com luz, mas o que faço é com tempo.
   </p>
-
-  <p class="hero__scroll" aria-hidden="true">Continue</p>
 </section>
 
 <!-- ═══════ TESE ═══════ -->
@@ -551,54 +78,48 @@
 <section class="work reveal" aria-label="Obras selecionadas">
   <div class="work__header">
     <h2>Três obras<span style="color:var(--fg-mute);">.</span></h2>
-    <span class="meta">Vinte e oito disponíveis</span>
+    <span class="meta">Vinte e oito disponíveis no portfolio</span>
   </div>
 
   <div class="work__grid">
-    <article class="work__card">
-      <a href="https://williansdesign-bot.github.io/willgomes-portfolio-public/" target="_blank" rel="noopener" aria-label="Ver Vortex no portfolio">
-        <div class="work__card-img">
-          <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg"
-               alt="Vortex — túnel hipnótico de luz, desenhado à mão durante o obturador aberto"
-               loading="lazy">
-        </div>
-        <div class="work__card-meta">
-          <span class="work__card-title">Vortex</span>
-          <span class="work__card-cat">Abstrato</span>
-        </div>
-      </a>
-    </article>
+    <a class="work__card" href="/portfolio.html" aria-label="Ver Vortex no portfolio">
+      <div class="frame">
+        <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg"
+             alt="Vortex — túnel hipnótico de luz, desenhado à mão"
+             loading="lazy">
+      </div>
+      <div class="work__card-meta">
+        <span class="work__card-title">Vortex</span>
+        <span class="work__card-cat">Abstrato</span>
+      </div>
+    </a>
 
-    <article class="work__card">
-      <a href="https://williansdesign-bot.github.io/willgomes-portfolio-public/" target="_blank" rel="noopener" aria-label="Ver Cordilheira no portfolio">
-        <div class="work__card-img">
-          <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_IMG_4684.jpg"
-               alt="Cordilheira — autorretrato em montanha noturna, com esferas de fagulhas douradas"
-               loading="lazy">
-        </div>
-        <div class="work__card-meta">
-          <span class="work__card-title">Cordilheira</span>
-          <span class="work__card-cat">Autorretrato</span>
-        </div>
-      </a>
-    </article>
+    <a class="work__card" href="/portfolio.html" aria-label="Ver Cordilheira no portfolio">
+      <div class="frame">
+        <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_IMG_4684.jpg"
+             alt="Cordilheira — autorretrato em montanha noturna, com esferas de fagulhas douradas"
+             loading="lazy">
+      </div>
+      <div class="work__card-meta">
+        <span class="work__card-title">Cordilheira</span>
+        <span class="work__card-cat">Autorretrato</span>
+      </div>
+    </a>
 
-    <article class="work__card">
-      <a href="https://williansdesign-bot.github.io/willgomes-portfolio-public/" target="_blank" rel="noopener" aria-label="Ver Árvore no portfolio">
-        <div class="work__card-img">
-          <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4239.jpg"
-               alt="Árvore — galhos delineados em dourado sobre escuridão absoluta"
-               loading="lazy">
-        </div>
-        <div class="work__card-meta">
-          <span class="work__card-title">Árvore</span>
-          <span class="work__card-cat">Paisagem</span>
-        </div>
-      </a>
-    </article>
+    <a class="work__card" href="/portfolio.html" aria-label="Ver Árvore no portfolio">
+      <div class="frame">
+        <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4239.jpg"
+             alt="Árvore — galhos delineados em dourado sobre escuridão absoluta"
+             loading="lazy">
+      </div>
+      <div class="work__card-meta">
+        <span class="work__card-title">Árvore</span>
+        <span class="work__card-cat">Paisagem</span>
+      </div>
+    </a>
   </div>
 
-  <a class="work__cta" href="https://williansdesign-bot.github.io/willgomes-portfolio-public/" target="_blank" rel="noopener">
+  <a class="work__cta" href="/portfolio.html">
     Ver portfolio completo
   </a>
 </section>
@@ -621,15 +142,14 @@
   <form class="news__form"
         action="mailto:willians.design@gmail.com"
         method="post"
-        enctype="text/plain"
-        onsubmit="this.querySelector('button').textContent='Enviado'; setTimeout(()=>this.reset(),3000);">
+        enctype="text/plain">
     <input type="email" name="email" placeholder="seu@email.com" required aria-label="Endereço de e-mail">
     <button type="submit">Receber aviso</button>
   </form>
 </section>
 
 <!-- ═══════ CONNECTIONS ═══════ -->
-<section class="connect reveal" aria-label="Conexões">
+<section class="connect reveal" id="contato" aria-label="Conexões">
   <h3>Onde encontrar</h3>
   <div class="connect__grid">
     <a class="connect__card" href="https://instagram.com/willgomes.lightpainting" target="_blank" rel="noopener">
@@ -653,24 +173,7 @@
   <p class="copyright">© Willians Gomes · Light painting · Fine art photography</p>
 </footer>
 
-<script>
-  // Reveal on scroll — IntersectionObserver
-  (function() {
-    if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-    } else {
-      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-    }
-  })();
-</script>
+<script src="/assets/script.js"></script>
 
 </body>
 </html>

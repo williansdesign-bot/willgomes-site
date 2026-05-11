@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio · Willians Gomes — Light Painting</title>
+<meta name="description" content="Vinte e oito obras de light painting selecionadas. Fotografia fine art em edição limitada.">
+<meta name="theme-color" content="#141414">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Portfolio · Willians Gomes — Light Painting">
+<meta property="og:description" content="Vinte e oito obras de light painting em edição limitada.">
+<meta property="og:image" content="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg">
+<meta property="og:url" content="https://willgomes.art/portfolio.html">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<!-- ═══════ TOP NAV ═══════ -->
+<nav class="topnav">
+  <a href="/" class="topnav__brand">Willians Gomes</a>
+  <ul class="topnav__menu">
+    <li><a href="/">Início</a></li>
+    <li><a href="/portfolio.html" class="active">Portfolio</a></li>
+    <li><a href="/#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════ PORTFOLIO HERO ═══════ -->
+<section class="portfolio-hero">
+  <h1>Portfolio</h1>
+  <p>
+    Vinte e oito obras selecionadas das duas últimas décadas de prática. Light painting — fotografia em que a luz é desenhada à mão, no tempo real do obturador aberto, sem montagem digital.
+  </p>
+  <p class="portfolio-meta">28 obras · Edição limitada · Brasil</p>
+</section>
+
+<!-- ═══════ GRID — populado via JS ═══════ -->
+<section class="portfolio-grid" id="portfolioGrid" aria-label="Todas as obras"></section>
+
+<!-- ═══════ LIGHTBOX ═══════ -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lb-close" aria-label="Fechar">×</button>
+  <button class="lb-prev" aria-label="Obra anterior">‹</button>
+  <button class="lb-next" aria-label="Próxima obra">›</button>
+
+  <div class="lb-stage">
+    <div class="frame">
+      <img id="lb-img" src="" alt="">
+    </div>
+  </div>
+
+  <aside class="lb-info">
+    <p class="lb-eyebrow">Obra</p>
+    <h3 id="lb-title"></h3>
+    <span class="lb-cat" id="lb-cat"></span>
+    <p class="desc" id="lb-desc"></p>
+    <div class="lb-tags" id="lb-tags"></div>
+
+    <div class="lb-pricing">
+      <h4>Edição limitada · valores iniciais</h4>
+      <table><tbody id="lb-pricing-table"></tbody></table>
+    </div>
+
+    <a id="lb-cta" class="lb-cta" href="#">Solicitar este print</a>
+    <p class="lb-fineprint">
+      Impressão fine art Hahnemühle Photo Rag 308gsm · Tinta pigmentada · Numerado e assinado à mão · Certificado de autenticidade · Frete sob orçamento.
+    </p>
+  </aside>
+</div>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <p class="edition">First edition · May 2026 · Brazil</p>
+  <p class="copyright">© Willians Gomes · Light painting · Fine art photography</p>
+</footer>
+
+<script src="/assets/script.js"></script>
+
+</body>
+</html>

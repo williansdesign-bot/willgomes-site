@@ -1,0 +1,422 @@
+[
+  {
+    "id": "p01",
+    "title": "Vortex",
+    "filename": "PORT_WAG_5373.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg",
+    "category": "abstrato",
+    "description": "Vortex hipnótico em azul e violeta com figura central — túnel de luz que parece sugar o olhar pra dentro da imagem. Estudo de movimento puro.",
+    "tags": [
+      "vortex",
+      "túnel",
+      "movimento circular",
+      "azul violeta",
+      "hipnótico"
+    ]
+  },
+  {
+    "id": "p02",
+    "title": "Cordilheira",
+    "filename": "PORT_IMG_4684.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_IMG_4684.jpg",
+    "category": "autorretrato",
+    "description": "Autorretrato em paisagem de montanha à noite — duas esferas perfeitas de fagulhas douradas (lã de aço) emolduram a figura, cidade ao fundo. O fogo desenha o tempo.",
+    "tags": [
+      "lã de aço",
+      "fagulhas",
+      "autorretrato",
+      "montanha",
+      "noturno"
+    ]
+  },
+  {
+    "id": "p03",
+    "title": "Árvore",
+    "filename": "PORT_DSC_4239.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4239.jpg",
+    "category": "paisagem",
+    "description": "Árvore solitária na escuridão — galhos iluminados em dourado com um tronco escarlate, contemplação noturna pura. Estudo de presença.",
+    "tags": [
+      "árvore",
+      "dourado",
+      "vermelho",
+      "solidão",
+      "minimalista"
+    ]
+  },
+  {
+    "id": "p04",
+    "title": "Janela",
+    "filename": "PORT_WAG_2335.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2335.jpg",
+    "category": "concept",
+    "description": "Janela de luz quadriculada flutuando entre folhagem noturna — concept art de luz como objeto sólido. A mata abraça uma forma impossível.",
+    "tags": [
+      "janela",
+      "geométrico",
+      "vegetação",
+      "flutuante",
+      "concept"
+    ]
+  },
+  {
+    "id": "p05",
+    "title": "Anunciação",
+    "filename": "PORT_WAG_8430.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8430.jpg",
+    "category": "retrato",
+    "description": "Retrato de modelo gestante em vestido branco — asas dramáticas em vermelho-fogo se abrem atrás dela, vegetação noturna ao fundo. Maternidade épica.",
+    "tags": [
+      "maternidade",
+      "asas",
+      "vermelho",
+      "floresta",
+      "sessão"
+    ]
+  },
+  {
+    "id": "p06",
+    "title": "Travessia",
+    "filename": "PORT_PHE_7476.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_PHE_7476.jpg",
+    "category": "paisagem",
+    "description": "Caminho de luz aberto entre vegetação tropical à noite — palmeiras e bananeiras emolduram um corredor iluminado por luz construída no chão. A escuridão da floresta vira matéria.",
+    "tags": [
+      "tropical",
+      "vegetação",
+      "caminho",
+      "luz construída",
+      "noturno"
+    ]
+  },
+  {
+    "id": "p07",
+    "title": "Infinito",
+    "filename": "PORT_GOPR5643.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5643.jpg",
+    "category": "lã de aço",
+    "description": "Explosão dourada de lã de aço na praia sob céu nublado dramático — fagulhas em meia-cúpula com símbolo de infinito no centro. Cinematic.",
+    "tags": [
+      "lã de aço",
+      "praia",
+      "fagulhas",
+      "infinito",
+      "céu dramático"
+    ]
+  },
+  {
+    "id": "p08",
+    "title": "Portal",
+    "filename": "PORT_WAG_8672.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8672.jpg",
+    "category": "retrato",
+    "description": "Modelo gestante em paisagem montanhosa noturna com céu estrelado — anel multicolorido (cyan, rosa, dourado) emoldura sua silhueta. Etéreo.",
+    "tags": [
+      "maternidade",
+      "montanha",
+      "multicolor",
+      "estrelas",
+      "portal"
+    ]
+  },
+  {
+    "id": "p09",
+    "title": "Jardim Noturno",
+    "filename": "PORT_DSC_1218.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1218.jpg",
+    "category": "paisagem",
+    "description": "Jardim de palmeiras à noite com orbes de luz multicoloridos espalhados entre os troncos — a vegetação dialoga com geometrias luminosas.",
+    "tags": [
+      "palmeiras",
+      "orbes",
+      "jardim",
+      "noturno",
+      "multicolor"
+    ]
+  },
+  {
+    "id": "p10",
+    "title": "Aparição",
+    "filename": "PORT_DSC_4184.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4184.jpg",
+    "category": "concept",
+    "description": "Figura ascendente em luz azul-ciano com base em luz branca translúcida — gênio noturno emergindo da floresta. Concept fantástico.",
+    "tags": [
+      "figura",
+      "azul ciano",
+      "ascendente",
+      "floresta",
+      "fantástico"
+    ]
+  },
+  {
+    "id": "p11",
+    "title": "Altar",
+    "filename": "PORT_GOPR5836.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5836.jpg",
+    "category": "concept",
+    "description": "Interior de oca cerimonial com almofadas no chão e velas acesas no centro — orbe azul-vermelha flutua sobre o altar improvisado. Espaço sagrado em luz.",
+    "tags": [
+      "oca",
+      "cerimonial",
+      "altar",
+      "azul vermelho",
+      "sagrado",
+      "velas"
+    ]
+  },
+  {
+    "id": "p12",
+    "title": "Oca",
+    "filename": "PORT_WAG_5229.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5229.jpg",
+    "category": "concept",
+    "description": "Interior de oca circular iluminada por light painting em azul e magenta, fogueira no centro — composição complexa em ambiente vernacular.",
+    "tags": [
+      "oca",
+      "fogueira",
+      "interior",
+      "magenta azul",
+      "vernacular"
+    ]
+  },
+  {
+    "id": "p13",
+    "title": "Vigília",
+    "filename": "PORT__WAG0466.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0466.jpg",
+    "category": "paisagem",
+    "description": "Silhueta sentada em meditação na areia, sob céu estrelado, envolvida por arcos dourados e formas em luz branca — momento de contemplação radical.",
+    "tags": [
+      "meditação",
+      "estrelas",
+      "silhueta",
+      "praia",
+      "contemplativo"
+    ]
+  },
+  {
+    "id": "p14",
+    "title": "Vista de Cima",
+    "filename": "PORT_DJI_0144.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DJI_0144.jpg",
+    "category": "abstrato",
+    "description": "Vista aérea de drone — forma orgânica em luz dourada flutuando sobre superfície escura. Estudo abstrato visto de cima.",
+    "tags": [
+      "drone",
+      "vista aérea",
+      "dourado",
+      "abstrato",
+      "orgânico"
+    ]
+  },
+  {
+    "id": "p15",
+    "title": "Sonho",
+    "filename": "PORT__WAG0931.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0931.jpg",
+    "category": "paisagem",
+    "description": "Árvores em silhueta sob céu noturno laranja-magenta — pequenas espirais douradas dispersas pelo gramado. Ambiente onírico de fim de dia.",
+    "tags": [
+      "árvores",
+      "crepúsculo",
+      "laranja magenta",
+      "espirais",
+      "onírico"
+    ]
+  },
+  {
+    "id": "p16",
+    "title": "Forma na Areia",
+    "filename": "PORT__WAG0495.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0495.jpg",
+    "category": "abstrato",
+    "description": "Escultura abstrata de luz na areia da praia, à noite — espirais e curvas em branco-pérola formam uma figura quase orgânica. Cabeça noturna.",
+    "tags": [
+      "praia",
+      "areia",
+      "escultural",
+      "monocromático",
+      "orgânico"
+    ]
+  },
+  {
+    "id": "p17",
+    "title": "Dança",
+    "filename": "PORT_DSC_5460.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_5460.jpg",
+    "category": "autorretrato",
+    "description": "Autorretrato dançando em paisagem urbana noturna — luzes coloridas envolvem a figura em movimento, ponte iluminada ao fundo. Ritmo capturado.",
+    "tags": [
+      "dança",
+      "urbano",
+      "ponte",
+      "movimento",
+      "multicolor"
+    ]
+  },
+  {
+    "id": "p18",
+    "title": "Monumento",
+    "filename": "PORT_DSC_1229.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1229.jpg",
+    "category": "concept",
+    "description": "Escultura urbana monumental envolvida em redemoinhos de luz dourada — arquitetura em diálogo com cor e movimento. Céu noturno alaranjado.",
+    "tags": [
+      "arquitetura",
+      "escultura urbana",
+      "dourado",
+      "monumental"
+    ]
+  },
+  {
+    "id": "p19",
+    "title": "Esfera",
+    "filename": "PORT_DSC_3077.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3077.jpg",
+    "category": "abstrato",
+    "description": "Esfera de luz branca-azulada flutuando entre árvores ao entardecer — composição etérea em parque tropical, céu rosado ao fundo.",
+    "tags": [
+      "esfera",
+      "branco azulado",
+      "parque",
+      "entardecer",
+      "etéreo"
+    ]
+  },
+  {
+    "id": "p20",
+    "title": "Linha",
+    "filename": "PORT_WAG_9237.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_9237.jpg",
+    "category": "paisagem",
+    "description": "Paisagem noturna minimalista — apenas um traço sutil de luz branca no horizonte sob céu nublado. Lirismo da economia. Quase nada, e tudo.",
+    "tags": [
+      "minimalista",
+      "horizonte",
+      "lírico",
+      "escuridão",
+      "sutil"
+    ]
+  },
+  {
+    "id": "p21",
+    "title": "Donut",
+    "filename": "PORT_WAG_8657.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8657.jpg",
+    "category": "retrato",
+    "description": "Modelo gestante emoldurada por anel/donut gigante de luz roxa+rosa — tracejados azuis ao redor da figura. Composição centrada, paisagem rural ao fundo.",
+    "tags": [
+      "maternidade",
+      "anel",
+      "roxo rosa",
+      "portal",
+      "sessão"
+    ]
+  },
+  {
+    "id": "p22",
+    "title": "Diagonal",
+    "filename": "PORT_GOPR8420.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR8420.jpg",
+    "category": "paisagem",
+    "description": "Praia à noite com céu estrelado — feixe de laser verde corta o quadro em diagonal e desenha forma luminosa na areia. Coqueiros silhueta no horizonte.",
+    "tags": [
+      "praia",
+      "laser verde",
+      "estrelas",
+      "coqueiros",
+      "linha"
+    ]
+  },
+  {
+    "id": "p23",
+    "title": "Passarela",
+    "filename": "PORT_WAG_2448.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2448.jpg",
+    "category": "paisagem",
+    "description": "Caminho de luz dourada sobre passarela de madeira em meio à mata — perspectiva linear com troncos verticais iluminados em azul. Profundidade pura.",
+    "tags": [
+      "passarela",
+      "perspectiva",
+      "dourado azul",
+      "mata",
+      "linear"
+    ]
+  },
+  {
+    "id": "p24",
+    "title": "Caligrafia",
+    "filename": "PORT_WAG_5255.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5255.jpg",
+    "category": "abstrato",
+    "description": "Macro de escrita luminosa dourada — formas abstratas em ouro vivo dominam o quadro inteiro. Caligrafia abstrata.",
+    "tags": [
+      "macro",
+      "dourado",
+      "caligrafia",
+      "detalhe",
+      "escrita"
+    ]
+  },
+  {
+    "id": "p25",
+    "title": "Diálogo",
+    "filename": "PORT_WAG_8599.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg",
+    "category": "abstrato",
+    "description": "Composição abstrata em laranja-fogo e branco-fluido — esfera central de fogo cercada por traços brancos sinuosos. Estudo de oposições.",
+    "tags": [
+      "abstrato",
+      "laranja branco",
+      "esfera",
+      "fluido",
+      "oposições"
+    ]
+  },
+  {
+    "id": "p26",
+    "title": "Cogumelo",
+    "filename": "PORT_WAG_2333-2.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2333-2.jpg",
+    "category": "concept",
+    "description": "Cogumelo de luz emergindo de tapete luminoso linear na mata — concept de criatura noturna feita só de luz. Surrealismo botânico.",
+    "tags": [
+      "cogumelo",
+      "tapete de luz",
+      "surreal",
+      "mata",
+      "criatura"
+    ]
+  },
+  {
+    "id": "p27",
+    "title": "Centro",
+    "filename": "PORT_DSC_2986.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_2986.jpg",
+    "category": "autorretrato",
+    "description": "Autorretrato dentro de oca circular com piso de madeira — figura central iluminada, traços verdes e brancos giram ao redor. Espaço sagrado.",
+    "tags": [
+      "oca",
+      "interior",
+      "verde branco",
+      "centro",
+      "sagrado"
+    ]
+  },
+  {
+    "id": "p28",
+    "title": "Anéis",
+    "filename": "PORT_DSC_3083.jpg",
+    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3083.jpg",
+    "category": "abstrato",
+    "description": "Anéis dourados sobrepostos em movimento orbital — composição complexa de loops e espirais flutuando entre árvores noturnas.",
+    "tags": [
+      "anéis",
+      "dourado",
+      "loops",
+      "noturno",
+      "parque"
+    ]
+  }
+]
