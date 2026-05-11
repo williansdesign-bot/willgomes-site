@@ -56,22 +56,24 @@
   .hero-pack { display: flex; flex-direction: column; align-items: center; gap: 24px; width: 100%; max-width: 1100px; margin: 0 auto; }
   .hero-pack__image {
     width: 100%;
+    aspect-ratio: 3 / 2;
     max-height: calc(100vh - 240px);
     max-height: calc(100svh - 240px);
     display: flex;
     justify-content: center;
+    contain: layout style;
   }
   .hero-pack__image .frame {
-    max-height: 100%;
-    aspect-ratio: 3 / 2;
-    width: auto;
+    width: 100%;
     height: 100%;
     padding: 12px;
+    background: var(--frame);
   }
   .hero-pack__image .frame img {
-    max-height: 100%;
-    width: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    background: var(--frame);
   }
   .hero-pack__caption {
     width: 100%;
@@ -227,6 +229,8 @@
       <div class="frame">
         <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg"
              alt="Diálogo, esfera de fogo laranja envolvida por traços brancos fluidos, calor e frescor na mesma exposição"
+             width="1100"
+             height="733"
              fetchpriority="high">
       </div>
     </div>
