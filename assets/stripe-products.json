@@ -3,17 +3,7 @@
     "id": "p01",
     "title": "Vortex",
     "filename": "PORT_WAG_5373.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg",
-    "category": "abstrato",
-    "description": "Túnel de luz violeta em movimento contínuo, feito provavelmente no clube da montanha. A figura central é envolvida por uma espiral que não para, parece sugar o olhar pra dentro da imagem. É o gesto puro: corpo girando no escuro, lanterna na mão, obturador aberto. O que sobra na chapa é o tempo dele, condensado.",
-    "tags": [
-      "vortex",
-      "violeta",
-      "hipnose",
-      "montanha",
-      "gesto",
-      "espiral"
-    ],
+    "product_id": "prod_UVQ6NuPkjAcUGb",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPG5PVC4Xcjrux0venPyyB",
@@ -45,24 +35,13 @@
         "url": "https://buy.stripe.com/test_bJe8wR2yL22v8R5891abK05",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ6NuPkjAcUGb"
+    }
   },
   {
     "id": "p02",
     "title": "Cordilheira",
     "filename": "PORT_IMG_4684.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_IMG_4684.jpg",
-    "category": "autorretrato",
-    "description": "Autorretrato em paisagem de montanha à noite, cidade brilhando ao fundo. Não é lã de aço: são estrelinhas, velas mágicas presas num bastão e giradas à mão tentando desenhar o símbolo do infinito. As fagulhas duram poucos segundos. A montanha é permanente. A fotografia segura as duas durações na mesma chapa, e algo aí lembra asas de águia abertas.",
-    "tags": [
-      "autorretrato",
-      "montanha",
-      "estrelinhas",
-      "fagulhas",
-      "gesto",
-      "asas"
-    ],
+    "product_id": "prod_UVQ652ifqdO2Z2",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPGGPVC4Xcjrux3dGWy384",
@@ -94,24 +73,13 @@
         "url": "https://buy.stripe.com/test_14AdRb1uH8qTebp60TabK0a",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ652ifqdO2Z2"
+    }
   },
   {
     "id": "p03",
     "title": "Árvore",
     "filename": "PORT_DSC_4239.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4239.jpg",
-    "category": "paisagem",
-    "description": "Árvore solitária na escuridão de um sítio. Galhos delineados em dourado, tronco escarlate. Experiência rara: a lanterna foi instalada num drone, e o desenho de luz veio do voo controlado ao redor da copa. O resto é silêncio. Estudo de presença, onde a árvore é tudo que existe no quadro porque foi tudo que a luz revelou.",
-    "tags": [
-      "árvore",
-      "dourado",
-      "drone",
-      "sítio",
-      "contemplação",
-      "presença"
-    ],
+    "product_id": "prod_UVQ6uxVbYhQlEo",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPGQPVC4XcjruxPiQSR6Rc",
@@ -143,23 +111,13 @@
         "url": "https://buy.stripe.com/test_fZu00l8X97mP7N1fBtabK0f",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ6uxVbYhQlEo"
+    }
   },
   {
     "id": "p04",
     "title": "Janela",
     "filename": "PORT_WAG_2335.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2335.jpg",
-    "category": "concept",
-    "description": "Primeira obra feita com o bastão de LED artesanal, montado em uma vara de bambu com fita LED e bateria 12V acoplada na ponta. Cenário: uma rua de Piracanga ao anoitecer, vegetação tropical respirando ao redor. A janela quadriculada aparece flutuando entre as folhas, sem moldura, sem parede que a sustente. Só luz desenhada no ar e a câmera somando tudo. Conceito visual de luz como matéria sólida.",
-    "tags": [
-      "piracanga",
-      "bastão LED",
-      "janela",
-      "concept",
-      "vegetação tropical"
-    ],
+    "product_id": "prod_UVQ6aRJdc8FPZp",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPGbPVC4XcjruxmcDoMZtJ",
@@ -191,23 +149,13 @@
         "url": "https://buy.stripe.com/test_9B6aEZc9l36z7N10GzabK0k",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ6aRJdc8FPZp"
+    }
   },
   {
     "id": "p05",
     "title": "Travessia",
     "filename": "PORT_PHE_7476.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_PHE_7476.jpg",
-    "category": "paisagem",
-    "description": "Entrada de uma das casas de Piracanga, na noite de lua cheia. O céu tropical clareou o suficiente pra recortar palmeiras e bananeiras em silhueta, enquanto a luz desenhada no chão abriu um corredor iluminado entre a folhagem densa. Travessia literal: o caminho que existia só de dia, revelado pela luz construída à noite. A floresta vira interior, a passagem vira convite.",
-    "tags": [
-      "piracanga",
-      "lua cheia",
-      "tropical",
-      "caminho",
-      "vegetação"
-    ],
+    "product_id": "prod_UVQ7QP07X7U3nH",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPGnPVC4XcjruxOlmZaWG9",
@@ -239,24 +187,13 @@
         "url": "https://buy.stripe.com/test_aFaeVf1uHbD5fft3SLabK0p",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ7QP07X7U3nH"
+    }
   },
   {
     "id": "p06",
     "title": "Cúpula",
     "filename": "PORT_GOPR5643.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5643.jpg",
-    "category": "lã de aço",
-    "description": "Lã de aço acesa no chicote e girada à mão na praia, sob céu nublado dramático. As fagulhas formam uma cúpula dourada que dura poucos segundos. Ao fundo, dunas e a linha do mar. O cenário sustenta o gesto: a praia vazia, o céu pesado, a meia-esfera de fogo que se desenha e some. A fotografia preserva o que, na noite real, foi efêmero.",
-    "tags": [
-      "praia",
-      "dunas",
-      "lã de aço",
-      "fagulhas",
-      "cúpula",
-      "cinematográfica"
-    ],
+    "product_id": "prod_UVQ7wsewBd57gw",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPGyPVC4XcjruxfYwUeEFf",
@@ -288,23 +225,13 @@
         "url": "https://buy.stripe.com/test_28EaEZgpBePh2sHcphabK0u",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ7wsewBd57gw"
+    }
   },
   {
     "id": "p07",
     "title": "Portal",
     "filename": "PORT_WAG_8672.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8672.jpg",
-    "category": "retrato",
-    "description": "Foto feita no alto da montanha, no clube da montanha onde morávamos. Melyna, esposa, em paisagem montanhosa noturna sob céu estrelado, grávida. O anel multicolorido em ciano, rosa e dourado emoldura a silhueta dela como um portal: ela está prestes a ser outra coisa, e a luz construída ao redor reconhece isso. Altitude, gestação, fotografia. Três passagens ocorrendo na mesma exposição.",
-    "tags": [
-      "gravidez",
-      "portal",
-      "montanha",
-      "anel",
-      "gesto"
-    ],
+    "product_id": "prod_UVQ7CalD6aaD9e",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPH9PVC4Xcjrux3MDThWc4",
@@ -336,24 +263,13 @@
         "url": "https://buy.stripe.com/test_bJeeVf2yLgXp0kz4WPabK0z",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ7CalD6aaD9e"
+    }
   },
   {
     "id": "p08",
     "title": "Jardim Noturno",
     "filename": "PORT_DSC_1218.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1218.jpg",
-    "category": "paisagem",
-    "description": "Parque do Ibirapuera, São Paulo, em noite de ensaio fotográfico improvisado com amigos. As palmeiras imensas viram um jardim suspenso, e os orbes de luz multicoloridos espalhados entre os troncos transformam o lugar num lugar diferente: a vegetação dialoga com geometrias luminosas, como se o parque tivesse ganho um andar invisível durante a noite. A cidade desaparece. O jardim ficou.",
-    "tags": [
-      "ibirapuera",
-      "jardim",
-      "suspenso",
-      "palmeiras",
-      "orbes",
-      "são paulo"
-    ],
+    "product_id": "prod_UVQ7PUAQt2FMAS",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPHKPVC4XcjruxjblbXEVN",
@@ -385,24 +301,13 @@
         "url": "https://buy.stripe.com/test_aFa8wRa1ddLd3wLgFxabK0E",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ7PUAQt2FMAS"
+    }
   },
   {
     "id": "p09",
     "title": "Aparição",
     "filename": "PORT_DSC_4184.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4184.jpg",
-    "category": "concept",
-    "description": "Figura ascendente em luz azul-ciano com base de luz branca translúcida, emergindo do escuro da floresta. Concept que beira o fantástico: gênio noturno se anunciando, presença que existe entre matéria e energia. A floresta abraça uma forma que não estava ali antes do gesto, e que não estará ali depois. A fotografia certifica o instante em que algo apareceu.",
-    "tags": [
-      "figura",
-      "aparição",
-      "ciano",
-      "floresta",
-      "fantástico",
-      "presença"
-    ],
+    "product_id": "prod_UVQ7XuF74dsjFg",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPHWPVC4XcjruxdHYBUxEb",
@@ -434,25 +339,13 @@
         "url": "https://buy.stripe.com/test_dRmcN7gpB8qTgjxcphabK0J",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ7XuF74dsjFg"
+    }
   },
   {
     "id": "p10",
     "title": "Altar",
     "filename": "PORT_GOPR5836.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5836.jpg",
-    "category": "concept",
-    "description": "Oca da etnia Xingu construída na Serrinha, durante festival de arte na Bahia. Uma fogueirinha verdadeira no centro, mas as labaredas em azul e magenta foram desenhadas com light painting, dilatando o fogo até preencher o espaço cerimonial. Local sagrado, presença viva: a oca recebe a luz como recebe convidados. Não domina, convive.",
-    "tags": [
-      "oca",
-      "xingu",
-      "serrinha",
-      "bahia",
-      "fogo",
-      "ritual",
-      "sagrado"
-    ],
+    "product_id": "prod_UVQ7cYVZwX82TU",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPHhPVC4XcjruxsEfgKYsj",
@@ -484,24 +377,13 @@
         "url": "https://buy.stripe.com/test_9B6bJ33CP0YrfftfBtabK0O",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ7cYVZwX82TU"
+    }
   },
   {
     "id": "p11",
     "title": "Oca",
     "filename": "PORT_WAG_5229.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5229.jpg",
-    "category": "concept",
-    "description": "Interior de oca circular com piso de madeira, iluminada por light painting em azul e magenta. Fogueira ao centro. A geometria redonda do espaço dialoga com a luz construída: a oca abriga, a luz revela. Cenário brasileiro tratado como cenário de concept, sem perder a presença do lugar real.",
-    "tags": [
-      "oca",
-      "interior",
-      "magenta",
-      "azul",
-      "fogueira",
-      "brasil"
-    ],
+    "product_id": "prod_UVQ8Xifd2DIYhO",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPHtPVC4XcjruxVhhps4RB",
@@ -533,24 +415,13 @@
         "url": "https://buy.stripe.com/test_fZubJ37T522vc3hbldabK0T",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ8Xifd2DIYhO"
+    }
   },
   {
     "id": "p12",
     "title": "Vigília",
     "filename": "PORT__WAG0466.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0466.jpg",
-    "category": "paisagem",
-    "description": "Praia de Piracanga, um amigo em posição de yoga sob céu estrelado, envolvido por arcos dourados e formas em luz branca. O corpo dele permanece parado pela duração inteira da exposição: a postura é a vigília, e a luz construída ao redor reconhece o silêncio dele. A noite chega em quem está disposto a esperar.",
-    "tags": [
-      "piracanga",
-      "yoga",
-      "praia",
-      "meditação",
-      "estrelas",
-      "vigília"
-    ],
+    "product_id": "prod_UVQ8Swy8Zz580T",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPI4PVC4Xcjrux3xxQnERn",
@@ -582,24 +453,13 @@
         "url": "https://buy.stripe.com/test_cNi7sNflx0Yr3wL74XabK0Y",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ8Swy8Zz580T"
+    }
   },
   {
     "id": "p13",
     "title": "Vista de Cima",
     "filename": "PORT_DJI_0144.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DJI_0144.jpg",
-    "category": "abstrato",
-    "description": "Vista aérea feita com drone enquanto eu desenhava embaixo com o bastão de LED. Forma orgânica em luz dourada, flutuando sobre superfície escura, vista de um ponto que olho nenhum alcança. Parte do ensaio se perdeu nos arquivos, esta sobreviveu. Estudo abstrato visto de cima, onde a perspectiva muda o que a luz desenha sem mudar o gesto.",
-    "tags": [
-      "drone",
-      "vista aérea",
-      "bastão LED",
-      "dourado",
-      "abstrato",
-      "orgânico"
-    ],
+    "product_id": "prod_UVQ8nd0NHG4rGp",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPIFPVC4Xcjrux2CvKUa01",
@@ -631,24 +491,13 @@
         "url": "https://buy.stripe.com/test_7sY6oJa1dgXpd7l4WPabK13",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ8nd0NHG4rGp"
+    }
   },
   {
     "id": "p14",
     "title": "Sonho",
     "filename": "PORT__WAG0931.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0931.jpg",
-    "category": "paisagem",
-    "description": "Árvores em silhueta sob céu noturno laranja-magenta, com pequenas espirais douradas dispersas pelo gramado. Cenário de festa, exposição de mais ou menos quinze minutos com um LED pequeno (Malight) na mão. As espirais se acumulam pelo chão como pegadas: o que sobra de quem caminhou desenhando luz a noite inteira. Ambiente onírico.",
-    "tags": [
-      "árvores",
-      "crepúsculo",
-      "malight",
-      "espirais",
-      "festa",
-      "onírico"
-    ],
+    "product_id": "prod_UVQ84ThIiIDpoV",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPIRPVC4XcjruxDu9U9Ldl",
@@ -680,24 +529,13 @@
         "url": "https://buy.stripe.com/test_8x2fZj5KXfTlgjx4WPabK18",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ84ThIiIDpoV"
+    }
   },
   {
     "id": "p15",
     "title": "Forma na Areia",
     "filename": "PORT__WAG0495.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0495.jpg",
-    "category": "abstrato",
-    "description": "Praia à noite, intenção de fotografar espíritos. Escultura abstrata de luz na areia, espirais e curvas em branco-pérola formando uma figura quase orgânica, vagamente humanoide, com capuz, com corpo de roupa solta. Não é gente, não é fantasma: é a luz que o gesto deixa quando a intenção é invocar o invisível. Cabeça noturna feita só de luz.",
-    "tags": [
-      "praia",
-      "areia",
-      "espíritos",
-      "capuz",
-      "escultura",
-      "fantasmagoria"
-    ],
+    "product_id": "prod_UVQ8BlGRryqeho",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPIcPVC4XcjruxfuCciHWL",
@@ -729,24 +567,13 @@
         "url": "https://buy.stripe.com/test_7sY6oJ0qD9uX1oDgFxabK1d",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ8BlGRryqeho"
+    }
   },
   {
     "id": "p16",
     "title": "Dança",
     "filename": "PORT_DSC_5460.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_5460.jpg",
-    "category": "retrato",
-    "description": "Rishikesh, beira do Rio Ganges, Índia. Uma modelo dançando entre luzes coloridas em paisagem urbana noturna, com as pontes da cidade ao fundo. Tentativa de uma imagem mais psicodélica: cor concentrada, ritmo no corpo, fluxo da câmera. O Ganges segue. A dança ficou na chapa.",
-    "tags": [
-      "índia",
-      "rishikesh",
-      "ganges",
-      "dança",
-      "psicodélica",
-      "urbano"
-    ],
+    "product_id": "prod_UVQ9OGYu2QBWw4",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPIoPVC4Xcjrux7FuiVWu6",
@@ -778,24 +605,13 @@
         "url": "https://buy.stripe.com/test_eVqfZj6P122v9V9891abK1i",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ9OGYu2QBWw4"
+    }
   },
   {
     "id": "p17",
     "title": "Monumento",
     "filename": "PORT_DSC_1229.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1229.jpg",
-    "category": "concept",
-    "description": "Intervenção artística monumental no Ibirapuera, São Paulo, em dia de exposição pública. Encontrei a escultura armada no parque e fiz a foto ali mesmo, envolvendo a obra em redemoinhos de luz dourada durante a exposição longa. Diálogo entre duas intervenções: a do artista da escultura e a minha, com a câmera. Resultou psicodélico.",
-    "tags": [
-      "ibirapuera",
-      "intervenção",
-      "escultura",
-      "dourado",
-      "psicodélico",
-      "são paulo"
-    ],
+    "product_id": "prod_UVQ9et4s1HNzc1",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPJ0PVC4XcjruxwpSweeut",
@@ -827,24 +643,13 @@
         "url": "https://buy.stripe.com/test_fZu3cx5KX9uX1oDfBtabK1n",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ9et4s1HNzc1"
+    }
   },
   {
     "id": "p18",
     "title": "Esfera",
     "filename": "PORT_DSC_3077.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3077.jpg",
-    "category": "abstrato",
-    "description": "Esfera de luz branca-azulada flutuando entre árvores ao entardecer, em parque tropical. Eu gosto dessas esferas e dessas mandalas: tem algo dentro delas, alguma coisa que ilumina por dentro e traz pra fora. O cenário sustenta o gesto, grama, floresta, bosque, céu rosado ao fundo. Composição etérea, antes da noite chegar completa.",
-    "tags": [
-      "esfera",
-      "mandala",
-      "entardecer",
-      "parque",
-      "etéreo",
-      "bosque"
-    ],
+    "product_id": "prod_UVQ9O7ZqgsAOAM",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPJBPVC4XcjruxYsv5Lo7Q",
@@ -876,24 +681,13 @@
         "url": "https://buy.stripe.com/test_6oUeVfa1dbD55ET891abK1s",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ9O7ZqgsAOAM"
+    }
   },
   {
     "id": "p19",
     "title": "Linha",
     "filename": "PORT_WAG_9237.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_9237.jpg",
-    "category": "paisagem",
-    "description": "Pedra grande em Atibaia, durante o projeto Lapsos, madrugada. Apenas um traço sutil de luz branca corta o horizonte sob céu nublado. A linha é mínima, quase um susto: o que ela faz é destacar a textura da pedra que estava ali o tempo todo, e que o olho diurno passaria sem ver. Lirismo da economia.",
-    "tags": [
-      "atibaia",
-      "pedra",
-      "lapsos",
-      "textura",
-      "minimalismo",
-      "horizonte"
-    ],
+    "product_id": "prod_UVQ9eyKCcaxRLN",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPJMPVC4XcjruxcB9jkJUB",
@@ -925,24 +719,13 @@
         "url": "https://buy.stripe.com/test_cNi00l8X9gXp0kz891abK1x",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ9eyKCcaxRLN"
+    }
   },
   {
     "id": "p20",
     "title": "Halo",
     "filename": "PORT_WAG_8657.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8657.jpg",
-    "category": "retrato",
-    "description": "Melyna em paisagem noturna da montanha. Eu estava estreando um equipamento novo, e o gesto procurava uma névoa de luz ao redor dela, uma aura curadora se formando no ar. O anel roxo perfeito flutua à volta da figura como halo: o que envolve, o que cuida, o que separa o sujeito do resto da noite. Retrato em luz construída.",
-    "tags": [
-      "halo",
-      "aura",
-      "melyna",
-      "montanha",
-      "roxo",
-      "retrato"
-    ],
+    "product_id": "prod_UVQ9gdXE9YXHh7",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPJXPVC4XcjruxpPgqn5GF",
@@ -974,24 +757,13 @@
         "url": "https://buy.stripe.com/test_4gMcN7b5h9uXebp891abK1C",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQ9gdXE9YXHh7"
+    }
   },
   {
     "id": "p21",
     "title": "Risca",
     "filename": "PORT_GOPR8420.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR8420.jpg",
-    "category": "paisagem",
-    "description": "Praia deserta à noite, sob céu estrelado profundo. Uma risca diagonal de luz verde corta o quadro e desenha uma forma na areia. Ao fundo, a cidade brilha a uns quinze quilômetros, recortada por coqueiros silhuetados. A foto vive da tensão entre o vazio próximo e a civilização distante, atravessada por uma única linha precisa. Quase milimétrica.",
-    "tags": [
-      "praia",
-      "deserta",
-      "risca",
-      "estrelas",
-      "coqueiros",
-      "diagonal"
-    ],
+    "product_id": "prod_UVQADZd7F9UhRR",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPJiPVC4XcjruxPHlVTjcG",
@@ -1023,24 +795,13 @@
         "url": "https://buy.stripe.com/test_3cIdRb5KXfTl2sH1KDabK1H",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQADZd7F9UhRR"
+    }
   },
   {
     "id": "p22",
     "title": "Passarela",
     "filename": "PORT_WAG_2448.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2448.jpg",
-    "category": "paisagem",
-    "description": "Estrada de areia em Piracanga, durante laboratório do FBA. Bastão de LED 12V girado em movimento contínuo desenha um caminho dourado sobre o solo, enquanto latinhas de teatro com gelatinas coloridas iluminam os troncos verticais ao lado da cerca em azul. Foto icônica do bastão que eu usei mais que qualquer outro pincel. Perspectiva linear pura.",
-    "tags": [
-      "piracanga",
-      "estrada",
-      "bastão LED",
-      "FBA",
-      "perspectiva",
-      "ícone"
-    ],
+    "product_id": "prod_UVQA3u6LS0WzF6",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPJtPVC4XcjruxtQkxVdgJ",
@@ -1072,24 +833,13 @@
         "url": "https://buy.stripe.com/test_9B600l5KXaz11oDfBtabK1M",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQA3u6LS0WzF6"
+    }
   },
   {
     "id": "p23",
     "title": "Caligrafia",
     "filename": "PORT_WAG_5255.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5255.jpg",
-    "category": "abstrato",
-    "description": "Inversão do gesto comum do light painting: aqui a luz ficou fixa e eu movimentei a câmera durante a exposição. O resultado é caligrafia, formas abstratas em ouro vivo dominando o quadro inteiro como escrita à mão. Trabalho inspirado em uma amiga que pratica caligrafia sensitiva. A câmera escrevendo, em vez do gesto.",
-    "tags": [
-      "caligrafia",
-      "sensitiva",
-      "dourado",
-      "macro",
-      "escrita",
-      "câmera em movimento"
-    ],
+    "product_id": "prod_UVQAFbKxetFNX7",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPK5PVC4XcjruxenprtMNa",
@@ -1121,24 +871,13 @@
         "url": "https://buy.stripe.com/test_14A4gBa1daz15ET0GzabK1R",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQAFbKxetFNX7"
+    }
   },
   {
     "id": "p24",
     "title": "Diálogo",
     "filename": "PORT_WAG_8599.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg",
-    "category": "abstrato",
-    "description": "Esfera central de fogo laranja envolvida por traços brancos sinuosos. Duas naturezas que normalmente não conversam: o quente e o frio, o concentrado e o disperso, o estável e o fluido. A fotografia coloca as duas no mesmo plano e na mesma duração, e por isso elas dialogam. Calor e frescor no mesmo gesto.",
-    "tags": [
-      "fogo",
-      "laranja",
-      "branco",
-      "fluido",
-      "oposição",
-      "diálogo"
-    ],
+    "product_id": "prod_UVQAqxURRS9w0a",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPKGPVC4XcjruxkJiNhNOZ",
@@ -1170,24 +909,13 @@
         "url": "https://buy.stripe.com/test_cNi28t2yLdLd4AP0GzabK1W",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQAqxURRS9w0a"
+    }
   },
   {
     "id": "p25",
     "title": "Surgimento",
     "filename": "PORT_WAG_2333-2.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2333-2.jpg",
-    "category": "concept",
-    "description": "Estradinha em Piracanga com plantações nas laterais. Não é cogumelo: é um caminho fluido com várias linhas onduladas que convergem até um portal, e algo está surgindo de lá de dentro. A forma emerge sem nome próprio, sem origem identificável, e a luz é só o que torna o surgimento visível pra câmera. O resto continua oculto.",
-    "tags": [
-      "piracanga",
-      "surgimento",
-      "portal",
-      "caminho",
-      "emergência",
-      "mata"
-    ],
+    "product_id": "prod_UVQABeKqsg6tpd",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPKSPVC4XcjruxWFNOs3Wz",
@@ -1219,24 +947,13 @@
         "url": "https://buy.stripe.com/test_dRm8wR2yLdLd6IX2OHabK21",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQABeKqsg6tpd"
+    }
   },
   {
     "id": "p26",
     "title": "Lume",
     "filename": "PORT_DSC_3083.jpg",
-    "url": "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3083.jpg",
-    "category": "abstrato",
-    "description": "Movimento contínuo do corpo com LEDs de luz quente nas mãos. O que parecia anéis sobrepostos é, no fundo, dança: loops fluidos, espirais que se acumulam, brasa em forma de gesto. A composição flutua entre árvores noturnas, e o movimento do corpo é o que estrutura tudo. Lume sustentado pela duração da exposição.",
-    "tags": [
-      "dança",
-      "lume",
-      "led quente",
-      "loops",
-      "espirais",
-      "movimento"
-    ],
+    "product_id": "prod_UVQAmHtVbY9lhU",
     "payment_links": {
       "a4": {
         "price_id": "price_1TWPKdPVC4Xcjrux6av4QYzf",
@@ -1268,7 +985,6 @@
         "url": "https://buy.stripe.com/test_bJeaEZflx6iLc3h9d5abK26",
         "amount_cents": 900000
       }
-    },
-    "stripe_product_id": "prod_UVQAmHtVbY9lhU"
+    }
   }
 ]

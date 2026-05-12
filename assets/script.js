@@ -33,12 +33,16 @@ document.querySelectorAll('.news__form').forEach(form => {
 // ═══════════════════════════════════════════════════════
 
 const PRICING = [
-  { size: '21 × 30 cm',  edition: 'Edição de 30', price: 'R$ 600' },
-  { size: '30 × 42 cm',  edition: 'Edição de 25', price: 'R$ 1.200' },
-  { size: '42 × 60 cm',  edition: 'Edição de 15', price: 'R$ 2.400' },
-  { size: '60 × 84 cm',  edition: 'Edição de 10', price: 'R$ 4.500' },
-  { size: '84 × 118 cm', edition: 'Edição de 5',  price: 'R$ 9.000' }
+  { size_key: 'a4', size: '21 × 30 cm',  edition: 'Edição de 30', price: 'R$ 600' },
+  { size_key: 'a3', size: '30 × 42 cm',  edition: 'Edição de 25', price: 'R$ 1.200' },
+  { size_key: 'a2', size: '42 × 60 cm',  edition: 'Edição de 15', price: 'R$ 2.400' },
+  { size_key: 'a1', size: '60 × 84 cm',  edition: 'Edição de 10', price: 'R$ 4.500' },
+  { size_key: 'a0', size: '84 × 118 cm', edition: 'Edição de 5',  price: 'R$ 9.000' }
 ];
+
+// Stripe test mode toggle: localStorage.setItem('stripeMode', 'test') no console pra ativar
+// Quando conta LIVE for ativada, troca pra 'live' (ou removo o gate)
+const STRIPE_MODE = (typeof localStorage !== 'undefined' && localStorage.getItem('stripeMode')) || 'off';
 
 function pricingList() {
   return PRICING.map((p, idx) =>
@@ -123,10 +127,22 @@ async function initGallery() {
     if (!p) return;
     if (selectedSizeIdx !== null) {
       const sz = PRICING[selectedSizeIdx];
-      lbCta.textContent = `Solicitar ${sz.size} · ${sz.price}`;
+      lbCta.textContent = `Comprar ${sz.size} · ${sz.price}`;
       lbCta.classList.add('lb-cta--ready');
-      const subj = encodeURIComponent(`Print: ${p.title} · ${sz.size} · ${sz.price}`);
-      const body = encodeURIComponent(`Olá Willians,
+
+      // Se temos Payment Link Stripe pra essa obra+tamanho e o modo tá ativo, usa ele
+      const stripeLink = p.payment_links && p.payment_links[sz.size_key];
+      if (stripeLink && (STRIPE_MODE === 'test' || STRIPE_MODE === 'live')) {
+        lbCta.href = stripeLink.url;
+        lbCta.target = '_blank';
+        lbCta.rel = 'noopener';
+        lbCta.textContent = `Comprar ${sz.size} · ${sz.price}`;
+      } else {
+        // Fallback: email pré-formatado
+        lbCta.removeAttribute('target');
+        lbCta.removeAttribute('rel');
+        const subj = encodeURIComponent(`Print: ${p.title} · ${sz.size} · ${sz.price}`);
+        const body = encodeURIComponent(`Olá Willians,
 
 Tenho interesse no print:
 
@@ -138,11 +154,14 @@ Tenho interesse no print:
 Confirma disponibilidade, prazo de entrega e forma de pagamento (Pix, transferência ou cartão)?
 
 Obrigado.`);
-      lbCta.href = `mailto:willians.design@gmail.com?subject=${subj}&body=${body}`;
+        lbCta.href = `mailto:willians.design@gmail.com?subject=${subj}&body=${body}`;
+        lbCta.textContent = `Solicitar ${sz.size} · ${sz.price}`;
+      }
     } else {
       lbCta.textContent = 'Toque um tamanho acima';
       lbCta.classList.remove('lb-cta--ready');
       lbCta.href = '#';
+      lbCta.removeAttribute('target');
     }
   }
 
