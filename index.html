@@ -1,484 +1,2092 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Willians Gomes · Light Painting · Prints fine art</title>
-<meta name="description" content="Light painting e fotografia fine art em edição limitada. Vinte e seis obras autorais de Willians Gomes, com mais de duas décadas de prática.">
-<meta name="theme-color" content="#141414">
+<title>Willians Gomes · Light Painting · Edição Inaugural</title>
+<meta name="description" content="Light painting fine art em edição limitada. 26 obras, 5 tamanhos, impressão Hahnemühle. Edição inaugural, Maio 2026.">
+<meta name="author" content="Willians Gomes">
+<meta name="theme-color" content="#06070a">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Willians Gomes · Light Painting">
-<meta property="og:description" content="Vinte e seis obras de light painting em edição limitada. Print fine art numerado, assinado e com certificado.">
+<meta property="og:description" content="Vinte anos de obturador aberto. 26 obras em edição limitada. Maio 2026.">
 <meta property="og:image" content="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg">
-<meta property="og:url" content="https://willgomes.art">
 <meta property="og:locale" content="pt_BR">
-
+<meta property="og:url" content="https://willgomes.art/">
+<meta property="og:site_name" content="willgomes.art">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Willians Gomes · Light Painting">
+<meta name="twitter:description" content="Vinte anos de obturador aberto. 26 obras em edição limitada.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg">
+<link rel="canonical" href="https://willgomes.art/">
 
-<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg">
-
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wpnreyr5nj");
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtist",
+  "name": "Willians Gomes",
+  "alternateName": "willgomes",
+  "url": "https://willgomes.art",
+  "email": "atelier@willgomes.art",
+  "description": "Artista brasileiro. Light painting, fotografia contemplativa, retiros e workshops. 20 anos de carreira.",
+  "nationality": "BR",
+  "sameAs": [
+    "https://instagram.com/willgomes.lightpainting",
+    "https://instagram.com/fotografiameditativa"
+  ]
+}
 </script>
+
+<!-- Analytics: Plausible (privacy-friendly). Activate by uncommenting after you set up the domain on plausible.io
+<script defer data-domain="willgomes.art" src="https://plausible.io/js/script.js"></script>
+-->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/assets/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-  /* ═══ V10: scroll livre, hero compacto, galeria first ═══ */
+/* ============================================================
+   TOKENS — cool deep-field night, instrument-panel aesthetic
+   ============================================================ */
+:root{
+  --bg:        oklch(0.13 0.012 250);
+  --bg-deep:   oklch(0.08 0.014 250);
+  --bg-darker: oklch(0.06 0.012 250);
+  --surface:   oklch(0.17 0.014 250);
+  --surface-2: oklch(0.20 0.014 250);
+  --fg:        oklch(0.96 0.005 250);
+  --fg-soft:   oklch(0.80 0.010 250);
+  --muted:     oklch(0.58 0.014 250);
+  --muted-2:   oklch(0.42 0.014 250);
+  --line:      oklch(0.26 0.014 250);
+  --line-2:    oklch(0.20 0.014 250);
+  --accent:    oklch(0.82 0.10 220);   /* cool cyan-ish, restrained */
+  --hot:       oklch(0.78 0.13 60);    /* warm signal */
 
-  /* Reseta o scroll-snap do V9 */
-  html { scroll-snap-type: none; scroll-behavior: smooth; }
+  --serif: "Cormorant Garamond", "Times New Roman", serif;
+  --sans:  "Inter", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
-  /* Hero compacto: imagem + identidade JUNTAS, ~80vh max desktop */
-  .hero-pack {
-    min-height: auto;
-    padding: 70px 24px 50px;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .hero-pack__image {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    max-height: 78vh;
-    display: flex;
-    align-items: center;
-  }
-  .hero-pack__image .frame {
-    width: 100%;
-    height: 100%;
-    padding: 12px;
-    background: var(--frame);
-  }
-  .hero-pack__image .frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .hero-pack__text {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .hero-pack__edition {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    opacity: 0.85;
-  }
-  .hero-pack__edition::before { content: '· '; color: var(--fg-mute); }
-  .hero-pack h1 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(2rem, 5vw, 3.4rem);
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    line-height: 1.1;
-    margin: 0;
-  }
-  .hero-pack__tagline {
-    font-size: 0.78rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--fg-soft);
-  }
-  .hero-pack__quote {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
-    color: var(--fg);
-    line-height: 1.5;
-    margin-top: 8px;
-    border-left: 1px solid var(--gold);
-    padding-left: 24px;
-  }
-  .hero-pack__cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 16px;
-    align-self: flex-start;
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--fg);
-    text-decoration: none;
-    padding: 14px 28px;
-    border: 1px solid var(--gold);
-    transition: all var(--transition);
-  }
-  .hero-pack__cta:hover {
-    background: var(--gold);
-    color: #0a0a0a;
-  }
-  .hero-pack__cta::after { content: '↓'; font-family: var(--sans); }
+  --max: 1480px;
+  --gutter: clamp(20px, 4vw, 64px);
 
-  .hero-pack__caption-bottom {
-    grid-column: 1 / -1;
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid var(--line);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-  }
-  .hero-pack__caption-bottom .work-title {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 0.95rem;
-    letter-spacing: 0.02em;
-    color: var(--fg-soft);
-    text-transform: none;
-  }
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
 
-  /* Galeria sem scroll-snap, alturas naturais */
-  .gallery-section {
-    padding: 60px 24px 80px;
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-  .gallery-header {
-    margin: 0 auto 50px;
-    max-width: 1100px;
-  }
-  .gallery-header .eyebrow {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    margin-bottom: 16px;
-  }
-  .gallery-header .eyebrow::before { content: '· '; color: var(--gold); }
-  .gallery-header h2 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    letter-spacing: 0.04em;
-    margin-bottom: 16px;
-    line-height: 1.2;
-  }
-  .gallery-header p {
-    color: var(--fg-soft);
-    font-size: 1rem;
-    line-height: 1.65;
-    max-width: 680px;
-    margin-bottom: 20px;
-  }
-  .gallery-header .meta {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
+*,*::before,*::after{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+html{ background: var(--bg-deep); color: var(--fg); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body{
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  background: var(--bg-deep);
+  color: var(--fg);
+  overflow-x: hidden;
+  min-height: 100vh;
+  letter-spacing: 0.005em;
+}
 
-  /* Sobre compacto e DEPOIS da galeria */
-  .about-section {
-    padding: 80px 24px;
-    background: var(--bg-soft);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-  .about-section__inner {
-    max-width: 820px;
-    margin: 0 auto;
-  }
-  .about-section .eyebrow {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    margin-bottom: 14px;
-  }
-  .about-section .eyebrow::before { content: '· '; color: var(--gold); }
-  .about-section h2 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-style: italic;
-    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
-    line-height: 1.35;
-    margin-bottom: 24px;
-    color: var(--fg);
-  }
-  .about-section p {
-    color: #d4d4d4;
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 0;
-  }
-  .about-section em {
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--gold);
-  }
+img{ display:block; max-width:100%; height:auto; }
+button{ font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+a{ color: inherit; text-decoration: none; }
+:focus-visible{ outline: 2px solid var(--accent); outline-offset: 3px; }
+h1,h2,h3,h4{ margin:0; font-weight: 500; }
+p{ margin: 0; }
 
-  /* Newsletter + Contato compactos lado-a-lado em desktop */
-  .footer-block {
-    padding: 60px 24px 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
-  }
-  .footer-block h3 {
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-  }
-  .footer-block .label {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-    margin-bottom: 16px;
-  }
-  .footer-block .label::before { content: '· '; color: var(--gold); }
-  .footer-block p {
-    color: var(--fg-soft);
-    font-size: 0.92rem;
-    margin-bottom: 22px;
-    line-height: 1.6;
-  }
-  .footer-block .news__form {
-    display: flex;
-    gap: 8px;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 8px;
-    transition: border-color var(--transition);
-  }
-  .footer-block .news__form:focus-within { border-color: var(--gold); }
-  .footer-block .news__form input {
-    flex: 1;
-    background: transparent;
-    border: 0;
-    color: var(--fg);
-    font-family: var(--sans);
-    font-size: 0.95rem;
-    padding: 10px 4px;
-    outline: none;
-  }
-  .footer-block .news__form input::placeholder { color: var(--fg-mute); }
-  .footer-block .news__form button {
-    background: transparent;
-    border: 0;
-    color: var(--gold);
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 10px 4px;
-    transition: color var(--transition);
-  }
-  .footer-block .news__form button:hover { color: var(--fg); }
+/* ============================================================
+   DEEP FIELD BACKGROUND — sense of depth via blurred orbs
+   ============================================================ */
+.deep-field{
+  position: fixed; inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: var(--bg-deep);
+}
+.deep-field .orb{
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: .55;
+  will-change: transform;
+}
+.deep-field .o1{ width: 60vmax; height: 60vmax; background: oklch(0.34 0.10 240); top: -10vmax; left: -15vmax; }
+.deep-field .o2{ width: 50vmax; height: 50vmax; background: oklch(0.30 0.12 280); bottom: -15vmax; right: -10vmax; opacity: .45; }
+.deep-field .o3{ width: 35vmax; height: 35vmax; background: oklch(0.32 0.10 200); top: 40vh; right: 20vw; opacity: .35; }
 
-  .footer-block__contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .footer-block__contact a {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--line);
-    color: var(--fg);
-    text-decoration: none;
-    font-family: var(--serif);
-    font-size: 1rem;
-    transition: color var(--transition);
-  }
-  .footer-block__contact a:hover { color: var(--gold); }
-  .footer-block__contact a span.l {
-    font-family: var(--mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--fg-mute);
-  }
+/* Grain + scanline subtle */
+.deep-field::after{
+  content:""; position: absolute; inset:0;
+  opacity: .045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+.deep-field::before{
+  content:""; position: absolute; inset:0;
+  background: radial-gradient(140% 90% at 50% 30%, transparent 35%, rgba(0,0,0,.55) 90%, rgba(0,0,0,.85) 100%);
+}
 
-  @media (max-width: 900px) {
-    .hero-pack { grid-template-columns: 1fr; gap: 36px; padding: 50px 20px 40px; }
-    .hero-pack__image { max-height: 60vh; aspect-ratio: 4/5; }
-    .footer-block { grid-template-columns: 1fr; gap: 50px; }
+/* Cursor spotlight */
+.spotlight{
+  position: fixed;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, oklch(0.6 0.08 220 / 0.10) 0%, transparent 70%);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+  mix-blend-mode: screen;
+  transition: opacity .4s;
+  opacity: 0;
+}
+
+.layer{ position: relative; z-index: 3; }
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .deep-field .orb{ animation: none !important; }
+}
+
+/* ============================================================
+   TYPE HELPERS
+   ============================================================ */
+.mono{ font-family: var(--mono); }
+.serif{ font-family: var(--serif); font-weight: 500; letter-spacing: -0.005em; }
+.italic{ font-style: italic; }
+
+.hud{
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 400;
+}
+.hud b{ color: var(--fg-soft); font-weight: 500; }
+.hud .live::before{
+  content:""; display: inline-block;
+  width: 6px; height: 6px; border-radius: 999px;
+  background: var(--hot);
+  margin-right: 8px;
+  animation: pulse 2.4s ease-in-out infinite;
+  box-shadow: 0 0 8px var(--hot);
+  vertical-align: middle;
+}
+@keyframes pulse{ 0%,100%{ opacity:.4 } 50%{ opacity:1 } }
+
+.eyebrow{
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.wrap{ width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 50;
+  padding: 16px var(--gutter);
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 24px;
+  backdrop-filter: blur(20px) saturate(1.2);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  background: color-mix(in oklab, var(--bg-deep) 70%, transparent);
+  border-bottom: 1px solid color-mix(in oklab, var(--line) 50%, transparent);
+}
+.nav .brand{
+  display: flex; align-items: baseline; gap: 14px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+}
+.nav .brand .id{
+  font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--muted);
+}
+.nav .center{
+  text-align: center;
+  font-family: var(--mono); font-size: 10px; letter-spacing: .26em; text-transform: uppercase; color: var(--muted);
+}
+.nav .center .live::before{
+  content:""; display: inline-block;
+  width: 6px; height: 6px; border-radius: 999px;
+  background: var(--hot);
+  margin-right: 8px;
+  animation: pulse 2.4s ease-in-out infinite;
+  box-shadow: 0 0 8px var(--hot);
+  vertical-align: middle;
+}
+.nav ul{ display:flex; gap: 24px; padding:0; margin:0; list-style:none; }
+.nav ul a{
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--fg-soft);
+  padding: 6px 0;
+  position: relative;
+}
+.nav ul a::after{
+  content:""; position:absolute; left:0; right:0; bottom: 2px;
+  height:1px; background: var(--accent); transform: scaleX(0); transform-origin: left;
+  transition: transform .4s var(--ease);
+}
+.nav ul a:hover::after{ transform: scaleX(1); }
+@media (max-width: 960px){
+  .nav{ grid-template-columns: auto 1fr auto; }
+  .nav ul, .nav .center{ display: none; }
+}
+
+/* ============================================================
+   HERO — clean photo, HUD lives only at extreme edges
+   ============================================================ */
+.hero{
+  position: relative;
+  min-height: 100svh;
+  padding-top: 72px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.hero-stage{
+  position: absolute;
+  inset: 72px 0 0 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.hero-img{
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center 45%;
+  filter: saturate(.95) contrast(1.04);
+  animation: kenburns 36s var(--ease) infinite alternate;
+  will-change: transform;
+}
+@keyframes kenburns{
+  from{ transform: scale(1.02) translate3d(0,0,0); }
+  to  { transform: scale(1.12) translate3d(-1.2%, -1%, 0); }
+}
+/* very subtle edge vignette only — no overlay over the center */
+.hero-stage::after{
+  content:""; position:absolute; inset:0; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(6,7,10,.50) 0%, transparent 14%, transparent 78%, rgba(6,7,10,.95) 100%),
+    linear-gradient(90deg,  rgba(6,7,10,.35) 0%, transparent 12%, transparent 88%, rgba(6,7,10,.35) 100%);
+}
+
+/* HUD frame — corners only, monospace, never crosses the photo */
+.hero-hud{
+  position: absolute; inset: 80px var(--gutter) 24px var(--gutter);
+  z-index: 4;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.hero-hud > *{ pointer-events: auto; }
+.hud-tl{ grid-column: 1; grid-row: 1; }
+.hud-tr{ grid-column: 2; grid-row: 1; text-align: right; }
+.hud-bl{ grid-column: 1; grid-row: 3; align-self: end; }
+.hud-br{ grid-column: 2; grid-row: 3; align-self: end; text-align: right; }
+.hud-tl, .hud-tr, .hud-bl, .hud-br{
+  display: flex; flex-direction: column; gap: 6px;
+}
+.hud-tr{ align-items: flex-end; }
+.hud-br{ align-items: flex-end; }
+
+.hud-cta{
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 14px 22px;
+  background: color-mix(in oklab, var(--surface) 90%, transparent);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--fg);
+  transition: background .3s, border-color .3s, transform .3s;
+  margin-top: 10px;
+}
+.hud-cta:hover{ background: var(--accent); color: var(--bg-deep); border-color: var(--accent); transform: translateY(-2px); }
+.hud-cta .arr{ display: inline-block; transition: transform .3s; }
+.hud-cta:hover .arr{ transform: translateX(4px); }
+
+/* Corner tick marks */
+.tick{ position: absolute; width: 14px; height: 14px; z-index: 4; pointer-events: none; }
+.tick::before, .tick::after{ content:""; position: absolute; background: var(--fg-soft); opacity: .5; }
+.tick::before{ width: 14px; height: 1px; top: 0; }
+.tick::after{ width: 1px; height: 14px; left: 0; }
+.tick.t-tl{ top: 84px; left: var(--gutter); }
+.tick.t-tr{ top: 84px; right: var(--gutter); }
+.tick.t-tr::before{ right: 0; left: auto; }
+.tick.t-tr::after{ left: auto; right: 0; }
+.tick.t-bl{ bottom: 24px; left: var(--gutter); }
+.tick.t-bl::before{ bottom: 0; top: auto; }
+.tick.t-br{ bottom: 24px; right: var(--gutter); }
+.tick.t-br::before{ bottom: 0; top: auto; right: 0; left: auto; }
+.tick.t-br::after{ left: auto; right: 0; }
+
+@media (max-width: 720px){
+  .hero-hud{ inset: 80px 16px 16px 16px; grid-template-columns: 1fr; grid-template-rows: auto 1fr auto auto; }
+  .hud-tr, .hud-br{ grid-column: 1; text-align: left; align-items: flex-start; }
+  .hud-tl{ grid-row: 1; }
+  .hud-tr{ grid-row: 2; align-self: start; }
+  .hud-bl{ grid-row: 3; }
+  .hud-br{ grid-row: 4; }
+}
+
+/* ============================================================
+   MANIFESTO — first block below hero. Big editorial title.
+   ============================================================ */
+.manifesto{
+  padding: clamp(80px, 14vh, 160px) 0 clamp(80px, 12vh, 140px);
+  position: relative;
+}
+.manifesto .grid{
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 80px;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 880px){ .manifesto .grid{ grid-template-columns: 1fr; gap: 16px; } }
+
+.manifesto .gutter-l, .manifesto .gutter-r{
+  display: flex; flex-direction: column; gap: 8px;
+}
+.manifesto .gutter-l{ border-left: 1px solid var(--line); padding-left: 16px; }
+.manifesto .gutter-r{ border-right: 1px solid var(--line); padding-right: 16px; text-align: right; align-items: flex-end; }
+@media (max-width: 880px){
+  .manifesto .gutter-l, .manifesto .gutter-r{ border: 0; padding: 0; text-align: left; align-items: flex-start; }
+}
+
+.manifesto h1{
+  font-family: var(--serif);
+  font-size: clamp(54px, 9vw, 148px);
+  line-height: .92;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+  max-width: 16ch;
+}
+.manifesto h1 em{ font-style: italic; color: var(--fg-soft); }
+.manifesto h1 .dot{
+  display: inline-block; width: .14em; height: .14em; border-radius: 999px;
+  background: var(--accent);
+  vertical-align: super; transform: translate(.05em, 0);
+}
+.manifesto .col-r{ padding-top: 8px; }
+.manifesto .col-r p{
+  color: var(--fg-soft);
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 42ch;
+  margin-bottom: 18px;
+}
+.manifesto .col-r .stats{
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  margin-top: 26px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.manifesto .col-r .stats div{ display: flex; flex-direction: column; gap: 4px; }
+.manifesto .col-r .stats .v{ font-family: var(--serif); font-style: italic; font-size: 32px; color: var(--fg); line-height: 1; }
+.manifesto .col-r .stats .k{ font-family: var(--mono); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+
+/* ============================================================
+   SECTION HEADERS
+   ============================================================ */
+.section{ padding: clamp(80px, 12vh, 140px) 0; position: relative; }
+.section-head{
+  display: grid; grid-template-columns: 80px 1fr auto 80px; gap: 24px;
+  align-items: end;
+  margin-bottom: clamp(40px, 6vh, 64px);
+}
+.section-head .gl, .section-head .gr{
+  display: flex; flex-direction: column; gap: 6px;
+  border-left: 1px solid var(--line);
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+.section-head .gr{ border-left: 0; border-right: 1px solid var(--line); padding-left: 0; padding-right: 16px; text-align: right; align-items: flex-end; }
+.section-title{
+  font-family: var(--serif);
+  font-size: clamp(42px, 6vw, 88px);
+  line-height: .92;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+.section-title em{ font-style: italic; color: var(--fg-soft); }
+.section-head .meta{
+  display: flex; flex-direction: column; gap: 6px;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+@media (max-width: 880px){
+  .section-head{ grid-template-columns: 1fr; }
+  .section-head .gl, .section-head .gr{ display: none; }
+  .section-head .meta{ align-items: flex-start; padding-bottom: 0; }
+}
+
+/* ============================================================
+   LANG TOGGLE
+   ============================================================ */
+.lang-toggle{
+  display: inline-flex; gap: 0; margin-left: 4px;
+  border: 1px solid var(--line); border-radius: 999px; overflow: hidden;
+}
+.lang-toggle button{
+  font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  padding: 6px 12px;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  transition: background .25s, color .25s;
+  cursor: pointer;
+}
+.lang-toggle button:hover{ color: var(--fg); }
+.lang-toggle button[aria-pressed="true"]{ background: var(--fg); color: var(--bg-deep); }
+
+/* ============================================================
+   SOBRE — process + portrait placeholders
+   ============================================================ */
+.sobre-extras{
+  margin-top: clamp(60px, 8vh, 100px);
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 3vw, 48px);
+}
+@media (max-width: 720px){ .sobre-extras{ grid-template-columns: 1fr; } }
+.sobre-extras figure{ margin: 0; }
+.sobre-extras .placeholder{
+  position: relative;
+  background: var(--bg-darker);
+  padding: 14px;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 1px 0 rgba(255,255,255,.04) inset, 0 30px 50px -30px rgba(0,0,0,.7);
+}
+.sobre-extras .placeholder.video{ aspect-ratio: 16 / 11; }
+.sobre-extras .placeholder .inner{
+  position: absolute; inset: 14px;
+  background-image: repeating-linear-gradient(135deg, transparent 0 14px, oklch(0.20 0.014 250) 14px 15px);
+  display: flex; align-items: center; justify-content: center;
+}
+.sobre-extras .placeholder .lbl{
+  font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--muted);
+  padding: 8px 14px;
+  background: var(--bg-deep);
+  position: relative; z-index: 2;
+}
+.sobre-extras .play-btn{
+  position: absolute; z-index: 3;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 76px; height: 76px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--fg) 92%, transparent);
+  color: var(--bg-deep);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 500;
+}
+.sobre-extras figcaption{
+  font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--muted); margin-top: 14px;
+}
+
+/* ============================================================
+   IMPRENSA / COMPANHIA
+   ============================================================ */
+.imprensa{
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+  background: var(--line); border: 1px solid var(--line);
+}
+@media (max-width: 720px){ .imprensa{ grid-template-columns: 1fr; } }
+.imprensa .item{
+  background: color-mix(in oklab, var(--bg-deep) 88%, transparent);
+  padding: 40px 32px;
+  display: flex; flex-direction: column; gap: 18px;
+  min-height: 240px;
+  backdrop-filter: blur(8px);
+}
+.imprensa .label-tag{
+  font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--accent);
+}
+.imprensa .quote{
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.3; color: var(--fg);
+}
+.imprensa .src{ margin-top: auto; }
+.imprensa .src .name{ font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--fg-soft); }
+.imprensa .src .info{ font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.imprensa .pending .quote{ color: var(--muted); }
+
+/* ============================================================
+   LIVRO
+   ============================================================ */
+.livro{
+  display: grid; grid-template-columns: 0.8fr 1fr; gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+}
+@media (max-width: 720px){ .livro{ grid-template-columns: 1fr; } }
+.livro .cover-wrap{
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(135deg, var(--bg-darker) 0%, var(--surface) 100%);
+  display: flex; align-items: flex-end; justify-content: flex-start;
+  padding: clamp(24px, 3vw, 40px);
+  box-shadow: 0 40px 60px -30px rgba(0,0,0,.85), 0 2px 4px rgba(0,0,0,.5);
+  overflow: hidden;
+  max-width: 360px;
+  width: 100%;
+}
+.livro .cover-wrap::before{
+  content:""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, oklch(0.42 0.10 240 / 0.55) 0%, transparent 55%),
+    radial-gradient(circle at 70% 65%, oklch(0.40 0.12 280 / 0.45) 0%, transparent 55%);
+}
+.livro .cover-wrap::after{
+  content:""; position: absolute; left: 0; top: 0; bottom: 0; width: 8px;
+  background: rgba(0,0,0,.6);
+}
+.livro .cover-text{ position: relative; z-index: 2; display: flex; flex-direction: column; gap: 12px; }
+.livro .cover-text .small{ font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--fg-soft); }
+.livro .cover-text .big{
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1; letter-spacing: -0.01em;
+  color: var(--fg);
+}
+.livro .cover-text .author{ font-family: var(--mono); font-size: 9px; letter-spacing: .26em; text-transform: uppercase; color: var(--muted); margin-top: 12px; }
+.livro .info h3{ font-family: var(--serif); font-size: clamp(32px, 4vw, 48px); line-height: 1.05; font-weight: 500; margin-bottom: 16px; }
+.livro .info h3 em{ font-style: italic; color: var(--fg-soft); }
+.livro .info p{ color: var(--fg-soft); font-size: 16px; line-height: 1.65; margin-bottom: 14px; max-width: 48ch; }
+.livro .info .badge{ font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); padding: 4px 0; display: inline-block; }
+.livro .waitlist-form{ display: flex; gap: 0; margin-top: 22px; border-bottom: 1px solid var(--fg-soft); max-width: 480px; }
+.livro .waitlist-form input{ flex: 1; background: transparent; border: 0; color: var(--fg); padding: 14px 0; font: inherit; font-size: 16px; outline: none; }
+.livro .waitlist-form input::placeholder{ color: var(--muted-2); }
+.livro .waitlist-form button{ padding: 14px 4px; color: var(--accent); font-family: var(--mono); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; }
+.livro .waitlist-form button:hover{ color: var(--fg); }
+
+/* GALLERY — masonry via CSS columns, photos uncropped
+   ============================================================ */
+.gallery-filter{
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: clamp(28px, 4vh, 44px);
+  align-items: center;
+}
+.gallery-filter .lbl{
+  font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--muted);
+  margin-right: 8px;
+}
+.gallery-filter button{
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--fg-soft);
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  transition: background .25s, border-color .25s, color .25s, transform .25s;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.gallery-filter button:hover{ border-color: var(--muted-2); color: var(--fg); }
+.gallery-filter button[aria-pressed="true"]{
+  background: color-mix(in oklab, var(--accent) 14%, transparent);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.gallery-filter button .count{
+  font-feature-settings: "tnum";
+  opacity: .7;
+}
+.gallery-filter .spacer{ flex: 1; min-width: 0; }
+.gallery-filter .mode-toggle{
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  padding: 8px 14px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: background .25s, border-color .25s, color .25s;
+  cursor: pointer;
+}
+.gallery-filter .mode-toggle:hover{ color: var(--fg); border-color: var(--muted-2); }
+.gallery-filter .mode-toggle[aria-pressed="true"]{ background: var(--fg); color: var(--bg-deep); border-color: var(--fg); }
+
+.gallery{
+  column-count: 3;
+  column-gap: clamp(20px, 2.2vw, 36px);
+}
+.gallery.immersive{
+  column-count: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.gallery.immersive .card{ margin-bottom: clamp(64px, 12vh, 140px); }
+.gallery.immersive .card .label{ padding-top: 22px; }
+@media (max-width: 1100px){ .gallery{ column-count: 2; } }
+@media (max-width: 620px){ .gallery{ column-count: 1; } }
+
+.card{
+  break-inside: avoid;
+  display: block;
+  margin: 0 0 clamp(28px, 3vh, 44px) 0;
+  cursor: pointer;
+  perspective: 1500px;
+  position: relative;
+}
+.card.hidden{ display: none; }
+.card .sig-mark{
+  position: absolute;
+  top: 16px; left: 16px;
+  z-index: 4;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--bg-deep);
+  background: var(--accent);
+  padding: 5px 10px;
+  border-radius: 999px;
+  pointer-events: none;
+  box-shadow: 0 4px 14px -4px rgba(0,0,0,.6);
+}
+@media (pointer: fine){
+  .gallery .card{ cursor: none; }
+  .cursor-plus{
+    position: fixed;
+    z-index: 199;
+    width: 56px; height: 56px;
+    border-radius: 999px;
+    pointer-events: none;
+    transform: translate3d(-50%, -50%, 0) scale(.6);
+    opacity: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: color-mix(in oklab, var(--fg) 92%, transparent);
+    color: var(--bg-deep);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: opacity .3s var(--ease), transform .3s var(--ease);
+    mix-blend-mode: difference;
   }
-  @media (max-width: 540px) {
-    .hero-pack h1 { letter-spacing: 0.16em; }
-    .hero-pack__quote { padding-left: 18px; }
-  }
+  .cursor-plus.on{ opacity: 1; transform: translate3d(-50%, -50%, 0) scale(1); }
+}
+.card .frame{
+  position: relative;
+  background: var(--bg-darker);
+  padding: clamp(10px, 1vw, 16px);
+  overflow: hidden;
+  transition: transform .8s var(--ease), box-shadow .8s var(--ease);
+  transform-style: preserve-3d;
+  will-change: transform;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.04) inset,
+    0 30px 50px -30px rgba(0,0,0,.85),
+    0 1px 2px rgba(0,0,0,.4);
+}
+.card .frame::before{
+  content:""; position: absolute; inset: 0; pointer-events: none;
+  border: 1px solid rgba(255,255,255,.025);
+}
+.card .frame img{
+  width: 100%; height: auto;
+  display: block;
+  filter: saturate(.95) contrast(1.03);
+  transition: filter .6s, transform .8s var(--ease);
+  background: #050606;
+  /* Reserve aspect ratio via attribute width/height to avoid CLS */
+}
+.card:hover .frame{
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.06) inset,
+    0 50px 100px -30px rgba(0,0,0,.95),
+    0 2px 4px rgba(0,0,0,.6),
+    0 0 0 1px color-mix(in oklab, var(--accent) 30%, transparent);
+}
+.card:hover .frame img{ filter: saturate(1.05) contrast(1.06); }
+
+.card .label{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 2px 0;
+  border-top: 1px solid transparent;
+  transition: border-color .4s;
+}
+.card:hover .label{ border-top-color: color-mix(in oklab, var(--accent) 50%, transparent); }
+.card .label .l-num{ font-family: var(--mono); font-size: 10px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+.card .label .l-title{ font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--fg); font-weight: 500; line-height: 1.1; }
+.card .label .l-cat{ font-family: var(--mono); font-size: 10px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+.card .label .row1{ display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.card .label .row2{ display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-top: 4px; }
+
+/* ============================================================
+   EDIÇÃO / SPECS
+   ============================================================ */
+.edicao{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+@media (max-width: 880px){ .edicao{ grid-template-columns: 1fr; } }
+.edicao .lede{
+  font-family: var(--serif);
+  font-size: clamp(24px, 2.6vw, 36px);
+  line-height: 1.22;
+  color: var(--fg);
+  font-weight: 400;
+  max-width: 26ch;
+}
+.edicao .lede em{ font-style: italic; color: var(--fg-soft); }
+
+.specs{
+  display: grid; gap: 0;
+  border-top: 1px solid var(--line);
+}
+.spec{
+  display: grid; grid-template-columns: 130px 1fr;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+.spec .k{ font-family: var(--mono); color: var(--muted); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; padding-top: 3px; }
+.spec .v{ color: var(--fg); font-size: 15px; line-height: 1.55; }
+.spec .v small{ display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
+
+.sizes-strip{ margin-top: 28px; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.size-row{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 18px;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line-2);
+  font-size: 14px;
+}
+.size-row .sz{ font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--fg); }
+.size-row .ed{ font-family: var(--mono); color: var(--muted); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
+.size-row .pr{ font-family: var(--mono); text-align: right; color: var(--fg); font-feature-settings: "tnum"; font-size: 14px; min-width: 90px; }
+
+/* ============================================================
+   SOBRE
+   ============================================================ */
+.sobre{
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+@media (max-width: 880px){ .sobre{ grid-template-columns: 1fr; } }
+.sobre .pull{
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(30px, 3.6vw, 52px);
+  line-height: 1.12;
+  color: var(--fg); font-weight: 400;
+  text-wrap: pretty;
+}
+.sobre .pull span{ color: var(--accent); }
+.sobre .body p{ color: var(--fg-soft); font-size: 16px; line-height: 1.7; margin-bottom: 1em; max-width: 48ch; }
+.sobre .body p:last-child{ margin-bottom: 0; }
+
+/* ============================================================
+   CREDS
+   ============================================================ */
+.creds{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+@media (max-width: 880px){ .creds{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px){ .creds{ grid-template-columns: 1fr; } }
+.creds .cred{
+  background: color-mix(in oklab, var(--bg-deep) 88%, transparent);
+  padding: 28px 24px;
+  display: flex; flex-direction: column; gap: 10px;
+  min-height: 180px;
+  backdrop-filter: blur(8px);
+}
+.creds .num{ font-family: var(--serif); font-style: italic; font-size: 48px; color: var(--accent); line-height: 1; }
+.creds .lbl{ color: var(--fg); font-size: 14px; line-height: 1.45; max-width: 22ch; }
+.creds .sub{ font-family: var(--mono); color: var(--muted); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; margin-top: auto; }
+
+/* ============================================================
+   FRENTES
+   ============================================================ */
+.frentes{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+@media (max-width: 880px){ .frentes{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 480px){ .frentes{ grid-template-columns: 1fr; } }
+.frente{
+  background: color-mix(in oklab, var(--bg-deep) 88%, transparent);
+  padding: 36px 24px;
+  display: flex; flex-direction: column; gap: 14px;
+  min-height: 220px;
+  transition: background .4s;
+  backdrop-filter: blur(8px);
+}
+.frente:hover{ background: var(--surface); }
+.frente .tt{ font-family: var(--serif); font-style: italic; font-size: 26px; color: var(--fg); line-height: 1.1; }
+.frente .dc{ color: var(--fg-soft); font-size: 14px; line-height: 1.55; }
+.frente .st{ margin-top: auto; font-family: var(--mono); color: var(--muted); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; }
+.frente .st b{ color: var(--accent); font-weight: 400; }
+
+/* ============================================================
+   NEWSLETTER
+   ============================================================ */
+.news{
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 5vw, 72px);
+  align-items: center;
+  padding: clamp(50px, 8vh, 96px) 0;
+}
+@media (max-width: 720px){ .news{ grid-template-columns: 1fr; } }
+.news h3{ font-family: var(--serif); font-size: clamp(28px, 3.4vw, 44px); line-height: 1.1; font-weight: 500; }
+.news h3 em{ font-style: italic; color: var(--fg-soft); }
+.news p{ color: var(--muted); margin-top: 14px; font-size: 14px; }
+.news form{ display: flex; gap: 0; border-bottom: 1px solid var(--fg-soft); }
+.news input{
+  flex: 1; background: transparent; border: 0; color: var(--fg);
+  padding: 14px 0; font: inherit; font-size: 16px; outline: none;
+}
+.news input::placeholder{ color: var(--muted-2); }
+.news button{
+  padding: 14px 4px; color: var(--accent);
+  font-family: var(--mono); font-size: 11px; letter-spacing: .22em; text-transform: uppercase;
+}
+.news button:hover{ color: var(--fg); }
+
+/* ============================================================
+   CONTATO + FOOTER
+   ============================================================ */
+.contato{
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px;
+  background: var(--line); border: 1px solid var(--line);
+}
+@media (max-width: 720px){ .contato{ grid-template-columns: 1fr; } }
+.contato a{
+  background: color-mix(in oklab, var(--bg-deep) 88%, transparent);
+  padding: 28px 24px;
+  display: flex; flex-direction: column; gap: 8px;
+  transition: background .3s;
+  backdrop-filter: blur(8px);
+}
+.contato a:hover{ background: var(--surface); }
+.contato .ch{ font-family: var(--serif); font-style: italic; font-size: 24px; }
+.contato .lb{ font-family: var(--mono); color: var(--muted); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; }
+
+footer{
+  padding: 48px var(--gutter) 36px;
+  border-top: 1px solid var(--line);
+  display: grid; grid-template-columns: 1fr auto; gap: 24px;
+  align-items: end;
+}
+footer .sig{ font-family: var(--serif); font-style: italic; font-size: 28px; color: var(--fg); }
+footer .right{ display: flex; flex-direction: column; gap: 6px; text-align: right; font-family: var(--mono); color: var(--muted); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+@media (max-width: 560px){ footer{ grid-template-columns: 1fr; } footer .right{ text-align: left; } }
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lb{
+  position: fixed; inset: 0;
+  background: rgba(4,6,10,.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  z-index: 200;
+  display: none;
+  opacity: 0;
+  transition: opacity .35s var(--ease);
+  overflow-y: auto;
+}
+.lb[data-open="true"]{ display: block; }
+.lb.visible{ opacity: 1; }
+.lb-inner{
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  min-height: 100vh;
+  max-width: 1700px;
+  margin: 0 auto;
+  gap: 0;
+}
+@media (max-width: 980px){ .lb-inner{ grid-template-columns: 1fr; min-height: auto; } }
+.lb-stage{
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(64px, 8vh, 96px) clamp(20px, 4vw, 48px);
+  min-height: 100vh;
+}
+@media (max-width: 980px){ .lb-stage{ min-height: 60vh; padding: 70px 16px 24px; } }
+.lb-frame{
+  position: relative;
+  background: var(--bg-darker);
+  padding: clamp(12px, 1.4vw, 20px);
+  max-width: 100%;
+  display: flex;
+  box-shadow: 0 1px 0 rgba(255,255,255,.04) inset, 0 50px 100px -20px rgba(0,0,0,.9);
+}
+.lb-frame img{
+  max-width: 100%;
+  max-height: calc(88vh - 40px);
+  width: auto; height: auto;
+  object-fit: contain;
+}
+
+.lb-info{
+  background: color-mix(in oklab, var(--bg-deep) 92%, transparent);
+  backdrop-filter: blur(14px);
+  padding: clamp(48px, 6vh, 80px) clamp(28px, 3vw, 56px);
+  display: flex; flex-direction: column; gap: 22px;
+  border-left: 1px solid var(--line);
+}
+@media (max-width: 980px){ .lb-info{ border-left: 0; border-top: 1px solid var(--line); } }
+
+.lb-cat{ font-family: var(--mono); color: var(--muted); font-size: 10px; letter-spacing: .24em; text-transform: uppercase; }
+.lb-title{ font-family: var(--serif); font-style: italic; font-weight: 500; font-size: clamp(40px, 4.4vw, 64px); line-height: 1.0; letter-spacing: -0.015em; }
+.lb-num{ font-family: var(--mono); font-size: 11px; letter-spacing: .22em; color: var(--muted); text-transform: uppercase; }
+.lb-desc{ color: var(--fg-soft); font-size: 16px; line-height: 1.6; max-width: 44ch; }
+.lb-pills{ display: flex; flex-wrap: wrap; gap: 8px; }
+.pill{
+  font-family: var(--mono);
+  font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+  padding: 6px 12px; border: 1px solid var(--line);
+  border-radius: 999px; color: var(--muted);
+}
+
+.lb-edition{ margin-top: 8px; padding-top: 24px; border-top: 1px solid var(--line); }
+.lb-edition h4{
+  font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 16px; font-weight: 400;
+}
+.size-opts{ display: grid; gap: 6px; }
+.size-opt{
+  display: grid; grid-template-columns: 1fr auto auto; align-items: baseline; gap: 18px;
+  padding: 14px 16px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  text-align: left;
+  width: 100%;
+  transition: background .25s, border-color .25s, transform .25s;
+}
+.size-opt:hover{ background: color-mix(in oklab, var(--surface) 70%, transparent); border-color: var(--muted-2); }
+.size-opt[aria-pressed="true"]{
+  background: color-mix(in oklab, var(--accent) 12%, transparent);
+  border-color: var(--accent);
+}
+.size-opt .so-sz{ font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--fg); }
+.size-opt .so-ed{ font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.size-opt .so-pr{ font-family: var(--mono); font-feature-settings: "tnum"; font-size: 14px; color: var(--fg); }
+.size-opt .so-stock{
+  grid-column: 1 / -1;
+  font-family: var(--mono); font-size: 9px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--muted); margin-top: 4px;
+}
+.size-opt .so-stock b{ color: var(--accent); font-weight: 400; }
+.size-opt[aria-pressed="true"] .so-stock{ color: var(--fg-soft); }
+
+.lb-buy{
+  margin-top: 18px;
+  display: inline-flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 18px 24px;
+  background: var(--fg); color: var(--bg-deep);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-weight: 500; font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+  transition: background .25s, transform .25s, opacity .25s;
+  width: 100%;
+}
+.lb-buy:hover:not(:disabled){ background: var(--accent); transform: translateY(-2px); }
+.lb-buy:disabled{ opacity: .4; cursor: not-allowed; background: color-mix(in oklab, var(--fg) 35%, var(--bg-deep)); color: var(--fg); }
+.lb-buy .arr{ transition: transform .3s; }
+.lb-buy:hover:not(:disabled) .arr{ transform: translateX(4px); }
+
+.lb-fineprint{ font-size: 12px; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--line); padding-top: 18px; margin-top: 10px; }
+.lb-fineprint b{ color: var(--fg-soft); font-weight: 500; }
+
+.lb-next-preview{
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  display: grid; grid-template-columns: 96px 1fr auto; gap: 18px; align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  width: 100%;
+  transition: opacity .25s;
+}
+.lb-next-preview .nx-img{
+  width: 96px; aspect-ratio: 4/3;
+  background: var(--bg-darker);
+  padding: 4px;
+  flex: none;
+}
+.lb-next-preview .nx-img img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+.lb-next-preview .nx-info{ display: flex; flex-direction: column; gap: 4px; }
+.lb-next-preview .nx-lbl{ font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+.lb-next-preview .nx-tt{ font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--fg); line-height: 1.1; }
+.lb-next-preview .nx-arr{ font-size: 24px; color: var(--muted); transition: color .3s, transform .3s; }
+.lb-next-preview:hover .nx-arr{ color: var(--accent); transform: translateX(4px); }
+
+.lb-close{
+  position: fixed; top: 20px; right: 20px;
+  width: 44px; height: 44px; border-radius: 999px;
+  background: color-mix(in oklab, var(--surface) 70%, transparent);
+  border: 1px solid color-mix(in oklab, var(--line) 70%, transparent);
+  color: var(--fg-soft);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; z-index: 220;
+  backdrop-filter: blur(10px);
+  transition: background .3s, color .3s, border-color .3s, transform .3s;
+}
+.lb-close:hover{ background: var(--accent); color: var(--bg-deep); border-color: var(--accent); transform: scale(1.05); }
+
+.lb-prev, .lb-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; height: 40px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--bg-deep) 55%, transparent);
+  border: 1px solid color-mix(in oklab, var(--fg-soft) 22%, transparent);
+  color: var(--fg-soft);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; z-index: 215;
+  backdrop-filter: blur(10px);
+  opacity: .5;
+  transition: opacity .35s var(--ease), background .3s, color .3s, border-color .3s, transform .3s;
+}
+.lb-prev{ left: clamp(14px, 1.6vw, 26px); }
+.lb-next{ right: clamp(14px, 1.6vw, 26px); }
+.lb-stage:hover .lb-prev,
+.lb-stage:hover .lb-next{ opacity: 1; }
+.lb-prev:hover, .lb-next:hover{
+  background: var(--accent); color: var(--bg-deep); border-color: var(--accent); opacity: 1;
+}
+.lb-prev:hover{ transform: translateY(-50%) translateX(-2px); }
+.lb-next:hover{ transform: translateY(-50%) translateX(2px); }
+@media (max-width: 980px){
+  .lb-prev, .lb-next{ opacity: 1; }
+}
+@media (max-width: 720px){
+  .lb-prev, .lb-next{ width: 38px; height: 38px; }
+  .lb-prev:hover, .lb-next:hover{ transform: translateY(-50%); }
+}
+
+body.locked{ overflow: hidden; }
+
+/* ============================================================
+   REVEAL ON SCROLL
+   ============================================================ */
+.reveal{ opacity: 0; transform: translateY(24px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
+.reveal.in{ opacity: 1; transform: none; }
+.reveal-stagger > *{ opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal-stagger.in > *{ opacity: 1; transform: none; }
 </style>
 </head>
 <body>
 
-<!-- ═══════ TOP NAV ═══════ -->
-<nav class="topnav">
-  <a href="#" class="topnav__brand">Willians Gomes</a>
-  <ul class="topnav__menu">
-    <li><a href="#galeria">Galeria</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#contato">Contato</a></li>
+<div class="deep-field" aria-hidden="true">
+  <span class="orb o1"></span>
+  <span class="orb o2"></span>
+  <span class="orb o3"></span>
+</div>
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
+<div class="cursor-plus" id="cursor-plus" aria-hidden="true">Ver</div>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav layer" aria-label="Navegação principal">
+  <a class="brand" href="#top" aria-label="Willians Gomes, início">
+    <span class="serif italic">Willians Gomes</span>
+    <span class="id">EST · 2003 · BR</span>
+  </a>
+  <div class="center"><span class="live" data-i18n="nav.status">Edição inaugural · Maio 2026</span></div>
+  <ul>
+    <li><a href="#galeria" data-i18n="nav.gallery">Galeria</a></li>
+    <li><a href="#edicao" data-i18n="nav.edition">Edição</a></li>
+    <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="#livro" data-i18n="nav.book">Livro</a></li>
+    <li><a href="#frentes" data-i18n="nav.practice">Frentes</a></li>
+    <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
   </ul>
+  <div class="lang-toggle" role="group" aria-label="Idioma">
+    <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
 </nav>
 
-<!-- ═══════ HERO COMPACTO ═══════ -->
-<section class="hero-pack" aria-label="Apresentação">
-  <div class="hero-pack__image">
-    <div class="frame">
-      <img src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg"
-           alt="Diálogo, esfera de fogo laranja envolvida por traços brancos fluidos, calor e frescor na mesma exposição"
-           width="900"
-           height="1125"
-           fetchpriority="high">
+<!-- ============================================================
+     HERO — clean photo, HUD only at edges
+     ============================================================ -->
+<header class="hero" id="top">
+  <div class="hero-stage">
+    <img class="hero-img"
+         src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg"
+         alt="Diálogo. Esfera de fogo laranja envolvida por traços brancos sinuosos. Quente e frio dialogando no escuro."
+         width="2400" height="1600" fetchpriority="high" decoding="async">
+  </div>
+
+  <span class="tick t-tl" aria-hidden="true"></span>
+  <span class="tick t-tr" aria-hidden="true"></span>
+  <span class="tick t-bl" aria-hidden="true"></span>
+  <span class="tick t-br" aria-hidden="true"></span>
+
+  <div class="hero-hud layer">
+    <div class="hud-tl">
+      <span class="hud"><b>FRAME</b> 24 · 26</span>
+      <span class="hud">DIÁLOGO · 2024</span>
+    </div>
+    <div class="hud-tr">
+      <span class="hud">EXP · 00:01:48"</span>
+      <span class="hud">ISO 100 · F/8</span>
+    </div>
+    <div class="hud-bl">
+      <span class="hud"><b>SÉRIE</b> · Light Painting</span>
+      <span class="hud">26 obras · 5 tamanhos</span>
+    </div>
+    <div class="hud-br">
+      <span class="hud">Edição inaugural · Maio 2026</span>
+      <a href="#galeria" class="hud-cta"><span data-i18n="hero.cta">Ver galeria</span> <span class="arr">→</span></a>
     </div>
   </div>
+</header>
 
-  <div class="hero-pack__text">
-    <p class="hero-pack__edition">Edição inaugural, Maio 2026</p>
-    <h1>Willians Gomes</h1>
-    <p class="hero-pack__tagline">Light Painting · Fine Art Photography</p>
-    <p class="hero-pack__quote">
-      Desenho com luz, mas o que faço é com tempo.
-    </p>
-    <a href="#galeria" class="hero-pack__cta">Ver 26 obras à venda</a>
-  </div>
+<!-- ============================================================
+     MANIFESTO
+     ============================================================ -->
+<section class="manifesto layer">
+  <div class="wrap">
+    <div class="grid">
+      <div class="gutter-l">
+        <span class="hud">§ 01</span>
+        <span class="hud" data-i18n="mfst.label">Manifesto</span>
+      </div>
 
-  <div class="hero-pack__caption-bottom">
-    <span class="work-title">Diálogo, 2010s · 2020s</span>
-    <span>Light painting · single exposure · Print fine art em edição limitada</span>
-  </div>
-</section>
+      <div class="col-l reveal">
+        <h1 class="serif" data-i18n-html="mfst.h1">Desenho com luz, <em>mas o que faço<br>é com tempo<span class="dot"></span></em></h1>
+      </div>
 
-<!-- ═══════ GALERIA + LOJA (LOGO em seguida) ═══════ -->
-<section class="gallery-section" id="galeria" aria-label="Galeria e loja">
-  <div class="gallery-header">
-    <p class="eyebrow">Galeria · loja</p>
-    <h2>Vinte e seis obras em edição limitada.</h2>
-    <p>Cada obra é única e irrepetível. Aqui ela vira print fine art Hahnemühle 308gsm, numerado, assinado à mão e acompanhado de certificado de autenticidade. Toque para ver maior, escolher tamanho e comprar.</p>
-    <p class="meta">26 obras · 5 tamanhos · R$ 600 a R$ 9.000 · Frete BR incluso</p>
-  </div>
+      <div class="col-r reveal">
+        <p data-i18n="mfst.p1">Há mais de duas décadas faço light painting: fotografia em que a luz é desenhada à mão, no tempo real do obturador aberto, sem montagem digital.</p>
+        <p style="color: var(--muted);" data-i18n="mfst.p2">Quando o obturador fica aberto por trinta, sessenta, cento e vinte segundos, uma hora inteira, o que a câmera captura não é uma cena. É uma duração.</p>
+        <div class="stats">
+          <div><span class="v">20+</span><span class="k" data-i18n="mfst.stat1">Anos de campo</span></div>
+          <div><span class="v">26</span><span class="k" data-i18n="mfst.stat2">Obras na edição</span></div>
+          <div><span class="v">05</span><span class="k" data-i18n="mfst.stat3">Tamanhos por obra</span></div>
+        </div>
+      </div>
 
-  <div class="portfolio-grid" id="portfolioGrid"></div>
-</section>
-
-<!-- ═══════ SOBRE compacto, DEPOIS da galeria ═══════ -->
-<section class="about-section" id="sobre" aria-label="Sobre o trabalho">
-  <div class="about-section__inner">
-    <p class="eyebrow">Sobre</p>
-    <h2>Há mais de duas décadas, light painting: fotografia em que a luz é desenhada à mão, no tempo real do obturador aberto, sem montagem digital.</h2>
-    <p>
-      Quando o obturador fica aberto por trinta, sessenta, cento e vinte segundos, uma hora, o que a câmera captura não é uma cena: é uma <em>duração</em>. A imagem que aparece nunca existiu pra ninguém, em nenhum momento, exceto pra ele, que intuía o que estava registrando no escuro.
-    </p>
+      <div class="gutter-r">
+        <span class="hud">EST · 2003</span>
+        <span class="hud">BR · BT · IN · ES · FR</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ═══════ NEWSLETTER + CONTATO lado-a-lado ═══════ -->
-<section class="footer-block" id="contato" aria-label="Contato e newsletter">
-  <div>
-    <p class="label">Novas obras</p>
-    <h3>Avise quando lançar.</h3>
-    <p>Sem spam. Um email quando houver novidade real: novas obras, exposições, drops de NFT.</p>
-    <form class="news__form" action="mailto:willians.design@gmail.com" method="post" enctype="text/plain">
-      <input type="email" name="email" placeholder="seu@email.com" required aria-label="Endereço de e-mail">
-      <button type="submit">Receber</button>
-    </form>
-  </div>
+<!-- ============================================================
+     GALERIA
+     ============================================================ -->
+<section class="section layer" id="galeria" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 02</span><span class="hud" data-i18n="sec.gallery.tag">Coleção</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.gallery">A coleção <em>completa<span style="color:var(--accent)">.</span></em></h2>
+      <div class="meta">
+        <span class="hud"><span class="live" data-i18n="gallery.meta1">26 obras disponíveis</span></span>
+        <span class="hud" data-i18n="gallery.meta2">Clique para adquirir</span>
+      </div>
+      <div class="gr"><span class="hud">2024 · 2026</span><span class="hud">Maio · BR</span></div>
+    </div>
 
-  <div>
-    <p class="label">Onde encontrar</p>
-    <div class="footer-block__contact">
+    <div class="gallery-filter reveal" id="gallery-filter" role="group" aria-label="Filtrar por categoria">
+      <span class="lbl" data-i18n="gallery.filter">Filtrar:</span>
+      <span class="spacer"></span>
+      <button type="button" class="mode-toggle" id="immersive-toggle" aria-pressed="false" data-i18n="gallery.immersive">Modo imersivo</button>
+    </div>
+
+    <div class="gallery" id="gallery" role="list"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EDIÇÃO
+     ============================================================ -->
+<section class="section layer" id="edicao" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 03</span><span class="hud" data-i18n="sec.edition.tag">Print Fine Art</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.edition">A <em>edição<span style="color:var(--accent)">.</span></em></h2>
+      <div class="meta">
+        <span class="hud" data-i18n="edition.meta1">Museum grade</span>
+        <span class="hud" data-i18n="edition.meta2">5 tamanhos · tiragem limitada</span>
+      </div>
+      <div class="gr"><span class="hud">Hahnemühle</span><span class="hud" data-i18n="edition.meta3">100+ anos</span></div>
+    </div>
+
+    <div class="edicao reveal">
+      <div>
+        <p class="lede" data-i18n-html="edition.lede">Impressão de museu sobre papel de algodão. Tinta pigmentada com permanência superior a cem anos. <em>Assinada à mão, numerada, com certificado.</em></p>
+      </div>
+      <div>
+        <div class="specs">
+          <div class="spec"><span class="k" data-i18n="spec.origin.k">Origem</span><span class="v" data-i18n-html="spec.origin.v">100% feita em câmera<small data-i18n="spec.origin.s">Obturador aberto, gesto à mão. Sem composição digital, sem IA, sem pós-produção que altere a imagem.</small></span></div>
+          <div class="spec"><span class="k" data-i18n="spec.paper.k">Papel</span><span class="v" data-i18n-html="spec.paper.v">Hahnemühle Photo Rag 308gsm<small data-i18n="spec.paper.s">100% algodão, sem ácido, superfície fosca aveludada</small></span></div>
+          <div class="spec"><span class="k" data-i18n="spec.ink.k">Tinta</span><span class="v" data-i18n-html="spec.ink.v">Epson UltraChrome pigmentada<small data-i18n="spec.ink.s">Permanência superior a 100 anos sob exposição normal</small></span></div>
+          <div class="spec"><span class="k" data-i18n="spec.sig.k">Assinatura</span><span class="v" data-i18n-html="spec.sig.v">À mão, no verso<small data-i18n="spec.sig.s">Número da tiragem, título e ano</small></span></div>
+          <div class="spec"><span class="k" data-i18n="spec.coa.k">Certificado</span><span class="v" data-i18n-html="spec.coa.v">COA físico<small data-i18n="spec.coa.s">Documento de autenticidade que acompanha cada obra</small></span></div>
+          <div class="spec"><span class="k" data-i18n="spec.time.k">Prazo</span><span class="v" data-i18n-html="spec.time.v">2 a 3 semanas no Brasil<small data-i18n="spec.time.s">Frete incluso. Internacional sob consulta</small></span></div>
+          <div class="spec"><span class="k" data-i18n="spec.pay.k">Pagamento</span><span class="v" data-i18n-html="spec.pay.v">Pix, cartão em até 10x sem juros, boleto<small data-i18n="spec.pay.s">Processado após confirmação da reserva</small></span></div>
+        </div>
+
+        <div class="sizes-strip">
+          <div class="size-row"><span class="sz">21 × 30 cm</span><span class="ed">30 cópias</span><span class="pr">R$ 600</span></div>
+          <div class="size-row"><span class="sz">30 × 42 cm</span><span class="ed">25 cópias</span><span class="pr">R$ 1.200</span></div>
+          <div class="size-row"><span class="sz">42 × 60 cm</span><span class="ed">15 cópias</span><span class="pr">R$ 2.400</span></div>
+          <div class="size-row"><span class="sz">60 × 84 cm</span><span class="ed">10 cópias</span><span class="pr">R$ 4.500</span></div>
+          <div class="size-row" style="border-bottom: 0;"><span class="sz">84 × 118 cm</span><span class="ed">5 cópias · obra de parede</span><span class="pr">R$ 9.000</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOBRE
+     ============================================================ -->
+<section class="section layer" id="sobre" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 04</span><span class="hud">Artista</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.about">Sobre <em>o trabalho<span style="color:var(--accent)">.</span></em></h2>
+      <div class="meta">
+        <span class="hud">Willians Gomes</span>
+        <span class="hud">20 anos de campo</span>
+      </div>
+      <div class="gr"><span class="hud">Atibaia · SP</span><span class="hud">Brasil</span></div>
+    </div>
+
+    <div class="sobre reveal">
+      <p class="pull" data-i18n-html="about.pull">Cada imagem que sai da câmera nunca existiu pra mais ninguém, <span>em nenhum momento</span>, exceto pra mim no escuro.</p>
+      <div class="body">
+        <p data-i18n="about.p1">Há mais de duas décadas faço light painting: fotografia em que a luz é desenhada à mão, no tempo real do obturador aberto, sem montagem digital. Quando a câmera fica aberta por trinta, sessenta, cento e vinte segundos, uma hora inteira, o que ela captura não é uma cena. É uma duração.</p>
+        <p data-i18n="about.p2">Por isso edição limitada não é estratégia comercial. É descrição do que essas fotos são: irrepetíveis.</p>
+        <p data-i18n="about.p3" style="color: var(--accent); font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; margin-top: 18px; line-height: 1.7;">Nada disso é feito com IA. Cada imagem é desenhada na câmera, no escuro, em tempo real.</p>
+      </div>
+    </div>
+
+    <div class="sobre-extras reveal">
+      <figure>
+        <div class="placeholder">
+          <div class="inner"></div>
+          <span class="lbl" data-i18n="about.photo.lbl">Retrato do artista · placeholder</span>
+        </div>
+        <figcaption data-i18n="about.photo.cap">Willians Gomes, Piracanga, 2024</figcaption>
+      </figure>
+      <figure>
+        <div class="placeholder video">
+          <div class="inner"></div>
+          <span class="play-btn" aria-hidden="true">Play</span>
+          <span class="lbl" style="position:absolute; bottom: 20px; left: 20px;" data-i18n="about.process.placeholder">Vídeo de processo · em breve</span>
+        </div>
+        <figcaption data-i18n="about.process.cap">O ofício no escuro, sessenta segundos de obturador aberto</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CREDS
+     ============================================================ -->
+<section class="section layer" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 05</span><span class="hud" data-i18n="sec.career.tag">Trajetória</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.career">Vinte anos <em>de campo<span style="color:var(--accent)">.</span></em></h2>
+      <div class="meta">
+        <span class="hud">Brasil · Butão · Índia · Espanha · França</span>
+        <span class="hud">Festivais · Livro · Retiros</span>
+      </div>
+      <div class="gr"><span class="hud">2003 · 2026</span><span class="hud">Em curso</span></div>
+    </div>
+    <div class="creds reveal">
+      <div class="cred">
+        <span class="num">10</span>
+        <p class="lbl">Anos no Festival Paraty em Foco, ao lado de Walter Firmo, Gal Oppido, Renan Cepeda.</p>
+        <span class="sub">2010 · 2020</span>
+      </div>
+      <div class="cred">
+        <span class="num">8</span>
+        <p class="lbl">Capítulos do livro autoral Pintando com Luz, em produção.</p>
+        <span class="sub">Livro · em curso</span>
+      </div>
+      <div class="cred">
+        <span class="num">4</span>
+        <p class="lbl">Países como guia fotográfico: Butão, Índia, Espanha e França. Atelier em Atibaia, SP.</p>
+        <span class="sub">Campo · contemplativo</span>
+      </div>
+      <div class="cred">
+        <span class="num">20+</span>
+        <p class="lbl">Anos de prática contínua em light painting. Primeira edição comercial em Maio de 2026.</p>
+        <span class="sub">Desde 2003</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LIVRO
+     ============================================================ -->
+<section class="section layer" id="livro" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 06</span><span class="hud" data-i18n="sec.book.tag">Livro autoral</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.book">O <em>livro<span style="color:var(--accent)">.</span></em></h2>
+      <div class="meta">
+        <span class="hud" data-i18n="book.meta1">Pintando com Luz</span>
+        <span class="hud" data-i18n="book.meta2">8 capítulos · em produção</span>
+      </div>
+      <div class="gr"><span class="hud">2026</span><span class="hud">Em breve</span></div>
+    </div>
+
+    <div class="livro reveal">
+      <div class="cover-wrap">
+        <div class="cover-text">
+          <span class="small" data-i18n="book.small">Manual autoral</span>
+          <span class="big" data-i18n-html="book.title">Pintando<br>com Luz</span>
+          <span class="author">Willians Gomes</span>
+        </div>
+      </div>
+      <div class="info">
+        <h3 class="serif" data-i18n-html="book.h">Um manual sobre <em>desenhar com luz.</em></h3>
+        <p data-i18n="book.p1">Oito capítulos sobre o ofício do obturador aberto. Técnica, gesto, contemplação, e os bastidores de vinte anos no escuro.</p>
+        <p data-i18n="book.p2">Em produção. Lista de espera aberta para o lançamento.</p>
+        <span class="badge" data-i18n="book.chapters">8 capítulos · 2026</span>
+        <form class="waitlist-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent=(document.documentElement.lang==='en'?'Joined ✓':'Inscrito ✓'); this.querySelector('input').value='';">
+          <input type="email" required placeholder="seu@email.com" data-i18n-attr="placeholder:book.placeholder" aria-label="E-mail">
+          <button type="submit" data-i18n="book.cta">Entrar na lista →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     IMPRENSA / COMPANHIA
+     ============================================================ -->
+<section class="section layer" id="imprensa" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 07</span><span class="hud" data-i18n="sec.press.tag">Prova social</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.press">Companhia <em>& imprensa<span style="color:var(--accent)">.</span></em></h2>
+      <div class="meta">
+        <span class="hud" data-i18n="press.meta1">Trajetória editorial</span>
+        <span class="hud" data-i18n="press.meta2">Em curso de publicação</span>
+      </div>
+      <div class="gr"><span class="hud">2010 · 2026</span><span class="hud">BR · BT · IN · ES · FR</span></div>
+    </div>
+
+    <div class="imprensa reveal">
+      <div class="item">
+        <span class="label-tag" data-i18n="press.companhia.tag">Companhia</span>
+        <p class="quote" data-i18n="press.companhia.txt">Festival Paraty em Foco, edições compartilhadas com Walter Firmo, Gal Oppido, Renan Cepeda e demais fotógrafos brasileiros de referência.</p>
+        <div class="src">
+          <span class="name">Festival Paraty em Foco</span>
+          <span class="info">10 edições · 2010—2020</span>
+        </div>
+      </div>
+      <div class="item pending">
+        <span class="label-tag" data-i18n="press.pending.tag">Imprensa</span>
+        <p class="quote" data-i18n="press.pending.txt">Crítica e cobertura da edição inaugural em curso de publicação. Veículos selecionados ainda serão anunciados.</p>
+        <div class="src">
+          <span class="name" data-i18n="press.pending.name">Em breve</span>
+          <span class="info" data-i18n="press.pending.info">Maio · 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FRENTES
+     ============================================================ -->
+<section class="section layer" id="frentes" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 08</span><span class="hud" data-i18n="sec.practice.tag">Atividades</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.practice">Outras <em>frentes<span style="color:var(--accent)">.</span></em></h2>
+      <div class="meta">
+        <span class="hud">Workshops · Retiros · NFT</span>
+        <span class="hud">Brasil · Butão · Índia · Espanha · França</span>
+      </div>
+      <div class="gr"><span class="hud">Em curso</span><span class="hud">Em breve</span></div>
+    </div>
+  </div>
+  <div class="frentes reveal">
+    <div class="frente">
+      <span class="tt" data-i18n="practice.workshops.tt">Workshops</span>
+      <p class="dc" data-i18n="practice.workshops.dc">Imersão prática em light painting, do gesto ao revelado. Pequenos grupos, no escuro.</p>
+      <span class="st" data-i18n-html="practice.workshops.st">Turmas · <b>em breve</b></span>
+    </div>
+    <div class="frente">
+      <span class="tt" data-i18n="practice.retreats.tt">Retiros</span>
+      <p class="dc" data-i18n="practice.retreats.dc">Retiros fotográficos contemplativos. Caminhar devagar, olhar com atenção, fotografar pouco.</p>
+      <span class="st" data-i18n="practice.retreats.st">Butão · Índia · Espanha · França · Brasil</span>
+    </div>
+    <div class="frente">
+      <span class="tt" data-i18n="practice.miksang.tt">Miksang</span>
+      <p class="dc" data-i18n="practice.miksang.dc">Fotografia meditativa na tradição contemplativa tibetana. Prática individual e coletiva.</p>
+      <span class="st" data-i18n="practice.miksang.st">Prática · contínua</span>
+    </div>
+    <div class="frente">
+      <span class="tt" data-i18n="practice.shows.tt">Exposições</span>
+      <p class="dc" data-i18n="practice.shows.dc">Mostras coletivas e individuais. Festival Paraty em Foco, salões e espaços independentes.</p>
+      <span class="st" data-i18n-html="practice.shows.st">Próxima · <b>em breve</b></span>
+    </div>
+    <div class="frente">
+      <span class="tt" data-i18n="practice.nft.tt">Tempo Único · NFT</span>
+      <p class="dc" data-i18n="practice.nft.dc">Edição de obras únicas em blockchain. Onde a duração condensada vira propriedade verificável.</p>
+      <span class="st" data-i18n-html="practice.nft.st">Drop · <b>em breve</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWSLETTER
+     ============================================================ -->
+<section class="section layer" style="padding-top: 0; padding-bottom: 0;">
+  <div class="wrap">
+    <div class="news reveal">
+      <div>
+        <h3 class="serif" data-i18n-html="news.h">Avisos <em>raros.</em></h3>
+        <p data-i18n="news.sub">Sem spam. Um e-mail quando houver novidade real: edição, drop, retiro.</p>
+      </div>
+      <form onsubmit="event.preventDefault(); this.querySelector('button').textContent=(document.documentElement.lang==='en'?'Subscribed ✓':'Inscrito ✓'); this.querySelector('input').value='';">
+        <input type="email" required placeholder="seu@email.com" data-i18n-attr="placeholder:news.placeholder" aria-label="Seu e-mail">
+        <button type="submit" data-i18n="news.cta">Assinar →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTATO
+     ============================================================ -->
+<section class="section layer" id="contato" style="padding-top: clamp(60px, 8vh, 100px);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="gl"><span class="hud">§ 09</span><span class="hud" data-i18n="sec.contact.tag">Contato</span></div>
+      <h2 class="section-title serif" data-i18n-html="sec.contact">Conversar<span style="color:var(--accent)">.</span></h2>
+      <div class="meta">
+        <span class="hud">Três canais</span>
+        <span class="hud">Resposta pessoal</span>
+      </div>
+      <div class="gr"><span class="hud">@willgomes</span><span class="hud">.lightpainting</span></div>
+    </div>
+    <div class="contato reveal">
       <a href="https://instagram.com/willgomes.lightpainting" target="_blank" rel="noopener">
-        <span class="l">Instagram · trabalho</span>
-        <span>@willgomes.lightpainting</span>
+        <span class="lb" data-i18n="contact.ig1.lb">Portfolio autoral</span>
+        <span class="ch">@willgomes.lightpainting</span>
       </a>
       <a href="https://instagram.com/fotografiameditativa" target="_blank" rel="noopener">
-        <span class="l">Instagram · contemplativa</span>
-        <span>@fotografiameditativa</span>
+        <span class="lb" data-i18n="contact.ig2.lb">Curadoria contemplativa</span>
+        <span class="ch">@fotografiameditativa</span>
       </a>
-      <a href="mailto:willians.design@gmail.com">
-        <span class="l">E-mail</span>
-        <span>willians.design@gmail.com</span>
+      <a href="mailto:atelier@willgomes.art">
+        <span class="lb" data-i18n="contact.email.lb">E-mail do ateliê</span>
+        <span class="ch">atelier@willgomes.art</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════ LIGHTBOX ═══════ -->
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <button class="lb-close" aria-label="Fechar">×</button>
-  <button class="lb-prev" aria-label="Obra anterior">‹</button>
-  <button class="lb-next" aria-label="Próxima obra">›</button>
-
-  <div class="lb-stage">
-    <div class="frame">
-      <img id="lb-img" src="" alt="">
-    </div>
+<footer class="layer">
+  <div class="sig serif italic">Willians Gomes</div>
+  <div class="right">
+    <span data-i18n="foot.editions">Edição inaugural · Maio 2026 · Brasil</span>
+    <span data-i18n="foot.copy">© 2026 · Todas as obras são edições limitadas, assinadas e certificadas</span>
   </div>
-
-  <aside class="lb-info">
-    <p class="lb-eyebrow">Obra</p>
-    <h3 id="lb-title"></h3>
-    <span class="lb-cat" id="lb-cat"></span>
-    <p class="desc" id="lb-desc"></p>
-    <div class="lb-tags" id="lb-tags"></div>
-
-    <div class="lb-pricing">
-      <h4>Edição limitada</h4>
-      <p class="pricing-sub">Toque o tamanho desejado para selecionar.</p>
-      <ul class="lb-pricing__list" id="lb-pricing-list"></ul>
-    </div>
-
-    <a id="lb-cta" class="lb-cta" href="#">Solicitar este print</a>
-    <ul class="lb-fineprint-list">
-      <li><strong>Papel:</strong> Hahnemühle Photo Rag 308gsm, 100% algodão</li>
-      <li><strong>Tinta:</strong> Epson UltraChrome pigmentada, longevidade 100+ anos</li>
-      <li><strong>Assinatura:</strong> à mão pelo artista, no verso, com número de edição</li>
-      <li><strong>Certificado:</strong> COA (autenticidade) acompanha cada print</li>
-      <li><strong>Prazo:</strong> 2 a 3 semanas (Brasil), 4 a 6 semanas (internacional)</li>
-      <li><strong>Frete:</strong> incluso no Brasil. Internacional sob orçamento (DHL/FedEx)</li>
-      <li><strong>Pagamento:</strong> Pix, cartão de crédito (até 10x sem juros), boleto</li>
-    </ul>
-  </aside>
-</div>
-
-<!-- ═══════ FOOTER ═══════ -->
-<footer>
-  <p class="edition">First edition · May 2026 · Brazil</p>
-  <p class="copyright">© Willians Gomes · Light painting · Fine art photography</p>
 </footer>
 
-<script src="/assets/script.js"></script>
+<!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" aria-hidden="true">
+  <button class="lb-close" id="lb-close" aria-label="Fechar">✕</button>
+
+  <div class="lb-inner">
+    <div class="lb-stage">
+      <button class="lb-prev" id="lb-prev" aria-label="Obra anterior">‹</button>
+      <button class="lb-next" id="lb-next" aria-label="Próxima obra">›</button>
+      <div class="lb-frame">
+        <img id="lb-img" alt="" width="2000" height="1500">
+      </div>
+    </div>
+    <aside class="lb-info">
+      <span class="lb-cat" id="lb-cat"></span>
+      <h3 class="lb-title serif italic" id="lb-title"></h3>
+      <span class="lb-num" id="lb-num"></span>
+      <p class="lb-desc" id="lb-desc"></p>
+      <div class="lb-pills" id="lb-pills"></div>
+
+      <div class="lb-edition">
+        <h4 data-i18n="lb.edition">Edição limitada · escolha o tamanho</h4>
+        <div class="size-opts" id="lb-sizes"></div>
+        <button class="lb-buy" id="lb-buy" disabled>
+          <span id="lb-buy-text" data-i18n="lb.select">Selecione um tamanho</span>
+          <span class="arr">→</span>
+        </button>
+        <p class="lb-fineprint" data-i18n-html="lb.fineprint">
+          <b>Papel</b> Hahnemühle Photo Rag 308gsm 100% algodão.
+          <b>Tinta</b> Epson UltraChrome pigmentada, permanência 100+ anos.
+          <b>Assinatura</b> à mão no verso, número da tiragem.
+          <b>Certificado</b> de autenticidade físico (COA).
+          <b>Prazo</b> 2 a 3 semanas, frete incluso no Brasil.
+          <b>Pagamento</b> Pix, cartão em até 10x sem juros, ou boleto.
+        </p>
+
+        <button class="lb-next-preview" id="lb-next-preview" aria-label="Próxima obra">
+          <div class="nx-img"><img id="nx-img" alt="" width="200" height="150"></div>
+          <div class="nx-info">
+            <span class="nx-lbl" data-i18n="lb.next">Próxima obra</span>
+            <span class="nx-tt serif italic" id="nx-tt"></span>
+          </div>
+          <span class="nx-arr">→</span>
+        </button>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  // ============================================================
+  // CONFIG — Stripe Payment Links (one URL per size, all 26 works share)
+  // Replace the placeholders below with the real Stripe Payment Link URLs.
+  // We'll append `?client_reference_id=obra-NN_Title` so each purchase is
+  // identifiable in the Stripe dashboard.
+  // ============================================================
+  const STRIPE_LINKS = {
+    s1: 'https://buy.stripe.com/REPLACE_S1_21x30',
+    s2: 'https://buy.stripe.com/REPLACE_S2_30x42',
+    s3: 'https://buy.stripe.com/REPLACE_S3_42x60',
+    s4: 'https://buy.stripe.com/REPLACE_S4_60x84',
+    s5: 'https://buy.stripe.com/REPLACE_S5_84x118'
+  };
+
+  // ============================================================
+  // I18N — UI strings (PT default; EN translations applied via data-i18n)
+  // ============================================================
+  const I18N = {
+    pt: {},  // default; PT lives in the markup
+    en: {
+      'nav.gallery':'Gallery','nav.edition':'Edition','nav.about':'About','nav.practice':'Practice','nav.book':'Book','nav.contact':'Contact',
+      'nav.status':'Inaugural edition · May 2026',
+      'hero.cta':'View gallery',
+      'mfst.label':'Manifesto',
+      'mfst.h1':'I draw with light, <em>but what I make<br>is with time<span class="dot"></span></em>',
+      'mfst.p1':'For more than two decades I have practiced light painting: photographs in which light is drawn by hand, in the real time of the open shutter, with no digital compositing.',
+      'mfst.p2':'When the shutter stays open for thirty, sixty, one hundred and twenty seconds, a full hour, what the camera captures is not a scene. It is a duration.',
+      'mfst.stat1':'Years in the field','mfst.stat2':'Works in the edition','mfst.stat3':'Sizes per work',
+      'sec.gallery':'The complete <em>collection<span style="color:var(--accent)">.</span></em>',
+      'sec.gallery.tag':'Collection',
+      'gallery.meta1':'26 works available','gallery.meta2':'Click to acquire',
+      'gallery.filter':'Filter:','gallery.immersive':'Immersive mode',
+      'sec.edition':'The <em>edition<span style="color:var(--accent)">.</span></em>',
+      'sec.edition.tag':'Fine art print',
+      'edition.meta1':'Museum grade','edition.meta2':'5 sizes · limited run','edition.meta3':'100+ years',
+      'edition.lede':'Museum-grade printing on cotton paper. Pigment ink with permanence exceeding one hundred years. <em>Hand-signed, numbered, certified.</em>',
+      'spec.paper.k':'Paper','spec.paper.v':'Hahnemühle Photo Rag 308gsm','spec.paper.s':'100% cotton, acid-free, matte velvety surface',
+      'spec.origin.k':'Origin','spec.origin.v':'100% in-camera','spec.origin.s':'Open shutter, hand gesture. No digital compositing, no AI, no post-production that alters the image.',
+      'spec.ink.k':'Ink','spec.ink.v':'Epson UltraChrome pigment','spec.ink.s':'Permanence exceeding 100 years under normal display',
+      'spec.sig.k':'Signature','spec.sig.v':'Hand-signed, verso','spec.sig.s':'Edition number, title and year',
+      'spec.coa.k':'Certificate','spec.coa.v':'Physical COA','spec.coa.s':'Document of authenticity accompanies each work',
+      'spec.time.k':'Lead time','spec.time.v':'2 to 3 weeks within Brazil','spec.time.s':'Shipping included. International on request',
+      'spec.pay.k':'Payment','spec.pay.v':'Pix, credit card in up to 10x interest-free, boleto','spec.pay.s':'Processed after reservation confirmed',
+      'sec.about':'About <em>the work<span style="color:var(--accent)">.</span></em>',
+      'sec.about.tag':'Artist','about.meta':'20 years in the field',
+      'about.pull':'Each image that comes out of the camera never existed for anyone else, <span>at any moment</span>, except for me in the dark.',
+      'about.p1':'For more than two decades I have practiced light painting: photographs in which light is drawn by hand, in the real time of the open shutter, with no digital compositing. When the camera stays open for thirty, sixty, one hundred and twenty seconds, a full hour, what it captures is not a scene. It is a duration.',
+      'about.p2':'That is why limited edition is not a commercial strategy here. It is a description of what these photographs are: unrepeatable.',
+      'about.p3':'None of this is made with AI. Every image is drawn in-camera, in the dark, in real time.',
+      'about.photo.lbl':'Artist portrait · placeholder','about.photo.cap':'Willians Gomes, Piracanga, 2024',
+      'about.process.placeholder':'Process video · coming soon','about.process.cap':'The practice in the dark, sixty seconds of open shutter',
+      'sec.career':'Twenty years <em>in the field<span style="color:var(--accent)">.</span></em>','sec.career.tag':'Career',
+      'sec.book':'The <em>book<span style="color:var(--accent)">.</span></em>','sec.book.tag':'Author manual',
+      'book.meta1':'Pintando com Luz','book.meta2':'8 chapters · in production',
+      'book.small':'Author manual','book.title':'Pintando<br>com Luz',
+      'book.h':'A manual on <em>drawing with light.</em>',
+      'book.p1':'Eight chapters on the craft of the open shutter. Technique, gesture, contemplation, and the backstage of twenty years in the dark.',
+      'book.p2':'In production. Waiting list open for the launch.',
+      'book.chapters':'8 chapters · 2026','book.placeholder':'your@email.com','book.cta':'Join the list →',
+      'sec.press':'Company <em>& press<span style="color:var(--accent)">.</span></em>','sec.press.tag':'Social proof',
+      'press.meta1':'Editorial trajectory','press.meta2':'Coverage in publication',
+      'press.companhia.tag':'Company',
+      'press.companhia.txt':'Festival Paraty em Foco, editions shared with Walter Firmo, Gal Oppido, Renan Cepeda and other leading Brazilian photographers.',
+      'press.pending.tag':'Press',
+      'press.pending.txt':'Criticism and coverage of the inaugural edition currently in publication. Selected outlets to be announced.',
+      'press.pending.name':'Coming soon','press.pending.info':'May · 2026',
+      'sec.practice':'Other <em>fronts<span style="color:var(--accent)">.</span></em>','sec.practice.tag':'Activities',
+      'practice.workshops.tt':'Workshops','practice.workshops.dc':'Hands-on light painting immersion, from gesture to print. Small groups, in the dark.','practice.workshops.st':'Classes · <b>coming soon</b>',
+      'practice.retreats.tt':'Retreats','practice.retreats.dc':'Contemplative photographic retreats. Walk slowly, look closely, photograph little.','practice.retreats.st':'Bhutan · India · Spain · France · Brazil',
+      'practice.miksang.tt':'Miksang','practice.miksang.dc':'Meditative photography in the Tibetan contemplative tradition. Individual and collective practice.','practice.miksang.st':'Practice · ongoing',
+      'practice.shows.tt':'Exhibitions','practice.shows.dc':'Group and solo shows. Festival Paraty em Foco, salons and independent spaces.','practice.shows.st':'Next · <b>coming soon</b>',
+      'practice.nft.tt':'Single Time · NFT','practice.nft.dc':'Unique works on blockchain. Where condensed duration becomes verifiable property.','practice.nft.st':'Drop · <b>coming soon</b>',
+      'news.h':'Rare <em>news.</em>','news.sub':'No spam. One email when something real happens: edition, drop, retreat.',
+      'news.placeholder':'your@email.com','news.cta':'Subscribe →',
+      'sec.contact':'Talk<span style="color:var(--accent)">.</span>','sec.contact.tag':'Contact',
+      'contact.ig1.lb':'Author portfolio','contact.ig2.lb':'Contemplative curation','contact.email.lb':'Atelier email',
+      'foot.editions':'Inaugural edition · May 2026 · Brazil','foot.copy':'© 2026 · All works are limited editions, signed and certified',
+      'lb.edition':'Limited edition · choose a size','lb.select':'Select a size','lb.next':'Next work',
+      'lb.fineprint':'<b>Paper</b> Hahnemühle Photo Rag 308gsm 100% cotton. <b>Ink</b> Epson UltraChrome pigment, permanence 100+ years. <b>Signature</b> hand-signed verso, edition number. <b>Certificate</b> physical authenticity certificate (COA). <b>Lead time</b> 2 to 3 weeks, shipping included within Brazil. <b>Payment</b> Pix, credit card in up to 10x interest-free, or boleto.',
+      'lb.buy':'Buy','lb.stock':'available','lb.signature':'Signature work'
+    }
+  };
+
+  let LANG = (localStorage.getItem('wg_lang') === 'en') ? 'en' : 'pt';
+  let __ptSnapshot = null;
+
+  function snapshotPT(){
+    if(__ptSnapshot) return;
+    __ptSnapshot = { text: {}, html: {}, attr: {} };
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      __ptSnapshot.text[el.dataset.i18n] = el.textContent;
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      __ptSnapshot.html[el.dataset.i18nHtml] = el.innerHTML;
+    });
+    document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+      const [attr, key] = (el.dataset.i18nAttr || '').split(':');
+      if(attr) __ptSnapshot.attr[key] = el.getAttribute(attr);
+    });
+  }
+
+  function applyLang(lang){
+    snapshotPT();
+    LANG = lang;
+    localStorage.setItem('wg_lang', lang);
+    document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-BR';
+    const dict = I18N[lang] || {};
+    // text content
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      const val = (dict[key] !== undefined) ? dict[key] : __ptSnapshot.text[key];
+      if(val !== undefined) el.textContent = val;
+    });
+    // html content
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.dataset.i18nHtml;
+      const val = (dict[key] !== undefined) ? dict[key] : __ptSnapshot.html[key];
+      if(val !== undefined) el.innerHTML = val;
+    });
+    // attribute translations (format: "attr:key")
+    document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+      const [attr, key] = (el.dataset.i18nAttr || '').split(':');
+      if(!attr) return;
+      const val = (dict[key] !== undefined) ? dict[key] : __ptSnapshot.attr[key];
+      if(val !== undefined) el.setAttribute(attr, val);
+    });
+    // lang toggle pressed state
+    document.querySelectorAll('.lang-toggle button').forEach(b => {
+      b.setAttribute('aria-pressed', b.dataset.lang === lang);
+    });
+    // sig mark + sizes need re-render to reflect new language
+    document.querySelectorAll('.sig-mark').forEach(el => {
+      el.textContent = (lang === 'en') ? 'Signature work' : 'Obra de assinatura';
+    });
+    // update filter "todas/all" label
+    const allBtn = document.querySelector('.gallery-filter button[data-cat="todas"] .cat-label');
+    if(allBtn) allBtn.textContent = (lang === 'en') ? 'all' : 'todas';
+    // re-render size opts if lightbox is open
+    if(typeof window.__wgRerender === 'function') window.__wgRerender();
+    // update document title
+    if(typeof window.__wgUpdateTitle === 'function') window.__wgUpdateTitle();
+  }
+
+  // Bind lang toggle buttons
+  document.querySelectorAll('.lang-toggle button').forEach(b => {
+    b.addEventListener('click', () => applyLang(b.dataset.lang));
+  });
+
+  const BASE = "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/";
+
+  // ratio = w/h. Approximations chosen for a coherent masonry; refined client-side once images load.
+  const WORKS = [
+    { n:"01", t:"Vortex",         c:"abstrato",     f:"PORT_WAG_5373.jpg",   r:1.50, d:"O corpo gira no escuro e a luz registra a rotação. Gesto e duração tornam-se uma só forma.", tags:["espiral","violeta","gesto"] },
+    { n:"02", t:"Cordilheira",    c:"autorretrato", f:"PORT_IMG_4684.jpg",   r:1.50, d:"Diante da montanha, um infinito riscado a faísca. Presença breve diante daquilo que permanece.", tags:["montanha","autorretrato","infinito"] },
+    { n:"03", t:"Árvore",         c:"paisagem",     f:"PORT_DSC_4239.jpg",   r:0.67, d:"A árvore se revela à luz que a percorre. Cada galho, um traço de atenção.", tags:["árvore","drone","dourado"] },
+    { n:"04", t:"Janela",         c:"concept",      f:"PORT_WAG_2335.jpg",   r:1.50, d:"A noite se abre como uma soleira. Primeiro registro de uma linguagem que viria a ser ofício.", tags:["LED bambu","primeira","soleira"] },
+    { n:"05", t:"Travessia",      c:"paisagem",     f:"PORT_PHE_7476.jpg",   r:1.50, d:"Entre palmeiras, a luz traz o caminho ao chão. A travessia acontece em silêncio.", tags:["lua","caminho","palmeiras"] },
+    { n:"06", t:"Cúpula",         c:"abstrato",     f:"PORT_GOPR5643.jpg",   r:1.33, d:"Fagulhas formam uma cúpula efêmera sobre o mar. Arquitetura de instantes.", tags:["lã de aço","fagulhas","praia"] },
+    { n:"07", t:"Portal",         c:"retrato",      f:"PORT_WAG_8672.jpg",   r:1.50, d:"Ao redor do corpo gestante, um anel de cores. Limiar entre o que está e o que virá.", tags:["retrato","gravidez","portal"] },
+    { n:"08", t:"Jardim Noturno", c:"paisagem",     f:"PORT_DSC_1218.jpg",   r:1.50, d:"Quando a noite se aprofunda, o parque se torna outro lugar. Esferas suspensas, jardim recolhido.", tags:["Ibirapuera","orbes","palmeiras"] },
+    { n:"09", t:"Aparição",       c:"concept",      f:"PORT_DSC_4184.jpg",   r:0.67, d:"Uma figura emerge do breu da mata. Presença que se anuncia sem rosto.", tags:["figura","ciano","floresta"] },
+    { n:"10", t:"Altar",          c:"concept",      f:"PORT_GOPR5836.jpg",   r:1.33, d:"Casa redonda, chamas desenhadas. Onde o fogo encontra a contemplação.", tags:["oca","Bahia","cerimônia"] },
+    { n:"11", t:"Oca",            c:"concept",      f:"PORT_WAG_5229.jpg",   r:1.50, d:"No centro da oca, o círculo se completa. Luz sobre o fogo, fogo sobre o silêncio.", tags:["interior","fogueira","ritual"] },
+    { n:"12", t:"Vigília",        c:"paisagem",     f:"PORT__WAG0466.jpg",   r:1.50, d:"Postura de espera sob o céu pleno. Vigília é também forma de oração.", tags:["yoga","estrelas","vigília"] },
+    { n:"13", t:"Vista de Cima",  c:"abstrato",     f:"PORT_DJI_0144.jpg",   r:1.33, d:"Do alto, a luz desenha uma forma viva sobre a terra. Caligrafia de outra escala.", tags:["drone","aérea","ouro"] },
+    { n:"14", t:"Sonho",          c:"paisagem",     f:"PORT__WAG0931.jpg",   r:1.50, d:"Quinze minutos de obturador aberto. O sonho condensado em uma única respiração luminosa.", tags:["espirais","longa exposição","gramado"] },
+    { n:"15", t:"Forma na Areia", c:"abstrato",     f:"PORT__WAG0495.jpg",   r:1.50, d:"Na areia, uma forma quase humana. O traço se faz presença e logo desaparece.", tags:["areia","escultura","branco"] },
+    { n:"16", t:"Dança",          c:"retrato",      f:"PORT_DSC_5460.jpg",   r:0.67, d:"À beira do rio sagrado, o corpo dança e a luz responde. Encontro entre gesto e geografia.", tags:["Índia","Ganges","dança"] },
+    { n:"17", t:"Monumento",      c:"concept",      f:"PORT_DSC_1229.jpg",   r:1.50, d:"Arquitetura encontra movimento. Por instantes, o monumento parece respirar.", tags:["Ibirapuera","monumento","ouro"] },
+    { n:"18", t:"Esfera",         c:"abstrato",     f:"PORT_DSC_3077.jpg",   r:1.50, d:"Entre as árvores, uma esfera de luz se suspende. Aparição contida, presença discreta.", tags:["esfera","entardecer","orbe"] },
+    { n:"19", t:"Linha",          c:"paisagem",     f:"PORT_WAG_9237.jpg",   r:1.50, d:"Uma única linha cruza o horizonte. Pouco é dito, muito é insinuado.", tags:["Atibaia","traço","horizonte"] },
+    { n:"20", t:"Halo",           c:"retrato",      f:"PORT_WAG_8657.jpg",   r:1.50, d:"Sobre o corpo, um anel violeta perfeito. Cada retrato é também um altar.", tags:["retrato","auréola","roxo"] },
+    { n:"21", t:"Risca",          c:"paisagem",     f:"PORT_GOPR8420.jpg",   r:1.33, d:"Praia vazia, cidade distante, uma risca diagonal verde. Distâncias se medem em luz.", tags:["praia","verde","distância"] },
+    { n:"22", t:"Passarela",      c:"paisagem",     f:"PORT_WAG_2448.jpg",   r:1.50, d:"O caminho não existia até ser desenhado. Ofício do que se cria à medida que se anda.", tags:["estrada","caminho","LED 12V"] },
+    { n:"23", t:"Caligrafia",     c:"abstrato",     f:"PORT_WAG_5255.jpg",   r:1.50, d:"A câmera se move, a luz permanece. Escrita sem alfabeto, leitura sem palavra.", tags:["caligrafia","câmera em movimento","ouro"] },
+    { n:"24", t:"Diálogo",        c:"abstrato",     f:"PORT_WAG_8599.jpg",   r:1.50, d:"Quente e frio, matéria e gesto, em conversa silenciosa. Obra de assinatura.", tags:["fogo","obra de assinatura","diálogo"], sig:true },
+    { n:"25", t:"Surgimento",     c:"concept",      f:"PORT_WAG_2333-2.jpg", r:1.50, d:"Linhas convergem até o ponto onde algo nasce. Cada surgimento exige um caminho.", tags:["caminho","portal","surgimento"] },
+    { n:"26", t:"Lume",           c:"abstrato",     f:"PORT_DSC_3083.jpg",   r:1.50, d:"Brasa em movimento. O corpo é a brasa, a luz é sua memória.", tags:["LED quente","dança","loops"] }
+  ];
+
+  const SIZES = [
+    { id:"s1", label:"21 × 30 cm",  edition:"30 cópias", editionEn:"30 prints", price:"R$ 600",   priceShort:"R$ 600",   stock:30, total:30 },
+    { id:"s2", label:"30 × 42 cm",  edition:"25 cópias", editionEn:"25 prints", price:"R$ 1.200", priceShort:"R$ 1.200", stock:25, total:25 },
+    { id:"s3", label:"42 × 60 cm",  edition:"15 cópias", editionEn:"15 prints", price:"R$ 2.400", priceShort:"R$ 2.400", stock:15, total:15 },
+    { id:"s4", label:"60 × 84 cm",  edition:"10 cópias", editionEn:"10 prints", price:"R$ 4.500", priceShort:"R$ 4.500", stock:10, total:10 },
+    { id:"s5", label:"84 × 118 cm", edition:"5 cópias",  editionEn:"5 prints",  price:"R$ 9.000", priceShort:"R$ 9.000", stock:5,  total:5  }
+  ];
+
+  // -- Render gallery --
+  const gallery = document.getElementById('gallery');
+  const cardHTML = (w, i) => {
+    const h = Math.round(1000 / w.r);
+    return `
+    <article class="card" role="listitem" data-idx="${i}" data-cat="${w.c}" tabindex="0" aria-label="Abrir obra ${w.t}">
+      ${w.sig ? '<span class="sig-mark">Obra de assinatura</span>' : ''}
+      <div class="frame">
+        <img src="${BASE}${w.f}" alt="${w.t}. ${w.d}" loading="lazy" decoding="async" width="1000" height="${h}">
+      </div>
+      <div class="label">
+        <div class="row1">
+          <span class="l-title serif italic">${w.t}</span>
+          <span class="l-num">№ ${w.n}/26</span>
+        </div>
+        <div class="row2">
+          <span class="l-cat">${w.c}</span>
+          <span class="l-num">ver →</span>
+        </div>
+      </div>
+    </article>`;
+  };
+  gallery.innerHTML = WORKS.map(cardHTML).join('');
+
+  // -- Build category filter --
+  const filterEl = document.getElementById('gallery-filter');
+  const filterSpacer = filterEl.querySelector('.spacer');
+  const cats = WORKS.reduce((acc, w) => {
+    acc[w.c] = (acc[w.c] || 0) + 1; return acc;
+  }, {});
+  const catKeys = ['todas', ...Object.keys(cats).sort()];
+  const counts = { todas: WORKS.length, ...cats };
+  let activeCat = 'todas';
+  catKeys.forEach(c => {
+    const btn = document.createElement('button');
+    btn.setAttribute('aria-pressed', c === activeCat);
+    btn.dataset.cat = c;
+    const label = (c === 'todas' && LANG === 'en') ? 'all' : c;
+    btn.innerHTML = `<span class="cat-label">${label}</span><span class="count">${counts[c]}</span>`;
+    btn.addEventListener('click', () => {
+      activeCat = c;
+      filterEl.querySelectorAll('button[data-cat]').forEach(b => b.setAttribute('aria-pressed', b.dataset.cat === c));
+      gallery.querySelectorAll('.card').forEach(card => {
+        const show = (c === 'todas') || (card.dataset.cat === c);
+        card.classList.toggle('hidden', !show);
+      });
+    });
+    filterEl.insertBefore(btn, filterSpacer);
+  });
+
+  // Update "todas" label on language change
+  const updateFilterLabel = () => {
+    const todasBtn = filterEl.querySelector('button[data-cat="todas"] .cat-label');
+    if(todasBtn) todasBtn.textContent = (LANG === 'en') ? 'all' : 'todas';
+  };
+
+  // Wire immersive toggle
+  const immBtn = document.getElementById('immersive-toggle');
+  if(immBtn){
+    immBtn.addEventListener('click', () => {
+      const on = immBtn.getAttribute('aria-pressed') !== 'true';
+      immBtn.setAttribute('aria-pressed', on);
+      gallery.classList.toggle('immersive', on);
+    });
+  }
+
+  // -- Once each image loads, fix exact aspect ratio so masonry settles correctly --
+  gallery.querySelectorAll('img').forEach(img => {
+    img.addEventListener('load', () => {
+      if(img.naturalWidth && img.naturalHeight){
+        img.setAttribute('width',  img.naturalWidth);
+        img.setAttribute('height', img.naturalHeight);
+      }
+    }, { once: true });
+  });
+
+  // -- 3D tilt on card hover (sense of depth) --
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){
+    gallery.querySelectorAll('.card').forEach(card => {
+      const frame = card.querySelector('.frame');
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        frame.style.transform = `perspective(1500px) rotateX(${(-y * 4).toFixed(2)}deg) rotateY(${(x * 5).toFixed(2)}deg) translateZ(20px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        frame.style.transform = '';
+      });
+    });
+  }
+
+  // -- Lightbox --
+  const lb       = document.getElementById('lightbox');
+  const lbImg    = document.getElementById('lb-img');
+  const lbCat    = document.getElementById('lb-cat');
+  const lbTitle  = document.getElementById('lb-title');
+  const lbNum    = document.getElementById('lb-num');
+  const lbDesc   = document.getElementById('lb-desc');
+  const lbPills  = document.getElementById('lb-pills');
+  const lbSizes  = document.getElementById('lb-sizes');
+  const lbBuy    = document.getElementById('lb-buy');
+  const lbBuyTxt = document.getElementById('lb-buy-text');
+  const nxImg    = document.getElementById('nx-img');
+  const nxTt     = document.getElementById('nx-tt');
+  const nxBtn    = document.getElementById('lb-next-preview');
+
+  let current = 0;
+  let selectedSize = null;
+
+  function renderSizeOpts(){
+    lbSizes.innerHTML = SIZES.map(s => {
+      const ed = (LANG === 'en' ? s.editionEn : s.edition);
+      const stockLabel = (I18N[LANG] && I18N[LANG]['lb.stock']) || 'disponível';
+      const stockTxt = (LANG === 'en')
+        ? `<b>${s.stock}</b> of ${s.total} ${stockLabel}`
+        : `<b>${s.stock}</b> de ${s.total} disponíve${s.stock===1?'l':'is'}`;
+      return `
+      <button class="size-opt" data-id="${s.id}" aria-pressed="${selectedSize===s.id}"${s.stock<=0?' disabled':''}>
+        <span class="so-sz">${s.label}</span>
+        <span class="so-ed">${ed}</span>
+        <span class="so-pr">${s.price}</span>
+        <span class="so-stock">${stockTxt}</span>
+      </button>`;
+    }).join('');
+    lbSizes.querySelectorAll('.size-opt').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if(btn.disabled) return;
+        selectedSize = btn.dataset.id;
+        renderSizeOpts();
+        updateBuy();
+      });
+    });
+  }
+  function updateBuy(){
+    const sz = SIZES.find(s => s.id === selectedSize);
+    if(sz){
+      lbBuy.disabled = false;
+      const verb = (LANG === 'en' ? 'Buy' : 'Comprar');
+      lbBuyTxt.textContent = `${verb} ${sz.label} · ${sz.priceShort}`;
+    } else {
+      lbBuy.disabled = true;
+      lbBuyTxt.textContent = (LANG === 'en') ? 'Select a size' : 'Selecione um tamanho';
+    }
+  }
+  // Allow applyLang to re-render size opts + buy state
+  window.__wgRerender = function(){ if(lb.dataset.open === 'true'){ renderSizeOpts(); updateBuy(); } };
+  // Document title updater
+  window.__wgUpdateTitle = function(){
+    if(lb.dataset.open === 'true'){
+      const w = WORKS[current];
+      const suffix = (LANG === 'en') ? 'Willians Gomes · Light Painting' : 'Willians Gomes · Light Painting';
+      document.title = `${w.t} · ${suffix}`;
+    } else {
+      document.title = (LANG === 'en')
+        ? 'Willians Gomes · Light Painting · Inaugural Edition'
+        : 'Willians Gomes · Light Painting · Edição Inaugural';
+    }
+  };
+
+  // Wire Stripe checkout
+  lbBuy.addEventListener('click', () => {
+    if(!selectedSize || lbBuy.disabled) return;
+    const w = WORKS[current];
+    const url = STRIPE_LINKS[selectedSize] + '?client_reference_id=' + encodeURIComponent(`obra-${w.n}_${w.t}`);
+    window.open(url, '_blank', 'noopener');
+  });
+
+  function show(idx){
+    current = (idx + WORKS.length) % WORKS.length;
+    const w = WORKS[current];
+    const next = WORKS[(current + 1) % WORKS.length];
+    lbImg.src = BASE + w.f;
+    lbImg.alt = `${w.t}. ${w.d}`;
+    lbCat.textContent = w.c;
+    lbTitle.textContent = w.t;
+    lbNum.textContent = `№ ${w.n} · de 26 obras`;
+    lbDesc.textContent = w.d;
+    lbPills.innerHTML = (w.tags || []).map(t => `<span class="pill">${t}</span>`).join('');
+    nxImg.src = BASE + next.f;
+    nxImg.alt = next.t;
+    nxTt.textContent = next.t;
+    selectedSize = null;
+    renderSizeOpts();
+    updateBuy();
+    // update hash silently
+    try{ history.replaceState(null, '', `#obra-${w.n}`); }catch(_){}
+    // update document.title
+    if(typeof window.__wgUpdateTitle === 'function') window.__wgUpdateTitle();
+  }
+  function open(idx){
+    show(idx);
+    lb.dataset.open = "true";
+    lb.setAttribute('aria-hidden','false');
+    document.body.classList.add('locked');
+    requestAnimationFrame(() => lb.classList.add('visible'));
+  }
+  function close(){
+    lb.classList.remove('visible');
+    lb.setAttribute('aria-hidden','true');
+    document.body.classList.remove('locked');
+    setTimeout(() => { lb.dataset.open = "false"; }, 350);
+    try{ history.replaceState(null, '', window.location.pathname); }catch(_){}
+    if(typeof window.__wgUpdateTitle === 'function') window.__wgUpdateTitle();
+  }
+
+  document.querySelectorAll('.card').forEach(c => {
+    c.addEventListener('click', () => open(+c.dataset.idx));
+    c.addEventListener('keydown', e => { if(e.key==='Enter' || e.key===' '){ e.preventDefault(); open(+c.dataset.idx); } });
+  });
+  document.getElementById('lb-close').addEventListener('click', close);
+  document.getElementById('lb-prev' ).addEventListener('click', () => show(current - 1));
+  document.getElementById('lb-next' ).addEventListener('click', () => show(current + 1));
+  nxBtn.addEventListener('click', () => show(current + 1));
+  lb.addEventListener('click', e => { if(e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if(lb.dataset.open !== "true") return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowLeft')  show(current - 1);
+    if(e.key === 'ArrowRight') show(current + 1);
+  });
+
+  // -- Reveal on scroll --
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if(en.isIntersecting){
+        en.target.classList.add('in');
+        io.unobserve(en.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -80px 0px', threshold: 0.05 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // -- Open from hash --
+  function openFromHash(){
+    const m = (window.location.hash || '').match(/^#obra-(\d{2})$/);
+    if(!m) return;
+    const idx = WORKS.findIndex(w => w.n === m[1]);
+    if(idx >= 0) open(idx);
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
+
+  // -- Apply saved language (does the initial PT/EN swap) --
+  applyLang(LANG);
+
+  // -- Custom cursor over cards --
+  if(window.matchMedia('(pointer:fine)').matches && !reduce){
+    const cur = document.getElementById('cursor-plus');
+    let cx = 0, cy = 0, tx = 0, ty = 0, raf = 0;
+    function loop(){
+      cx += (tx - cx) * 0.22; cy += (ty - cy) * 0.22;
+      cur.style.left = cx + 'px';
+      cur.style.top  = cy + 'px';
+      raf = (Math.abs(tx-cx) > 0.4 || Math.abs(ty-cy) > 0.4) ? requestAnimationFrame(loop) : 0;
+    }
+    document.addEventListener('mousemove', (e) => {
+      tx = e.clientX; ty = e.clientY;
+      if(!raf) raf = requestAnimationFrame(loop);
+    });
+    gallery.addEventListener('mouseover', e => {
+      if(e.target.closest('.card')) cur.classList.add('on');
+    });
+    gallery.addEventListener('mouseout', e => {
+      if(!e.relatedTarget || !e.relatedTarget.closest('.card')) cur.classList.remove('on');
+    });
+  }
+
+  // -- Spotlight follow (desktop only) --
+  if(!reduce && window.matchMedia('(pointer:fine)').matches){
+    const spot = document.getElementById('spotlight');
+    let raf = 0, tx = 0, ty = 0, cx = 0, cy = 0;
+    window.addEventListener('mousemove', (e) => {
+      tx = e.clientX; ty = e.clientY;
+      spot.style.opacity = '1';
+      if(!raf) raf = requestAnimationFrame(loop);
+    });
+    window.addEventListener('mouseleave', () => { spot.style.opacity = '0'; });
+    function loop(){
+      cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12;
+      spot.style.left = cx + 'px';
+      spot.style.top  = cy + 'px';
+      raf = (Math.abs(tx-cx) > 0.4 || Math.abs(ty-cy) > 0.4) ? requestAnimationFrame(loop) : 0;
+    }
+  }
+
+  // -- Parallax for deep-field orbs --
+  if(!reduce){
+    const orbs = document.querySelectorAll('.deep-field .orb');
+    let lastY = 0, ticking = false;
+    window.addEventListener('scroll', () => {
+      lastY = window.scrollY;
+      if(!ticking){
+        ticking = true;
+        requestAnimationFrame(() => {
+          orbs.forEach((o, i) => {
+            const speed = (i + 1) * 0.04;
+            o.style.transform = `translate3d(0, ${(-lastY * speed).toFixed(1)}px, 0)`;
+          });
+          ticking = false;
+        });
+      }
+    }, { passive: true });
+  }
+
+})();
+</script>
 
 </body>
 </html>
