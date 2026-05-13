@@ -1391,8 +1391,9 @@ body.locked{ overflow: hidden; }
         <p data-i18n="book.p1">Oito capítulos sobre o ofício do obturador aberto. Técnica, gesto, contemplação, e os bastidores de vinte anos no escuro.</p>
         <p data-i18n="book.p2">Em produção. Lista de espera aberta para o lançamento.</p>
         <span class="badge" data-i18n="book.chapters">8 capítulos · 2026</span>
-        <form class="waitlist-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent=(document.documentElement.lang==='en'?'Joined ✓':'Inscrito ✓'); this.querySelector('input').value='';">
+        <form class="waitlist-form" data-subscribe-list="livro">
           <input type="email" required placeholder="seu@email.com" data-i18n-attr="placeholder:book.placeholder" aria-label="E-mail">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true">
           <button type="submit" data-i18n="book.cta">Entrar na lista →</button>
         </form>
       </div>
@@ -1490,8 +1491,9 @@ body.locked{ overflow: hidden; }
         <h3 class="serif" data-i18n-html="news.h">Avisos <em>raros.</em></h3>
         <p data-i18n="news.sub">Sem spam. Um e-mail quando houver novidade real: edição, drop, retiro.</p>
       </div>
-      <form onsubmit="event.preventDefault(); this.querySelector('button').textContent=(document.documentElement.lang==='en'?'Subscribed ✓':'Inscrito ✓'); this.querySelector('input').value='';">
+      <form data-subscribe-list="newsletter">
         <input type="email" required placeholder="seu@email.com" data-i18n-attr="placeholder:news.placeholder" aria-label="Seu e-mail">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true">
         <button type="submit" data-i18n="news.cta">Assinar →</button>
       </form>
     </div>
@@ -2087,6 +2089,60 @@ body.locked{ overflow: hidden; }
     }, { passive: true });
   }
 
+})();
+</script>
+
+<!-- ============================================================
+     SUBSCRIBE HANDLER · POST /api/subscribe (Cloudflare Pages Function)
+     Liga forms com [data-subscribe-list] à API Brevo via CF Worker.
+     ============================================================ -->
+<script>
+(function(){
+  const forms = document.querySelectorAll('form[data-subscribe-list]');
+  if (!forms.length) return;
+
+  forms.forEach(form => {
+    const list = form.dataset.subscribeList;
+    const button = form.querySelector('button[type="submit"]');
+    const input = form.querySelector('input[type="email"]');
+    const honeypot = form.querySelector('input[name="website"]');
+    const labelOK = (document.documentElement.lang === 'en') ? 'Subscribed ✓' : 'Inscrito ✓';
+    const labelERR = (document.documentElement.lang === 'en') ? 'Try again' : 'Tente de novo';
+    const originalText = button.textContent;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = (input.value || '').trim();
+      if (!email) return;
+
+      button.disabled = true;
+      button.textContent = '...';
+
+      try {
+        const resp = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email,
+            list,
+            lang: document.documentElement.lang || 'pt',
+            website: honeypot ? honeypot.value : ''
+          })
+        });
+        if (resp.ok) {
+          button.textContent = labelOK;
+          input.value = '';
+          setTimeout(() => { button.textContent = originalText; button.disabled = false; }, 4000);
+        } else {
+          button.textContent = labelERR;
+          setTimeout(() => { button.textContent = originalText; button.disabled = false; }, 3000);
+        }
+      } catch (err) {
+        button.textContent = labelERR;
+        setTimeout(() => { button.textContent = originalText; button.disabled = false; }, 3000);
+      }
+    });
+  });
 })();
 </script>
 
