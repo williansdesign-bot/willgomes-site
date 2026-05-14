@@ -477,6 +477,16 @@ p{ margin: 0; }
   box-shadow: 0 1px 0 rgba(255,255,255,.04) inset, 0 30px 50px -30px rgba(0,0,0,.7);
 }
 .sobre-extras .placeholder.video{ aspect-ratio: 16 / 11; }
+.sobre-extras .process-video{
+  width:100%;
+  aspect-ratio:16/11;
+  object-fit:cover;
+  background:#000;
+  border:1px solid var(--line);
+  cursor:pointer;
+}
+.sobre-extras .process-video:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
 .sobre-extras .placeholder .inner{
   position: absolute; inset: 14px;
   background-image: repeating-linear-gradient(135deg, transparent 0 14px, oklch(0.20 0.014 250) 14px 15px);
@@ -1336,11 +1346,17 @@ body.locked{ overflow: hidden; }
         <figcaption data-i18n="about.photo.cap">Willians Gomes, Piracanga, 2024</figcaption>
       </figure>
       <figure>
-        <div class="placeholder video">
-          <div class="inner"></div>
-          <span class="play-btn" aria-hidden="true">Play</span>
-          <span class="lbl" style="position:absolute; bottom: 20px; left: 20px;" data-i18n="about.process.placeholder">Vídeo de processo · em breve</span>
-        </div>
+        <video
+          class="process-video"
+          src="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/video/longa-exposicao.mov"
+          controls
+          preload="metadata"
+          playsinline
+          muted
+          loop
+          poster="https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg"
+          aria-label="Vídeo de processo: longa exposição">
+        </video>
         <figcaption data-i18n="about.process.cap">O ofício no escuro, sessenta segundos de obturador aberto</figcaption>
       </figure>
     </div>
