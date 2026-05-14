@@ -1027,6 +1027,27 @@ footer .right{ display: flex; flex-direction: column; gap: 6px; text-align: righ
 .lb-buy .arr{ transition: transform .3s; }
 .lb-buy:hover:not(:disabled) .arr{ transform: translateX(4px); }
 
+.lb-buy-btc{
+  margin-top: 10px;
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 6px; padding: 10px 14px;
+  background: transparent; color: var(--fg-soft);
+  border: 1px solid color-mix(in oklab, var(--fg) 18%, var(--bg-deep));
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-weight: 400; font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
+  transition: color .25s, border-color .25s, background .25s, opacity .25s;
+  width: 100%;
+  cursor: pointer;
+}
+.lb-buy-btc:hover:not(:disabled){
+  color: #f7931a;
+  border-color: color-mix(in oklab, #f7931a 50%, transparent);
+  background: color-mix(in oklab, #f7931a 4%, transparent);
+}
+.lb-buy-btc:disabled{ opacity: .35; cursor: not-allowed; }
+.lb-buy-btc.loading{ opacity: .6; cursor: wait; }
+
 .lb-fineprint{ font-size: 12px; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--line); padding-top: 18px; margin-top: 10px; }
 .lb-fineprint b{ color: var(--fg-soft); font-weight: 500; }
 
@@ -1567,6 +1588,10 @@ body.locked{ overflow: hidden; }
           <span id="lb-buy-text" data-i18n="lb.select">Selecione um tamanho</span>
           <span class="arr">→</span>
         </button>
+        <button class="lb-buy-btc" id="lb-buy-btc" disabled type="button" aria-label="Pagar com Bitcoin">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="margin-right:6px;vertical-align:-2px;"><path d="M11.768 7.116c.93-.464 1.567-1.413 1.567-2.498 0-1.422-1.107-2.617-2.575-2.79V0H9.262v1.811H8.135V0H6.772v1.811H3.5v1.444h1.097c.426 0 .773.346.773.773v6.943c0 .426-.347.773-.773.773H3.5v1.444h3.272V15h1.363v-1.812h1.127V15h1.498v-1.838c2.072-.117 3.49-1.226 3.49-3.022 0-1.327-.804-2.41-1.972-2.84zm-4.45-3.612h2.388c.93 0 1.567.566 1.567 1.366 0 .8-.637 1.366-1.567 1.366H7.318v-2.732zm2.726 7.628H7.318V8.358h2.726c1.07 0 1.81.612 1.81 1.387 0 .775-.74 1.387-1.81 1.387z"/></svg>
+          <span id="lb-buy-btc-text" data-i18n="lb.btc">ou pague com Bitcoin</span>
+        </button>
         <p class="lb-fineprint" data-i18n-html="lb.fineprint">
           <b>Papel</b> Hahnemühle Photo Rag 308gsm 100% algodão.
           <b>Tinta</b> Epson UltraChrome pigmentada, permanência 100+ anos.
@@ -1672,7 +1697,7 @@ body.locked{ overflow: hidden; }
       'sec.contact':'Talk<span style="color:var(--accent)">.</span>','sec.contact.tag':'Contact',
       'contact.ig1.lb':'Author portfolio','contact.ig2.lb':'Contemplative curation','contact.email.lb':'Atelier email',
       'foot.editions':'Inaugural edition · May 2026 · Brazil','foot.copy':'© 2026 · All works are limited editions, signed and certified',
-      'lb.edition':'Limited edition · choose a size','lb.select':'Select a size','lb.next':'Next work',
+      'lb.edition':'Limited edition · choose a size','lb.select':'Select a size','lb.next':'Next work','lb.btc':'or pay with Bitcoin',
       'lb.fineprint':'<b>Paper</b> Hahnemühle Photo Rag 308gsm 100% cotton. <b>Ink</b> Epson UltraChrome pigment, permanence 100+ years. <b>Signature</b> hand-signed verso, edition number. <b>Certificate</b> physical authenticity certificate (COA). <b>Lead time</b> 2 to 3 weeks, shipping included within Brazil. <b>Payment</b> Pix, credit card in up to 10x interest-free, or boleto.',
       'lb.buy':'Buy','lb.stock':'available','lb.signature':'Signature work'
     }
@@ -1920,13 +1945,16 @@ body.locked{ overflow: hidden; }
   }
   function updateBuy(){
     const sz = SIZES.find(s => s.id === selectedSize);
+    const btcBtn = document.getElementById('lb-buy-btc');
     if(sz){
       lbBuy.disabled = false;
       const verb = (LANG === 'en' ? 'Buy' : 'Comprar');
       lbBuyTxt.textContent = `${verb} ${sz.label} · ${sz.priceShort}`;
+      if(btcBtn) btcBtn.disabled = false;
     } else {
       lbBuy.disabled = true;
       lbBuyTxt.textContent = (LANG === 'en') ? 'Select a size' : 'Selecione um tamanho';
+      if(btcBtn) btcBtn.disabled = true;
     }
   }
   // Allow applyLang to re-render size opts + buy state
@@ -1951,6 +1979,51 @@ body.locked{ overflow: hidden; }
     const url = STRIPE_LINKS[selectedSize] + '?client_reference_id=' + encodeURIComponent(`obra-${w.n}_${w.t}`);
     window.open(url, '_blank', 'noopener');
   });
+
+  // Wire BTCPay checkout (Bitcoin)
+  const lbBuyBtc    = document.getElementById('lb-buy-btc');
+  const lbBuyBtcTxt = document.getElementById('lb-buy-btc-text');
+  if (lbBuyBtc) {
+    // Habilita/desabilita junto com size selection
+    const origUpdateBuy = updateBuy;
+    window.updateBuyBtc = function(){
+      lbBuyBtc.disabled = !selectedSize;
+    };
+    lbBuyBtc.addEventListener('click', async () => {
+      if(!selectedSize || lbBuyBtc.disabled || lbBuyBtc.classList.contains('loading')) return;
+      const w = WORKS[current];
+      const originalText = lbBuyBtcTxt.textContent;
+      lbBuyBtc.classList.add('loading');
+      lbBuyBtcTxt.textContent = (LANG === 'en') ? 'Creating invoice...' : 'Gerando fatura...';
+      try {
+        const resp = await fetch('/api/btc-invoice', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            worksId: `obra-${w.n}`,
+            size: selectedSize,
+            work_title: w.t
+          })
+        });
+        const data = await resp.json();
+        if (resp.ok && data.checkout_url) {
+          window.open(data.checkout_url, '_blank', 'noopener');
+          lbBuyBtcTxt.textContent = originalText;
+        } else if (resp.status === 503) {
+          lbBuyBtcTxt.textContent = (LANG === 'en') ? 'BTC unavailable, use card' : 'BTC indisponivel, use cartao';
+          setTimeout(() => { lbBuyBtcTxt.textContent = originalText; }, 4000);
+        } else {
+          lbBuyBtcTxt.textContent = (LANG === 'en') ? 'Try again' : 'Tente novamente';
+          setTimeout(() => { lbBuyBtcTxt.textContent = originalText; }, 3000);
+        }
+      } catch (err) {
+        lbBuyBtcTxt.textContent = (LANG === 'en') ? 'Network error' : 'Erro de rede';
+        setTimeout(() => { lbBuyBtcTxt.textContent = originalText; }, 3000);
+      } finally {
+        lbBuyBtc.classList.remove('loading');
+      }
+    });
+  }
 
   function show(idx){
     current = (idx + WORKS.length) % WORKS.length;
