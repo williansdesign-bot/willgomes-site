@@ -1,9 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://willgomes.art/</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5373.jpg</image:loc>
+      <image:title>Vortex · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_IMG_4684.jpg</image:loc>
+      <image:title>Cordilheira · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4239.jpg</image:loc>
+      <image:title>Árvore · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2335.jpg</image:loc>
+      <image:title>Janela · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_PHE_7476.jpg</image:loc>
+      <image:title>Travessia · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5643.jpg</image:loc>
+      <image:title>Cúpula · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8672.jpg</image:loc>
+      <image:title>Portal · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1218.jpg</image:loc>
+      <image:title>Jardim Noturno · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_4184.jpg</image:loc>
+      <image:title>Aparição · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR5836.jpg</image:loc>
+      <image:title>Altar · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5229.jpg</image:loc>
+      <image:title>Oca · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0466.jpg</image:loc>
+      <image:title>Vigília · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DJI_0144.jpg</image:loc>
+      <image:title>Vista de Cima · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0931.jpg</image:loc>
+      <image:title>Sonho · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT__WAG0495.jpg</image:loc>
+      <image:title>Forma na Areia · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_5460.jpg</image:loc>
+      <image:title>Dança · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_1229.jpg</image:loc>
+      <image:title>Monumento · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3077.jpg</image:loc>
+      <image:title>Esfera · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_9237.jpg</image:loc>
+      <image:title>Linha · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8657.jpg</image:loc>
+      <image:title>Halo · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_GOPR8420.jpg</image:loc>
+      <image:title>Risca · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2448.jpg</image:loc>
+      <image:title>Passarela · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_5255.jpg</image:loc>
+      <image:title>Caligrafia · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_8599.jpg</image:loc>
+      <image:title>Diálogo · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_WAG_2333-2.jpg</image:loc>
+      <image:title>Surgimento · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/PORT_DSC_3083.jpg</image:loc>
+      <image:title>Lume · Willians Gomes Light Painting</image:title>
+      <image:caption>Edicao limitada · 5 tamanhos · R$ 600 a R$ 9.000</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-01</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-02</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-03</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-04</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-05</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-06</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-07</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-08</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-09</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-10</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-11</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-12</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-13</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-14</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-15</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-16</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-17</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-18</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-19</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-20</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-21</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-22</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-23</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-24</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-25</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willgomes.art/#obra-26</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
