@@ -79,6 +79,20 @@ async function saveBuyerToBrevo(brevoKey, email, attributes) {
   }).catch(() => {});
 }
 
+
+async function sendBrevoTransactional(brevoKey, templateId, email, name, params) {
+  if (!brevoKey || !templateId || !email) return;
+  await fetch("https://api.brevo.com/v3/smtp/email", {
+    method: "POST",
+    headers: { "accept": "application/json", "content-type": "application/json", "api-key": brevoKey },
+    body: JSON.stringify({
+      templateId,
+      to: [{ email, name: name || undefined }],
+      params: params || {}
+    })
+  }).catch(() => {});
+}
+
 export async function onRequestPost(context) {
   const { request, env } = context;
 
@@ -157,6 +171,17 @@ export async function onRequestPost(context) {
       COMPRADO_EM: new Date().toISOString(),
       MODO: isTest ? "test" : "live"
     });
+
+    // 3. Envia email de confirmação (template 31)
+    if (!isTest || env.SEND_TEST_EMAILS === "true") {
+      await sendBrevoTransactional(env.BREVO_API_KEY, 31, email, name, {
+        NOME: name,
+        OBRA_TITULO: obraTitle,
+        OBRA_NUMERO: obraNum,
+        TAMANHO: sizeLabel,
+        VALOR_BRL: amount.toLocaleString("pt-BR")
+      });
+    }
   }
 
   return new Response(JSON.stringify({ ok: true, processed: event.type, obra: obraNum, size: sizeKey }), { status: 200 });
