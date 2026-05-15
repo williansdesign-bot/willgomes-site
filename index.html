@@ -445,15 +445,21 @@ p{ margin: 0; }
 .lang-toggle{
   display: inline-flex; gap: 0; margin-left: 4px;
   border: 1px solid var(--line); border-radius: 999px; overflow: hidden;
+  position: relative; z-index: 60;
 }
 .lang-toggle button{
-  font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
-  padding: 6px 12px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+  padding: 10px 16px;
+  min-height: 40px;
+  min-width: 48px;
   color: var(--muted);
   background: transparent;
   border: 0;
   transition: background .25s, color .25s;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 .lang-toggle button:hover{ color: var(--fg); }
 .lang-toggle button[aria-pressed="true"]{ background: var(--fg); color: var(--bg-deep); }
@@ -1781,9 +1787,12 @@ body.locked{ overflow: hidden; }
     if(typeof window.__wgUpdateTitle === 'function') window.__wgUpdateTitle();
   }
 
-  // Bind lang toggle buttons
-  document.querySelectorAll('.lang-toggle button').forEach(b => {
-    b.addEventListener('click', () => applyLang(b.dataset.lang));
+  // Bind lang toggle buttons via event delegation (robusto pra mobile)
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.lang-toggle button[data-lang]');
+    if(!btn) return;
+    e.preventDefault();
+    applyLang(btn.dataset.lang);
   });
 
   const BASE = "https://raw.githubusercontent.com/williansdesign-bot/willgomes-portfolio-public/main/apostila/";
