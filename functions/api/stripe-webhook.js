@@ -10,14 +10,13 @@ const SIZE_LABELS = {
   s5: "84x118 cm"
 };
 
-// Mapeia price_id Stripe -> size key
-// Atualizar quando migrar pra LIVE
+// Mapeia price_id Stripe -> size key (LIVE, migrado 2026-05-18)
 const PRICE_TO_SIZE = {
-  "price_1TWfeDPVC4XcjruxDLvbg239": "s1",
-  "price_1TWfeGPVC4Xcjruxg9DuCnG7": "s2",
-  "price_1TWfeJPVC4XcjruxvhhlmY5B": "s3",
-  "price_1TWfeMPVC4Xcjruxz0yG2DEy": "s4",
-  "price_1TWfePPVC4Xcjruxt8UNdfYx": "s5"
+  "price_1TYbzqBlpIGHYVZ682HlEHDj": "s1",
+  "price_1TYbzsBlpIGHYVZ6JNBvSfSg": "s2",
+  "price_1TYbzuBlpIGHYVZ6pgIcVjHq": "s3",
+  "price_1TYbzwBlpIGHYVZ6fGbat2Fd": "s4",
+  "price_1TYbzyBlpIGHYVZ6eHp9ko8h": "s5"
 };
 
 // Stripe webhook signature verification (HMAC SHA-256)
